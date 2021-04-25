@@ -10,8 +10,8 @@
   display: grid;
   grid-template-columns: 25% 25% 25% 25%;
   grid-template-areas:
+  'header header header header'
     'mainnav mainnav mainnav mainnav'
-    'header header header header'
     'sidemenu main main main';
   grid-gap: 3px;
 }
@@ -100,8 +100,8 @@ aside li a:hover {
   .wrapper {
     grid-template-columns: auto;
     grid-template-areas:
-      'mainnav'
       'header'
+      'mainnav'
       'main'
       'sidemenu';
   }
