@@ -1,21 +1,20 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital@1&display=swap');
+
 * {
   box-sizing: border-box;
   padding: 0px;
   margin: 0px;
 }
+
 .wrapper {
-display:grid;
-grid-template-columns: 25% 25% 25% 25%;
-grid-template-areas:
-'mainnav mainnav mainnav mainnav'
-'header header header header'
-'sidemenu main main main';
-grid-gap: 3px;
-
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-areas:
+    'mainnav mainnav mainnav mainnav'
+    'header header header header'
+    'sidemenu main main main';
+  grid-gap: 3px;
 }
-
 
 .mainnav {
   grid-area: mainnav;
@@ -39,7 +38,6 @@ grid-gap: 3px;
   color: #edafb8ff;
 }
 
-
 .header {
   grid-area: header;
   font-size: 4em;
@@ -52,28 +50,45 @@ grid-gap: 3px;
 .main {
   grid-area: main;
   text-align: center;
-  height:300px;
+  height: 300px;
   background-color: #4a5759ff;
   font-family: 'Roboto Condensed', sans-serif;
+}
 
-}
-.main a{
+.main a {
   text-decoration: none;
-  color:white;
+  color: white;
 }
-.main a:hover{
+
+.main a:hover {
   color: #edafb8ff;
 }
-.sidemenu{
+
+aside {
   grid-area: sidemenu;
-  height:300px;
+  height: 300px;
   text-align: center;
   background-color: #dedbd2ff;
   font-size: 2em;
   font-weight: bold;
-  
-
 }
+
+aside ul {
+  font-size: .5em;
+  text-align: left;
+}
+
+aside li {
+  padding: 3px;
+}
+
+aside li a {
+  text-decoration: none;
+}
+aside li a:hover {
+color: #edafb8ff;
+}
+
 /* CSS HEX
 --light-pink: #edafb8ff;
 --champagne-pink: #f7e1d7ff;
