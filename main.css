@@ -85,24 +85,29 @@ aside li {
 aside li a {
   text-decoration: none;
 }
+
 aside li a:hover {
-color: #edafb8ff;
+  color: #edafb8ff;
 }
-@media (max-width: 828px){
-  .mainnav ul{
-flex-direction:column;
 
+@media (max-width: 828px) {
+  .mainnav ul li a{
+    display: block;
+  }.mainnav ul{
+    justify-content: center;
   }
- .wrapper{
- grid-template-columns: auto;
-   grid-template-areas:
-  'mainnav'
-  'header'
-  'main'
-  'sidemenu';
-}
+
+  .wrapper {
+    grid-template-columns: auto;
+    grid-template-areas:
+      'mainnav'
+      'header'
+      'main'
+      'sidemenu';
+  }
 
 }
+
 /* CSS HEX
 --light-pink: #edafb8ff;
 --champagne-pink: #f7e1d7ff;
