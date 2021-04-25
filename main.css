@@ -88,7 +88,21 @@ aside li a {
 aside li a:hover {
 color: #edafb8ff;
 }
+@media (max-width: 828px;){
+  .mainnav ul{
+flex-direction:column;
 
+  }
+ .wrapper{
+ grid-template-columns: auto;
+   grid-template-areas:
+  'mainnav'
+  'header'
+  'main'
+  'sidemenu';
+}
+
+}
 /* CSS HEX
 --light-pink: #edafb8ff;
 --champagne-pink: #f7e1d7ff;
