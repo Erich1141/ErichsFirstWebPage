@@ -3,6 +3,12 @@
   padding: 0px;
   margin: 0px;
 }
+body{
+  display:flex;
+}
+div{
+  display:flex;
+}
 h1{
   height: 1000px;
   color:red;
