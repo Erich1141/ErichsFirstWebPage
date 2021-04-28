@@ -52,7 +52,11 @@
   text-align: center;
   height: 500px;
   background-color: #4a5759ff;
-.*  font-family: 'Roboto Condensed', sans-serif;*/
+  display: flex;
+  align-items: center;
+  justify-content:center;
+
+/*  font-family: 'Roboto Condensed', sans-serif;*/
 }
 
 .main a {
