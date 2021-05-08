@@ -146,6 +146,9 @@ aside h4 {
   height:1350px;
   display:block;
 }
+.main div{
+  width:100%;
+}
 aside{
   height:1350px;
 }
