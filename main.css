@@ -75,7 +75,7 @@ h1 {
 
 .main div {
   width: 50%;
-  height: 250px;
+  height: auto;
 
 
 
@@ -143,11 +143,11 @@ aside h4 {
 }
 @media (max-width: 1200px) {
 .main{
-  height:1100px;
+  height:1200px;
   display:block;
 }
 aside{
-  height:1100px;
+  height:1200px;
 }
 
   }
