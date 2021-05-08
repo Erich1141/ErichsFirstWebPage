@@ -143,11 +143,11 @@ aside h4 {
 }
 @media (max-width: 1200px) {
 .main{
-  height:1200px;
+  height:1350px;
   display:block;
 }
 aside{
-  height:1200px;
+  height:1350px;
 }
 
   }
