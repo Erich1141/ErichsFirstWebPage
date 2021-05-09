@@ -82,7 +82,7 @@ h1 {
 .main iframe {
   border: 3px solid yellow;
   width: 75%;
-  ;
+
   aspect-ratio: 16/9;
 }
 
@@ -137,12 +137,12 @@ aside h4 {
 
 @media (max-width: 1200px) {
   .main {
-    height: 1000px;
+    height: 1500px;
     display: block;
   }
 
   .main div {
-    width: 80%;
+    width: 70%;
   }
   h2{
     margin:10px 0px;
@@ -152,7 +152,7 @@ aside h4 {
   }
 
   aside {
-    height: 1000px;
+    height: 1500px;
   }
 }
 
