@@ -86,8 +86,8 @@ h1 {
 .main  iframe{
 border:3px solid yellow;
 
-  width:50%;;
-  height:200px;
+  width:75%;;
+  aspect-ratio: 16/9;
 
 
 
