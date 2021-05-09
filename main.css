@@ -142,7 +142,13 @@ aside h4 {
   }
 
   .main div {
-    width: 50%;
+    width: 80%;
+  }
+  h2{
+    margin:10px 0px;
+  }
+  iframe{
+
   }
 
   aside {
