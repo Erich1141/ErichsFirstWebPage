@@ -45,7 +45,7 @@ h1 {
 .header {
   grid-area: header;
   font-size: 4em;
-  background-image: linear-gradient(#b0c4b1ff,  #6e916f);
+  background-image: linear-gradient(#b0c4b1ff, #6e916f);
   text-align: center;
   padding: 20px;
   color: black;
@@ -69,20 +69,17 @@ h1 {
 
 .main h2 {
   font-style: italic;
-  height:50px;
-
+  height: 50px;
 }
 
 .main div {
   width: 50%;
   height: auto;
-
 }
 
 .main iframe {
   border: 3px solid yellow;
   width: 75%;
-
   aspect-ratio: 16/9;
 }
 
@@ -116,15 +113,9 @@ aside h4 {
   padding-bottom: 5px;
 }
 
+
+
 @media (max-width: 875px) {
-  .mainnav ul {
-    flex-direction: column;
-  }
-
-  .mainnav ul li {
-    text-align: center;
-  }
-
   .wrapper {
     grid-template-columns: auto;
     grid-template-areas:
@@ -132,6 +123,14 @@ aside h4 {
       'mainnav'
       'main'
       'sidemenu';
+  }
+
+  .mainnav ul {
+    flex-direction: column;
+  }
+
+  .mainnav ul li {
+    text-align: center;
   }
 }
 
@@ -144,17 +143,19 @@ aside h4 {
   .main div {
     width: 70%;
   }
-  h2{
-    margin:10px 0px;
-  }
-  iframe{
 
+  h2 {
+    margin: 10px 0px;
   }
 
   aside {
     height: 1500px;
   }
 }
+@media (max-width: 500px) {
+  .main {
+    height: 800px;
+  }
 
 /*CSS HEX
 --light-pink: #edafb8ff;
