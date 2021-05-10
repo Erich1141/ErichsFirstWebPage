@@ -156,6 +156,9 @@ aside h4 {
   .main {
     height: 800px;
   }
+  aside{
+    height:800px;
+  }
 
 /*CSS HEX
 --light-pink: #edafb8ff;
