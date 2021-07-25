@@ -1,0 +1,32 @@
+* {
+  box-sizing: border-box;
+  padding: 0px;
+
+}
+.container{
+  background-color: lightblue;
+  width: 50vw;
+  height: 50vh;
+  margin: 25vh auto 0;
+
+  display: flex;
+
+
+
+}
+.item{
+  color:white;
+  background-color: #6495ED;
+  margin:20px;
+
+}
+.one{
+flex-grow: 1;
+
+}
+.two{
+  flex-grow: 4;
+}
+p{
+  font-size: 6em;
+}
