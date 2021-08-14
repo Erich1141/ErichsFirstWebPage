@@ -58,6 +58,7 @@ h1 {
   background-image: linear-gradient(to right, #9eacae, #2e3638);
   display: flex;
   flex-wrap: wrap;
+  justify-content: flex-start;
   color: white;
   /*  font-family: 'Roboto Condensed', sans-serif;*/
 }
@@ -74,19 +75,23 @@ h1 {
 }
 
 .main div {
-  width: 50%;
-  height: auto;
+
+
+  width: 30vw;
+
+
 }
 
 .main iframe {
-  border: 3px solid yellow;
-  width: 75%;
-  aspect-ratio: 16/9;
+
+  height:200px;
+
+
 }
 
 aside {
   grid-area: sidemenu;
-  height: 1000px;
+  height: 1500px;
   text-align: center;
   background-image: linear-gradient(to right, #dedbd2ff, #847b62);
   font-size: 2em;
@@ -154,7 +159,7 @@ aside h4 {
   }
 }
 aside{
-    height:800px;
+    height:1000px;
   }
   .main div {
     width: 50%;
@@ -163,6 +168,7 @@ aside{
 @media (max-width: 500px) {
   .main {
     height: 1200px;
+
   }
   aside{
     height:800px;
@@ -170,6 +176,7 @@ aside{
   .main div {
     width: 50%;
     height: auto;
+    font-size: 10px;
   }
 
 /*CSS HEX
