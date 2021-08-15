@@ -92,7 +92,7 @@ height:30vh;
 
 aside {
   grid-area: sidemenu;
-  height: 1500px;
+  height: 1000px;
   text-align: center;
   background-image: linear-gradient(to right, #dedbd2ff, #847b62);
   font-size: 2em;
