@@ -76,8 +76,9 @@ h1 {
 
 .main div {
 
-
-  width: 30vw;
+padding: 15px;
+height:30vh;
+  width: 20vw;
 
 
 }
@@ -118,6 +119,14 @@ aside li a:hover {
 aside h4 {
   padding-bottom: 5px;
 }
+aside .highlight{
+
+  color: red;
+}
+.alert{
+color: red;
+
+}
 
 
 
@@ -137,6 +146,9 @@ aside h4 {
 
   .mainnav ul li {
     text-align: center;
+  }
+  aside{
+    height:1500;
   }
 }
 
@@ -158,9 +170,7 @@ aside h4 {
     height: 1500px;
   }
 }
-aside{
-    height:1000px;
-  }
+
   .main div {
     width: 50%;
     height: auto;

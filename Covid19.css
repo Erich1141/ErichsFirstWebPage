@@ -86,7 +86,7 @@ aside h4 {
 .main>h1 {
   width: 100%;
   height: 20px;
-    
+
 }
 
 .main h2 {
@@ -104,3 +104,81 @@ aside h4 {
   width: 75%;
   aspect-ratio: 16/9;
 }
+.alert{
+
+font-size: 50px;
+color:red;
+padding:20px;
+
+}
+@media (max-width: 875px) {
+  .wrapper {
+    grid-template-columns: auto;
+    grid-template-areas:
+      'header'
+      'mainnav'
+      'main'
+      'sidemenu';
+  }
+
+  .mainnav ul {
+    flex-direction: column;
+  }
+
+  .mainnav ul li {
+    text-align: center;
+  }
+  aside{
+    height:1500;
+  }
+}
+.hightlight{
+  color:red;
+}
+
+@media (max-width: 1200px) {
+  .main {
+    height: 1500px;
+    display: block;
+  }
+
+  .main div {
+    width: 70%;
+  }
+
+  h2 {
+    margin: 10px 0px;
+  }
+
+  aside {
+    height: 1500px;
+  }
+}
+aside{
+    height:1000px;
+  }
+  .main div {
+    width: 50%;
+    height: auto;
+  }
+@media (max-width: 500px) {
+  .main {
+    height: 1200px;
+
+  }
+  aside{
+    height:800px;
+  }
+  .main div {
+    width: 50%;
+    height: auto;
+    font-size: 10px;
+  }
+
+/*CSS HEX
+--light-pink: #edafb8ff;
+--champagne-pink: #f7e1d7ff;
+--timberwolf: #dedbd2ff;
+--cambridge-blue: #b0c4b1ff;
+--deep-space-sparkle: #4a5759ff;
+*/
