@@ -149,6 +149,9 @@ color: red;
   .mainnav ul li {
     text-align: center;
   }
+  .main{
+height:1700px;
+  }
   aside{
     height:1500;
   }
@@ -156,7 +159,7 @@ color: red;
 
 @media (max-width: 1200px) {
   .main {
-    height: 1500px;
+    height: 1600px;
     display: block;
   }
 
@@ -169,7 +172,7 @@ color: red;
   }
 
   aside {
-    height: 1500px;
+    height: 1600px;
   }
 }
 
@@ -179,14 +182,14 @@ color: red;
   }
 @media (max-width: 500px) {
   .main {
-    height: 1600px;
+    height: 1700px;
 
   }
   aside{
-    height:800px;
+    height:900px;
   }
   .main div {
-    width: 50%;
+    width: 70%;
     height: auto;
     font-size: 10px;
   }
