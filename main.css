@@ -57,7 +57,8 @@ h1 {
 .main {
   grid-area: main;
   height: 1000px;
-  background-image: linear-gradient(to right, #9eacae, #2e3638);
+/*  background-image: linear-gradient(to right, #9eacae, #2e3638);*/
+background-color:#595959;
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
@@ -159,16 +160,16 @@ color: orange;
     text-align: center;
   }
   .main{
-height:1700px;
+/*height:1700px;*/
   }
   aside{
-    height:1500;
+  /*  height:1500;*/
   }
 }
 
 @media (max-width: 1200px) {
   .main {
-    height: 1600px;
+    height: 1900px;
     display: block;
   }
 
@@ -181,7 +182,7 @@ height:1700px;
   }
 
   aside {
-    height: 1600px;
+    height: 1900px;
   }
 }
 
@@ -191,11 +192,11 @@ height:1700px;
   }
 @media (max-width: 500px) {
   .main {
-    height: 1700px;
+  /*  height: 1700px;*/
 
   }
   aside{
-    height:900px;
+  /*  height:900px;*/
   }
   .main div {
     width: 70%;
