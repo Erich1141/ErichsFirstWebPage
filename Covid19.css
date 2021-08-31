@@ -76,7 +76,7 @@ aside h4 {
 .main {
   grid-area: main;
   height: 1000px;
-  background-image: linear-gradient(to right, #9eacae, #2e3638);
+  background-color:#595959;
   display: flex;
   flex-wrap: wrap;
   color: white;
@@ -109,6 +109,20 @@ aside h4 {
 font-size: 50px;
 color:red;
 padding:20px;
+
+
+}
+.highlight {
+
+  color:orange;
+}
+.flashit{
+  animation:flash linear 1.5s infinite
+}
+@keyframes flash {
+   0% {opacity: 1}
+   50% {opacity: .1}
+   100% {opacity:1}
 
 }
 @media (max-width: 875px) {
