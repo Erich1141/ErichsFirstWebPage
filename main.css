@@ -56,7 +56,7 @@ h1 {
 
 .main {
   grid-area: main;
-  height: 1000px;
+  height: 1200px;
 /*  background-image: linear-gradient(to right, #9eacae, #2e3638);*/
 background-color:#595959;
   display: flex;
@@ -95,7 +95,7 @@ height:30vh;
 
 aside {
   grid-area: sidemenu;
-  height: 1000px;
+  height: 1200px;
   text-align: center;
   background-image: linear-gradient(to right, #dedbd2ff, #847b62);
   font-size: 2em;
@@ -142,34 +142,10 @@ color: orange;
 
 
 
-@media (max-width: 875px) {
-  .wrapper {
-    grid-template-columns: auto;
-    grid-template-areas:
-      'header'
-      'mainnav'
-      'main'
-      'sidemenu';
-  }
-
-  .mainnav ul {
-    flex-direction: column;
-  }
-
-  .mainnav ul li {
-    text-align: center;
-  }
-  .main{
-/*height:1700px;*/
-  }
-  aside{
-  /*  height:1500;*/
-  }
-}
 
 @media (max-width: 1200px) {
   .main {
-    height: 1900px;
+    height: 2300px;
     display: block;
   }
 
@@ -177,12 +153,15 @@ color: orange;
     width: 70%;
   }
 
-  h2 {
+
+  .main h2 {
     margin: 10px 0px;
+    height:70px;
+
   }
 
   aside {
-    height: 1900px;
+    height: 2300px;
   }
 }
 
@@ -190,9 +169,38 @@ color: orange;
     width: 50%;
     height: auto;
   }
+  @media (max-width: 875px) {
+    .wrapper {
+      grid-template-columns: auto;
+      grid-template-areas:
+        'header'
+        'mainnav'
+        'main'
+        'sidemenu';
+    }
+
+    .mainnav ul {
+      flex-direction: column;
+    }
+
+    .mainnav ul li {
+      text-align: center;
+    }
+    .main{
+      font-size: 12px;
+  /*height:1700px;*/
+    }
+    .main h2{
+        height:50px;
+    }
+    aside{
+    /*  height:1500;*/
+    }
+  }
+
 @media (max-width: 500px) {
-  .main {
-  /*  height: 1700px;*/
+  .main h2{
+    height: 30px;
 
   }
   aside{
