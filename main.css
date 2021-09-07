@@ -146,7 +146,7 @@ color: orange;
 
 @media (max-width: 1200px) {
   .main {
-    height: 2300px;
+    height: 2700px;
     display: block;
   }
 
@@ -162,7 +162,7 @@ color: orange;
   }
 
   aside {
-    height: 2300px;
+    height: 2700px;
   }
 }
 
@@ -186,6 +186,9 @@ color: orange;
 
     .mainnav ul li {
       text-align: center;
+    }
+    .main{
+    height:2500px;
     }
     .main{
       font-size: 12px;
