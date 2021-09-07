@@ -200,8 +200,19 @@ color: orange;
   }
 
 @media (max-width: 500px) {
+
+.main{
+height:2400px;
+}
+
+
+  .video0 h2{
+width:350px;
+height:
+
+  }
   .main h2{
-    height: 30px;
+    height: 40px;
 
   }
   aside{
