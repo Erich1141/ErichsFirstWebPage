@@ -16,10 +16,6 @@ body {}
     "header header header header"
     "important important important important"
     "mainnav mainnav mainnav mainnav"
-    "aside main main main"
-    "aside main main main"
-    "aside main main main"
-    "aside main main main"
     "aside main main main";
 }
 
@@ -43,7 +39,6 @@ li {
   text-align: center;
   font-size: 2em;
 }
-
 
 .mainnav {
   grid-area: mainnav;
@@ -74,7 +69,7 @@ li {
 .aside {
   grid-area: aside;
   background-image: linear-gradient(to right, #dedbd2ff, #847b62);
-  height: 230vh;
+  height: 290vh;
   border-right: 3px solid white;
 }
 
@@ -96,18 +91,28 @@ li {
   display: grid;
   grid-template-columns: 50% 50%;
   grid-template-areas:
+    "maintitle maintitle"
     "tag1 tag2"
     "video1 video2"
     "tag3 tag4"
     "video3 video4"
     "tag5 tag6"
-    "video5 video6";
+    "video5 video6"
+    "tag7 tag8"
+    "video7 video8";
   background-color: #595959;
-  height: 230vh;
+  height: 290vh;
   align-content: flex-start;
   padding: 1.5em;
   color: white;
   font-style: italic;
+}
+
+.main-title {
+  grid-area: "maintitle";
+  font-size: 4em;
+  text-align: center;
+  width: 200%;
 }
 
 .videotag1 {
@@ -138,6 +143,18 @@ li {
 .videotag6 {
   grid-area: tag6;
   margin: 1em .5em 1em .5em;
+}
+
+.videotag7 {
+  grid-area: tag7;
+  margin: 1em .5em 1em .5em;
+  padding-top: 1em;
+}
+
+.videotag8 {
+  grid-area: tag8;
+  margin: 1em .5em 1em .5em;
+  padding-top: 1em;
 }
 
 .videoclip1 {
@@ -225,6 +242,42 @@ li {
   height: 100%;
 }
 
+.iframe-container7 {
+  grid-area: video7;
+  position: relative;
+  width: 96%;
+  padding-bottom: 56.25%;
+  height: 0;
+}
+
+.videoclip7 {
+  margin: 1em .5em 1em .5em;
+  border: 5px solid white;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.iframe-container8 {
+  grid-area: video8;
+  position: relative;
+  width: 87%;
+  padding-bottom: 56.25%;
+  height: 0;
+}
+
+.videoclip8 {
+  margin: 1em .5em 1em .5em;
+  border: 5px solid white;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
 .highlight {
   color: red;
 }
@@ -265,6 +318,7 @@ li {
   .main {
     grid-template-columns: 100%;
     grid-template-areas:
+      "maintitle"
       "tag1"
       "video1"
       "tag2"
@@ -276,34 +330,43 @@ li {
       "tag5"
       "video5"
       "tag6"
-      "video6";
-    height: 550vh;
+      "video6"
+      "tag7"
+      "video7"
+      "tag8"
+      "video8";
+    height: 700vh;
   }
 
-  @media (max-width: 740px) {
-    .main {
-      height: 490vh;
-    }
+  .main-title {
+    width: 100%;
+  }
+}
+
+@media (max-width: 740px) {
+  .main {
+    height: 630vh;
+  }
+}
+
+@media (max-width: 560px) {
+  .main {
+    height: 560vh;
   }
 
-  @media (max-width: 560px) {
+  @media (max-width: 465px) {
     .main {
-      height: 400vh;
+      height: 470vh;
     }
 
-    @media (max-width: 465px) {
+    @media (max-width: 350px) {
       .main {
-        height: 530vh;
+        height: 500vh;
       }
+    }
 
-      @media (min-width: 350px) {
-        .main {
-          height: 360vh;
-        }
+    @media (max-width: 252px) {
+      .main {
+        height: 450vh;
       }
-
-      @media (min-width: 252px) {
-        .main {
-          height: 330vh;
-        }
-      }
+    }
