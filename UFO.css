@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=News+Cycle&display=swap');
+
+* {
+  box-sizing: border-box;
+  padding: :0px;
+  margin: 0px;
+}
+
+body {
+  background-color: #fbf2ea;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.videopartext {
+  padding: 20px 30px;
+  font-style: italic;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.header {
+  font-size: 5em;
+  font-weight: bold;
+  text-align: center;
+  border-bottom: 3px solid black;
+}
+
+.date {
+  text-align: center;
+  border-bottom: 3px solid black;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-areas:
+    "newsarticles Ufophenomena Uforesources";
+}
+
+.newsarticles {
+  grid-area: newsarticles;
+  height: 83.5vh;
+  border-right: 3px solid #D3D3D3;
+}
+
+.newsarticles header {
+  font-size: 3em;
+  font-weight: bold;
+  text-align: center;
+}
+
+.Ufophenomena {
+  grid-area: Ufophenomena;
+  height: 83.5vh;
+  border-right: 3px solid #D3D3D3;
+  overflow-y: scroll;
+}
+
+.Ufophenomena header {
+  font-size: 5em;
+  font-weight: bold;
+  text-align: center;
+}
+
+.Uforesources {
+  grid-area: Uforesources;
+  height: 83.5;
+}
+ li a:hover {
+  color: #edafb8ff;
+}
+.Uforesources ul li a{
+  text-decoration: none;
+}
+.Uforesources ul  {
+  list-style:none;
+  font-weight: bold;
+  font-style: italic;
+  background-color: lightblue;
+  border: 2px solid dodgerblue;
+
+}
+
+.Uforesources header {
+  font-size: 3em;
+  font-weight: bold;
+  text-align: center;
+}
+
+.iframe-container1 {
+  position: relative;
+  width: 96%;
+  padding-bottom: 56.25%;
+  height: 0;
+}
+
+.videoclip1 {
+  margin: 1em .5em 1em .5em;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 98%;
+  height: 90%;
+  padding-left: 20px;
+}
+
+.iframe-container2 {
+  position: relative;
+  width: 96%;
+  padding-bottom: 56.25%;
+  height: 0;
+}
+
+.videoclip2 {
+  margin: 1em .5em 1em .5em;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 98%;
+  height: 90%;
+  padding-left: 20px;
+}
+@media (max-width: 599px) {
+
+.wrapper {
+  grid-template-columns: 100%;
+  grid-template-areas:
+  "Ufophenomena"
+  "newsarticles"
+  "Uforesources";
+}
+
+}
