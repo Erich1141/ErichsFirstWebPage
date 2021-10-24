@@ -10,9 +10,9 @@ body {
   background-color: #fbf2ea;
 }
 
-body::-webkit-scrollbar {
+/*body::-webkit-scrollbar {
   display: none;
-}
+}*/
 
 .videopartext {
   padding: 20px 30px;
