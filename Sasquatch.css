@@ -8,7 +8,7 @@
   width: 100vw;
   background-color: black;
   display: flex;
-    
+
 }
 
 .mainnav ul li {
@@ -32,4 +32,10 @@
 
 .video {
   margin-top: 200px;
+}
+.construction{
+  font-size: 3em;
+  color: red;
+  width:100%;
+  text-align: center;
 }
