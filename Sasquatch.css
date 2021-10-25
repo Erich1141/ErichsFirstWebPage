@@ -1,0 +1,35 @@
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+
+.mainnav ul {
+  width: 100vw;
+  background-color: black;
+  display: flex;
+    
+}
+
+.mainnav ul li {
+  flex-wrap: wrap;
+  list-style: none;
+  font-size: 1.5em;
+  background-color: black;
+  padding: 0px 20px;
+}
+
+.mainnav ul li a {
+  display: inline-block;
+
+  text-decoration: none;
+  color: white;
+}
+
+.mainnav li a:hover {
+  color: #edafb8ff;
+}
+
+.video {
+  margin-top: 200px;
+}
