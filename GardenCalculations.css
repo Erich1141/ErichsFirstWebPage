@@ -4,6 +4,9 @@
   border: 0px;
   padding: 0px;
 }
+body{
+  height: 100vh;
+}
 
 .mainnav ul {
   width: 100vw;
