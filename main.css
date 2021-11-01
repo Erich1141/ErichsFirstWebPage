@@ -32,6 +32,13 @@ li {
   padding: .3em;
   border-bottom: 3px solid white;
 }
+.small{
+  font-size: 20px;
+  text-decoration: none;
+  position: absolute;
+  left:10px;
+  top:10px;
+}
 
 .important {
   grid-area: important;
