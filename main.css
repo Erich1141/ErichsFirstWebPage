@@ -416,7 +416,7 @@ li {
       "video9"
       "tag10"
       "video10";
-    height: 830vh;
+    height: 930vh;
   }
 
   .main-title {
@@ -426,28 +426,28 @@ li {
 
 @media (max-width: 740px) {
   .main {
-    height: 730vh;
+    height: 830vh;
   }
 }
 
 @media (max-width: 560px) {
   .main {
-    height: 630vh;
+    height: 730vh;
   }
 
   @media (max-width: 465px) {
     .main {
-      height: 550vh;
+      height: 620vh;
     }
 
     @media (max-width: 350px) {
       .main {
-        height: 550vh;
+        height: 630vh;
       }
     }
 
     @media (max-width: 252px) {
       .main {
-        height: 600vh;
+        height: fb56d584866c67f437f48f5750ae943e7e339bedvh;
       }
     }
