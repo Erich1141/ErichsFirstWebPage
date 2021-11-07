@@ -71,26 +71,31 @@ a:hover {
   margin-top: 20px;
 }
 
-
-
-
 .calculators {
-display:flex;
-width:100%;
+  display: flex;
+  width: 100%;
 }
 
 .calculator {
-width:25%;
-
+  width: 25%;
   padding: 20px;
   background-color: #66b5ff;
   border: 5px solid #808080;
-flex-wrap: wrap;
+  flex-wrap: wrap;
+  
 }
+
+/*#fifthCalc {
+  background-image: url("turfgrass.jpg");
+}
+
+#fifthCalc img {
+
+}*/
 
 .top {
   height: 200px;
-  padding:10%;
+  padding: 10%;
 }
 
 .top li {
@@ -145,10 +150,9 @@ flex-wrap: wrap;
 }
 
 @media (max-width: 1000px) {
-  .calculator,.calculators ,.hell, .p1, .inputs, .p2 {
-display: block;
-width:100%;
-
+  .calculator, .calculators, .hell, .p1, .inputs, .p2 {
+    display: block;
+    width: 100%;
   }
 
   #button1, #button2, #resultname, #result, #w, #h {
