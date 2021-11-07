@@ -64,6 +64,7 @@ function calcSodAmount() {
 function calcSodPrice() {
   var piecesod = document.getElementById('piecesod').value;
   var pricesod = document.getElementById('pricesod').value;
+  alert("Price tier discounts available for SPECIAL ORDER SOD delivered to the homeowner-CHECK QUOTE CENTER. In house sod occasionally has percentage discounts from time to time on bulk purchases-CHECK SOD HUT FOR INFO.")
   var subtotal = Number((pricesod * piecesod).toFixed(2));
   console.log(subtotal)
   var tax = Number((subtotal * .0775).toFixed(2));
@@ -73,6 +74,12 @@ function calcSodPrice() {
 
   document.getElementById('tax').value = `$ ${tax}`;
   document.getElementById('resultsod2').innerHTML = `$ ${total.toFixed(2)}`
+  if(piecesod<60){
+    alert("The quantity is not sufficient for delivery by the sod farm. Must order 60 pieces for delivery by sod farm. No minimum for sod delivered to the customer from store level")
+  }
+  else{
+
+  }
 
 }
 
