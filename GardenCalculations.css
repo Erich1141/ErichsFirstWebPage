@@ -77,7 +77,7 @@ a:hover {
 }
 
 .calculator {
-  height: 75vh;
+  height: auto;
   width: 25%;
   padding: 20px;
   background-color: #66b5ff;
