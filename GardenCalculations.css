@@ -7,6 +7,7 @@
 
 body {
   height: 200vh;
+  background-color: #D3D3D3;
 }
 
 .mainnav ul {
@@ -33,15 +34,64 @@ body {
   color: #edafb8ff;
 }
 
-.calculator {
-  height: 65vh;
-  width: 30vw;
-  padding-top: 2em;
+.quicklinks {
+  width: 100vw;
+  height: 15vh;
+  display: flex;
+  padding-top: 30px;
+  background-color: #66ffff;
+  border: 5px solid #808080;
+}
 
-  background-color: #ffb3b3;
+.quicklinks li {
+
+  list-style: none;
+  font-size: 1em;
+  padding: 0px 20px;
+}
+
+.quicklinks li a {
+  display: inline-block;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+.quicklinks li a:hover {
+  color: #edafb8ff;
+}
+
+a:hover {
+  color: #edafb8ff;
+}
+
+.header {
+  font-size: 4em;
+  text-align: center;
+  margin-bottom: 30px;
+  margin-top: 20px;
+}
+
+.calculators {
   display: flex;
   flex-wrap: wrap;
-  border:3px solid black;
+}
+
+.calculator {
+  height: 75vh;
+  width: 25%;
+  padding: 20px;
+  background-color: #66b5ff;
+  border: 5px solid #808080;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.top {
+  text-decoration: none;
+  position: absolute;
+  bottom: 40px;
+  left: 5px;
 }
 
 .p1 {
@@ -54,23 +104,24 @@ body {
 .inputs {
   border: 3px solid black;
   font-size: 1.3em;
-  width: 60%;
-    margin-right: 5px;
+  width: 100%;
+  margin-right: 5px;
+  background-color: #D3D3D3;
 }
 
 .p2 {
   font-size: 1.3em;
-  width: 40%;
+  width: 100%;
 }
 
-#button1, #button2 {
-
+.button {
   font-size: 1.3em;
   border: 3px solid black;
   font-weight: bold;
   width: 40%;
   margin-top: 20px;
   margin-right: 6px;
+  background-color: #D3D3D3;
 }
 
 #resultname {
@@ -78,24 +129,34 @@ body {
   width: 100%;
 }
 
-#result {
-  width: 250px;
+.result {
+  width: auto;
   height: 1.8em;
   font-size: 1.5em;
-  background-color: white;
+  background-color: #D3D3D3;
   border: 3px solid black;
 }
 
-@media (max-width: 665px) {
-  .calculator,.p1,.inputs,.p2{
-    width:100%;
+@media (max-width: 1000px) {
+  .calculator,.hell, .p1, .inputs, .p2 {
+    width: 100%;
   }
-  #button1, #button2,#resultname,#result{
-    width:100%;
+
+  #button1, #button2, #resultname, #result, #w, #h {
+    width: 90%;
   }
-  .mainnav ul  {
-    display:block;
+
+  .mainnav ul {
+    display: block;
+    text-align: center;
+  }
+
+  .hell ul {
+    height: auto;
+    display: block;
     text-align:center;
 
+
   }
+
 }

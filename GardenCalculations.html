@@ -7,35 +7,86 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="GardenCalculations.css">
   <title>Garden Calculations</title>
-
+  <audio src="multimedia_rollover_014.mp3" volume="low" id="tick"></audio>
 </head>
 
 <body>
-  <div class="wrapper">
-    <nav class="mainnav">
-      <ul>
-        <li><a href="index.html" class="sound">Home</a></li>
-        <li><a href="Sasquatch.html" class="sound">Sasquatch</a></li>
-        <li><a href="Covid19.html" class="sound">Covid19</a></li>
-        <li><a href="UFO.html" class="sound">UFO</a></li>
-        <audio src="multimedia_rollover_014.mp3" volume="low" id="tick"></audio>
-      </ul>
-    </nav>
 
+  <nav class="mainnav" id="top">
+    <ul>
+      <li><a href="index.html" class="sound">Home</a></li>
+      <li><a href="Sasquatch.html" class="sound">Sasquatch</a></li>
+      <li><a href="Covid19.html" class="sound">Covid19</a></li>
+      <li><a href="UFO.html" class="sound">UFO</a></li>
+
+    </ul>
+  </nav>
+  <div class="hell">
+    <ul class="quicklinks">
+      <li><a href="#firstCalc" class="sound">CALCULATE SQUARE FEET</a></li>
+      <li><a href="#secondCalc" class="sound">CALCULATE CUBIC FEET</a></li>
+      <li><a href="#thirdCalc" class="sound">FUTURE CALCULATOR</a></li>
+      <li><a href="#fourthCalc" class="sound">FUTURE CALCULATOR</a></li>
+      <li><a href="#fifthCalc" class="sound">HOW MANY PIECES OF SOD DO I NEED ?</a></li>
+
+    </ul>
   </div>
+  <header class="header">General Calculations</header>
 
-  <div class="calculator">
-    <p class="p1 ">CALCULATE AREA OF A SQUARE OR A RECTANGLE</p>
-    <p class="p2">Enter Width</p> <input class="inputs" id="w">
-    <p class= "p2">Enter Height</p><input class="inputs" id="h">
+  <span class="calculators">
 
-    <button type="text" onclick="calculate()" id="button1">Submit</button>
-    <button type="text" onclick="reset()" id="button2">Reset</button>
-    <p  class= "p2" id=resultname>Result </p><div id="result"></div>
+    <div class="calculator" id="firstCalc">
+      <p class="p1 ">CALCULATE SQUARE FEET</p>
+      <p class="p2">Enter Width Of Area In Feet</p> <input type="number" class="inputs" id="w1">
+      <p class="p2">Enter Length Of Area In Feet</p><input type="number" class="inputs" id="l1">
+
+      <button class="button" type="text" onclick="calculateSQFT()" id="button1">Submit</button>
+      <button class="button" type="text" onclick="reset()" id="button2">Reset</button>
+      <p class="p2" id=resultname>Result </p>
+      <div class="result" id="result1"></div>
+      <a href="#top" class="top sound">GO BACK TO TOP OF PAGE</a>
+    </div>
+    <div class="calculator" id="secondCalc">
+      <p class="p1 ">CALCULATE CUBIC FEET</p>
+      <p class="p2">Enter Width Of Area In Feet</p> <input type="number" class="inputs" id="w2">
+      <p class="p2">Enter Length Of Area In Feet</p><input type="number" class="inputs" id="l2">
+      <p class="p2">Enter Height Of Area In Feet</p><input type="number" class="inputs" id="h2">
+
+      <button class="button" type="text" onclick="calculateCUFT()" id="button3">Submit</button>
+      <button class="button" type="text" onclick="reset()" id="button4">Reset</button>
+      <p class="p2" id=resultname>Result </p>
+      <div class="result" id="result2"></div>
+      <a href="#top" class="top sound">GO BACK TO TOP OF PAGE</a>
+    </div>
+    <div class="calculator " id="thirdCalc">
+      <p class="p1">FUTURE CALCULATOR</p>
+      <a href="#top" class="top sound">GO BACK TO TOP OF PAGE</a>
+    </div>
+    <div class="calculator " id="fourthCalc">
+      <p class="p1">FUTURE CALCULATOR</p>
+      <a href="#top" class="top sound">GO BACK TO TOP OF PAGE</a>
+    </div>
+
+  </span>
+
+  <header class="header">Sod Calculations</header>
+
+  <span class="calculators">
+    <div class="calculator" id="fifthCalc">
+      <p class="p1 ">HOW MANY PIECES OF SOD DO I NEED ?</p>
+      <p class="p2">Enter Width Of Area To Be Sodded In Feet</p> <input type="number" class="inputs" id="wsod">
+      <p class="p2">Enter Length Of Area To Be Sodded In Feet</p><input type="number" class="inputs" id="lsod">
+
+      <button class="button" type="text" onclick="calcSodAmount()" id="sod1">Submit</button>
+      <button class="button" type="text" onclick="reset()" id="sod2">Reset</button>
+      <p class="p2" id=resultname>Result </p>
+      <div class="result" id="resultsod1"></div>
+      <a href="#top" class="top sound">GO BACK TO TOP OF PAGE</a>
+    </div>
+
+  </span>
 
 
-
-  </div>
   <script src="sound.js" type="text/javascript"></script>
 </body>
 
