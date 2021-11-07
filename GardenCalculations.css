@@ -74,6 +74,7 @@ a:hover {
 .calculators {
   display: flex;
   flex-wrap: wrap;
+  height:auto;
 }
 
 .calculator {
