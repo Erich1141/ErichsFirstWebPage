@@ -16,6 +16,7 @@ x[11].addEventListener("mouseover", myFunction);
 x[12].addEventListener("mouseover", myFunction);
 x[13].addEventListener("mouseover", myFunction);
 x[14].addEventListener("mouseover", myFunction);
+x[15].addEventListener("mouseover", myFunction);
 
 function myFunction(ev) {
   var file = document.getElementById('tick')
