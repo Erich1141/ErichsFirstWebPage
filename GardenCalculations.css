@@ -44,7 +44,6 @@ body {
 }
 
 .quicklinks li {
-
   list-style: none;
   font-size: 1em;
   padding: 0px 20px;
@@ -88,10 +87,14 @@ a:hover {
 }
 
 .top {
-  text-decoration: none;
+  
   position: absolute;
-  bottom: 40px;
-  left: 5px;
+  left: 10px;
+  bottom: 10px;
+
+}
+a{
+  text-decoration: none;
 }
 
 .p1 {
@@ -138,7 +141,7 @@ a:hover {
 }
 
 @media (max-width: 1000px) {
-  .calculator,.hell, .p1, .inputs, .p2 {
+  .calculator, .hell, .p1, .inputs, .p2 {
     width: 100%;
   }
 
@@ -154,17 +157,15 @@ a:hover {
   .hell ul {
     height: auto;
     display: block;
-    text-align:center;
-
-
+    text-align: center;
   }
-  .hell ul li{
-  margin-bottom: 10px;
 
-}@media (      orientation: landscape){
-
-  .calculator{
-
-height:150vh;
+  .hell ul li {
+    margin-bottom: 10px;
   }
-}
+
+  @media (orientation: landscape) {
+    .calculator {
+      height: 150vh;
+    }
+  }
