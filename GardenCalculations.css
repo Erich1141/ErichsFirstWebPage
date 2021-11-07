@@ -83,17 +83,18 @@ a:hover {
   background-color: #66b5ff;
   border: 5px solid #808080;
   flex-wrap: wrap;
-  position: relative;
 }
 
 .top {
-  
-  position: absolute;
-  left: 10px;
-  bottom: 10px;
-
+  height: 200px;
+  padding:10%;
 }
-a{
+
+.top li {
+  list-style: none;
+}
+
+.top li a {
   text-decoration: none;
 }
 
