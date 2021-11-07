@@ -55,7 +55,7 @@ function calcSodAmount() {
 
   document.getElementById('resultsod1').innerHTML = `${pieces} Sod Rolls`;
   alert(`If you want to get the estimated cost of the sod with tax, do not push the reset button!
-    Go to the calculator on the right where the sod quantity will be prefilled. Then add the
+    Go to the next calculator on the right on a PC, or the bottom on a smartphone or tablet, where the sod quantity will be prefilled. Then add the
     extra fields.`)
   document.getElementById('piecesod').value = pieces;
 }
@@ -70,8 +70,8 @@ function calcSodPrice() {
   var total = (subtotal + (tax));
 
 
-  document.getElementById('tax').value = tax;
-  document.getElementById('resultsod2').innerHTML = total.toFixed(2)
+  document.getElementById('tax').value = `$ ${tax}`;
+  document.getElementById('resultsod2').innerHTML = `$ ${total.toFixed(2)}`
 
 }
 
