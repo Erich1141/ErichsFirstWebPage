@@ -15,8 +15,7 @@ x[10].addEventListener("mouseover", myFunction);
 x[11].addEventListener("mouseover", myFunction);
 x[12].addEventListener("mouseover", myFunction);
 x[13].addEventListener("mouseover", myFunction);
-
-
+x[14].addEventListener("mouseover", myFunction);
 
 function myFunction(ev) {
   var file = document.getElementById('tick')
@@ -52,12 +51,27 @@ function calcSodAmount() {
   var length = document.getElementById("lsod").value;
   var result = width * length;
   var pieces = Math.ceil(result / 8);
+
+
   document.getElementById('resultsod1').innerHTML = `${pieces} Sod Rolls`;
+  alert(`If you want to get the estimated cost of the sod with tax, do not push the reset button!
+    Go to the calculator on the right where the sod quantity will be prefilled. Then add the
+    extra fields.`)
+  document.getElementById('piecesod').value = pieces;
+}
+
+function calcSodPrice() {
+  var piecesod = document.getElementById('piecesod').value;
+  var pricesod = document.getElementById('pricesod').value;
+  var subtotal = Number((pricesod * piecesod).toFixed(2));
+  console.log(subtotal)
+  var tax = Number((subtotal * .0775).toFixed(2));
+  console.log(tax)
+  var total = (subtotal + (tax));
 
 
-
-
-
+  document.getElementById('tax').value = tax;
+  document.getElementById('resultsod2').innerHTML = total.toFixed(2)
 
 }
 
@@ -72,5 +86,9 @@ function reset() {
   document.getElementById("wsod").value = "";
   document.getElementById("lsod").value = "";
   document.getElementById('resultsod1').innerHTML = "";
+  document.getElementById('piecesod').value = "";
+  document.getElementById('pricesod').value = "";
+  document.getElementById('tax').value = "";
+  document.getElementById('resultsod2').innerHTML = "";
 
 }
