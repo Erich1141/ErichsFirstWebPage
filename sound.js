@@ -63,34 +63,40 @@ function calcSodAmount() {
 
 function calcSodPrice() {
   var piecesod = document.getElementById('piecesod').value;
-  var pricesod=6.85;
-  if (piecesod<120){
-    pricesod=6.85;
-  } else if (piecesod<300) {
-pricesod=Number((6.85*.75).toFixed(2));
-}else{
-pricesod=Number((6.85/2).toFixed(2));
-}
+  var pricesod = 6.85;
+  if (piecesod < 120) {
+    pricesod = 6.85;
+  } else if (piecesod < 300) {
+    pricesod = Number((6.85 * .75).toFixed(2));
+  } else {
 
-console.log(pricesod)
 
+
+
+
+    let number = 6.85 / 2;
+    let decimals = 2;
+    pricesod = toFixed(number, decimals)
+  }
   var subtotal = Number((pricesod * piecesod).toFixed(2));
-
   var tax = Number((subtotal * .0775).toFixed(2));
-
   var total = (subtotal + (tax));
-document.getElementById('pricesod').value = pricesod;
-
+  document.getElementById('pricesod').value = pricesod;
   document.getElementById('tax').value = `$ ${tax}`;
   document.getElementById('resultsod2').innerHTML = `$ ${total.toFixed(2)}`
-  if(piecesod<60){
+  if (piecesod < 60) {
     alert("If you special order 60 pieces or 1 pallet of sod, the sod will be delivered to your house, which is included in the price")
-  }
-  else{
-  alert("This sod can be delivered free to your house fresh, if you special order it.")
+  } else {
+    alert("This sod can be delivered free to your house fresh, if you special order it.")
   }
 
 }
+
+function toFixed(number, decimals) {
+  var x = Math.pow(10, Number(decimals) + 1);
+  return (Number(number) + (1 / x)).toFixed(decimals)
+}
+
 
 function reset() {
   document.getElementById("w1").value = "";
