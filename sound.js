@@ -55,9 +55,9 @@ function calcSodAmount() {
 
 
   document.getElementById('resultsod1').innerHTML = `${pieces} Sod Rolls`;
-  alert(`If you want to get the estimated cost of the sod with tax, do not push the reset button!
-    Go down to the next calculator on a smartphone or tablet, or  go the right on a PC, where the sod quantity will be prefilled. Then add the
-    extra fields.`)
+  alert(     `If you want to get the estimated cost of the sod with tax, do not push the reset button!
+              Go down to the next calculator on a smartphone or tablet, or  go the right on a PC, where the
+              sod quantity will be prefilled. Then add the extra fields.`)
   document.getElementById('piecesod').value = pieces;
 }
 
@@ -69,7 +69,8 @@ function calcSodPrice() {
 
   if (deliveryMethod === "one") {
     if (piecesod < 60) {
-       alert(`The sod farm wont deliver sod below 60 pieces. Store pick-up or store delivery is an option`)
+       alert(     `The sod farm wont deliver sod below 60 pieces. Store pick-up or store delivery is an option.
+                   To continue, pres the SUBMIT BUTTON!!`)
 
        document.getElementById('pricesod').value = "";
        document.getElementById('pickup').value = "two";
@@ -96,8 +97,8 @@ function calcSodPrice() {
       pricesod = 5.92;
       calculateFinal(pricesod,piecesod)
     }
-    alert(`There is an extra charge for DELIVERY!!. Go to the special order desk or pro desk to get
-      a delivery quote`)
+    alert(`There is an extra charge for IN STORE DELIVERY!!. Go to the special order desk or pro desk to get
+           a delivery quote`)
   }
 
 }
