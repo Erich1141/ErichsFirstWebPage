@@ -56,46 +56,63 @@ function calcSodAmount() {
 
   document.getElementById('resultsod1').innerHTML = `${pieces} Sod Rolls`;
   alert(`If you want to get the estimated cost of the sod with tax, do not push the reset button!
-    Go to the next calculator on the right on a PC, or the bottom on a smartphone or tablet, where the sod quantity will be prefilled. Then add the
+    Go down to the next calculator on a smartphone or tablet, or  go the right on a PC, where the sod quantity will be prefilled. Then add the
     extra fields.`)
   document.getElementById('piecesod').value = pieces;
 }
 
 function calcSodPrice() {
   var piecesod = document.getElementById('piecesod').value;
-  var pricesod = 6.85;
-  if (piecesod < 120) {
-    pricesod = 6.85;
-  } else if (piecesod < 300) {
-    pricesod = Number((6.85 * .75).toFixed(2));
-  } else {
+  var pricesod;
+  var deliveryMethod = document.getElementById('pickup').value;
 
 
+  if (deliveryMethod === "one") {
+    if (piecesod < 60) {
+       alert(`The sod farm wont deliver sod below 60 pieces. Store pick-up or store delivery is an option`)
 
-
-
-    let number = 6.85 / 2;
-    let decimals = 2;
-    pricesod = toFixed(number, decimals)
-  }
-  var subtotal = Number((pricesod * piecesod).toFixed(2));
-  var tax = Number((subtotal * .0775).toFixed(2));
-  var total = (subtotal + (tax));
-  document.getElementById('pricesod').value = pricesod;
-  document.getElementById('tax').value = `$ ${tax}`;
-  document.getElementById('resultsod2').innerHTML = `$ ${total.toFixed(2)}`
-  if (piecesod < 60) {
-    alert("If you special order 60 pieces or 1 pallet of sod, the sod will be delivered to your house, which is included in the price")
-  } else {
-    alert("This sod can be delivered free to your house fresh, if you special order it.")
+       document.getElementById('pricesod').value = "";
+       document.getElementById('pickup').value = "two";
+       document.getElementById('tax').value = "";
+       document.getElementById('resultsod2').innerHTML = "";
+    } else if (piecesod < 120) {
+      pricesod = 6.58;
+    calculateFinal(pricesod,piecesod)
+      alert(`Delivery is free!!`)
+    } else if (piecesod < 300) {
+      pricesod = 4.94;
+      calculateFinal(pricesod,piecesod)
+        alert(`Delivery is free!!`)
+    } else {
+      pricesod = 3.29;
+      calculateFinal(pricesod,piecesod)
+        alert(`Delivery is free!!`)
+    }
+  } else if (deliveryMethod === "two") {
+    if (piecesod < 60) {
+      pricesod = 6.58;
+      calculateFinal(pricesod,piecesod)
+    } else {
+      pricesod = 5.92;
+      calculateFinal(pricesod,piecesod)
+    }
+    alert(`There is an extra charge for DELIVERY!!. Go to the special order desk or pro desk to get
+      a delivery quote`)
   }
 
 }
-
-function toFixed(number, decimals) {
+function calculateFinal(pricesod,piecesod){
+var subtotal = Number((pricesod * piecesod).toFixed(2));
+var tax = Number((subtotal * .0775).toFixed(2));
+var total = (subtotal + (tax));
+document.getElementById('pricesod').value = pricesod;
+document.getElementById('tax').value = `$ ${tax}`;
+document.getElementById('resultsod2').innerHTML = `$ ${total.toFixed(2)}`
+}
+/*function toFixed(number, decimals) {
   var x = Math.pow(10, Number(decimals) + 1);
   return (Number(number) + (1 / x)).toFixed(decimals)
-}
+}*/
 
 
 function reset() {
@@ -110,8 +127,10 @@ function reset() {
   document.getElementById("lsod").value = "";
   document.getElementById('resultsod1').innerHTML = "";
   document.getElementById('piecesod').value = "";
+  document.getElementById('pickup').value = "one";
   document.getElementById('pricesod').value = "";
   document.getElementById('tax').value = "";
   document.getElementById('resultsod2').innerHTML = "";
+
 
 }

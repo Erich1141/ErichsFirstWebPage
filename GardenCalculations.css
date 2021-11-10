@@ -82,7 +82,7 @@ a:hover {
   background-color: #66b5ff;
   border: 5px solid #808080;
   flex-wrap: wrap;
-  
+
 }
 
 /*#fifthCalc {
@@ -139,6 +139,13 @@ a:hover {
 #resultname {
   margin-top: 20px;
   width: 100%;
+}
+#pickup {
+  color:grey;
+}
+#pickup option{
+  color:grey;
+
 }
 
 .result {
