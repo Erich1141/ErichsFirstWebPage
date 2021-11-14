@@ -84,6 +84,13 @@ a:hover {
   flex-wrap: wrap;
 
 }
+#thirdCalc>:nth-child(2){
+color:red;
+margin-top: 50px;
+font-size: 2em;
+transform:rotate(-45deg);
+
+}
 
 /*#fifthCalc {
   background-image: url("turfgrass.jpg");

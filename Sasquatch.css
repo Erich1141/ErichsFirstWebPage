@@ -8,7 +8,6 @@
   width: 100vw;
   background-color: black;
   display: flex;
-
 }
 
 .mainnav ul li {
@@ -21,7 +20,6 @@
 
 .mainnav ul li a {
   display: inline-block;
-
   text-decoration: none;
   color: white;
 }
@@ -31,11 +29,16 @@
 }
 
 .video {
-  margin-top: 200px;
+  display: inline-block;
+  margin-top: 100px;
+  width: 30%;
 }
-.construction{
+
+.construction {
+  display: inline-block;
   font-size: 3em;
   color: red;
-  width:100%;
+  width: 100%;
   text-align: center;
+  transform: rotate(-45deg);
 }

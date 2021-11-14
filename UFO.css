@@ -51,7 +51,13 @@ body {
   font-weight: bold;
   text-align: center;
 }
-
+.newsarticles  p{
+margin-top: 100px;
+margin-left: 40px;
+font-size: 3em;
+color: red;
+transform: rotate(-45deg);
+}
 .Ufophenomena {
   grid-area: Ufophenomena;
   height: 83.5vh;
