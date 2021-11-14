@@ -79,15 +79,15 @@ function calcSodPrice() {
     } else if (piecesod < 120) {
       pricesod = 6.58;
     calculateFinal(pricesod,piecesod)
-      alert(`Delivery is free!!`)
+      alert(`Sod farm delivery is free!!`)
     } else if (piecesod < 300) {
       pricesod = 4.94;
       calculateFinal(pricesod,piecesod)
-        alert(`Delivery is free!!`)
+        alert(`Sod farm delivery is free!!`)
     } else {
       pricesod = 3.29;
       calculateFinal(pricesod,piecesod)
-        alert(`Delivery is free!!`)
+        alert(`Sod farm delivery is free!!`)
     }
   } else if (deliveryMethod === "two") {
     if (piecesod < 60) {
