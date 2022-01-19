@@ -77,24 +77,24 @@ function calcSodPrice() {
        document.getElementById('tax').value = "";
        document.getElementById('resultsod2').innerHTML = "";
     } else if (piecesod < 120) {
-      pricesod = 6.58;
+      pricesod = 7.97;
     calculateFinal(pricesod,piecesod)
       alert(`Sod farm delivery is free!!`)
     } else if (piecesod < 300) {
-      pricesod = 4.94;
+      pricesod = 5.98;
       calculateFinal(pricesod,piecesod)
         alert(`Sod farm delivery is free!!`)
     } else {
-      pricesod = 3.29;
+      pricesod = 3.99;
       calculateFinal(pricesod,piecesod)
         alert(`Sod farm delivery is free!!`)
     }
   } else if (deliveryMethod === "two") {
     if (piecesod < 60) {
-      pricesod = 6.58;
+      pricesod = 7.98;
       calculateFinal(pricesod,piecesod)
     } else {
-      pricesod = 5.92;
+      pricesod = 7.18;
       calculateFinal(pricesod,piecesod)
     }
     alert(`There is an extra charge for IN STORE DELIVERY!!. Go to the special order desk or pro desk to get
