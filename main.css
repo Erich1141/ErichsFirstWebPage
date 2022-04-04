@@ -178,7 +178,7 @@ li {
   grid-area: video1;
   position: relative;
   width: 96%;
-  padding-bottom: 56.25%;
+  padding-bottom: 62.25%;
   height: 0;
 }
 
@@ -195,8 +195,8 @@ li {
 .iframe-container2 {
   grid-area: video2;
   position: relative;
-  width: 87%;
-  padding-bottom: 56.25%;
+  width: 96%;
+  padding-bottom: 62.25%;
   height: 0;
 }
 
@@ -360,7 +360,7 @@ li {
 }
 
 .flashit {
-  animation: flash linear 1.5s infinite
+  animation: flash linear 2s infinite
 }
 
 @keyframes flash {
