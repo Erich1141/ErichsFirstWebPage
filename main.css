@@ -76,7 +76,7 @@ li {
 .aside {
   grid-area: aside;
   background-image: linear-gradient(to right, #dedbd2ff, #847b62);
-  height: 360vh;
+  height: 400vh;
   border-right: 3px solid white;
 }
 
@@ -110,7 +110,7 @@ li {
     "tag9 tag10"
     "video9 video10";
   background-color: #595959;
-  height: 360vh;
+  height: 400vh;
   align-content: flex-start;
   padding: 1.5em;
   color: white;
@@ -216,7 +216,7 @@ li {
   grid-area: video3;
   position: relative;
   width: 96%;
-  padding-bottom: 56.25%;
+  padding-bottom: 66%;
   height: 0;
 }
 
@@ -227,14 +227,14 @@ li {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 95%;
 }
 
 .iframe-container4 {
   grid-area: video4;
   position: relative;
   width: 96%;
-  padding-bottom: 56.25%;
+  padding-bottom: 66%;
   height: 0;
 }
 
@@ -245,7 +245,7 @@ li {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 95%;
 }
 
 .iframe-container5 {
@@ -334,14 +334,14 @@ li {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 110%;
 
 }
 .iframe-container10 {
   grid-area: video10;
   position: relative;
   width: 96%;
-  padding-bottom: 56.25%;
+  padding-bottom: 62%;
   height: 0;
 }
 
