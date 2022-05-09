@@ -173,7 +173,7 @@ li {
 }
 .videotag10 {
   grid-area: tag10;
-  margin: 1em .5em 1em .5em;
+  margin: 2em .5em 1em .5em;
 }
 .videotag11 {
   grid-area: tag11;
