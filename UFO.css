@@ -38,11 +38,12 @@ body {
   grid-template-columns: 1fr 2fr 1fr;
   grid-template-areas:
     "newsarticles Ufophenomena Uforesources";
+    overflow-y: hidden;
 }
 
 .newsarticles {
   grid-area: newsarticles;
-  height: 83.5vh;
+  height: 100vh;
   border-right: 3px solid #D3D3D3;
 }
 
@@ -51,16 +52,10 @@ body {
   font-weight: bold;
   text-align: center;
 }
-.newsarticles  p{
-margin-top: 100px;
-margin-left: 40px;
-font-size: 3em;
-color: red;
-transform: rotate(-45deg);
-}
+
 .Ufophenomena {
   grid-area: Ufophenomena;
-  height: 83.5vh;
+  height: 100vh;
   border-right: 3px solid #D3D3D3;
   overflow-y: scroll;
 }
@@ -73,7 +68,7 @@ transform: rotate(-45deg);
 
 .Uforesources {
   grid-area: Uforesources;
-  height: 83.5;
+  height: 100vh;
 }
  li a:hover {
   color: #edafb8ff;
@@ -129,6 +124,23 @@ transform: rotate(-45deg);
   height: 90%;
   padding-left: 20px;
 }
+.iframe-container3 {
+  position: relative;
+  width: 96%;
+  padding-bottom: 56.25%;
+  height: 0;
+}
+
+.videoclip3 {
+  margin: 1em .5em 1em .5em;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 98%;
+  height: 90%;
+  padding-left: 20px;
+}
+
 @media (max-width: 599px) {
 
 .wrapper {
