@@ -5,11 +5,6 @@
   padding: 0px;
 }
 
-body {
-  //  width:100vw;
-  //  height: 100vh;
-}
-
 h1 {
   padding: 40px;
   font-style: italic;
@@ -20,14 +15,13 @@ p {
   font-size: 1.5em;
   color: forestgreen;
   font-weight: bold;
-  padding-bottom:  60px;
+  padding-bottom: 80px;
   padding-right: 40px;
-  height:20%;
+  height: 30%;
+  //  background-color: pink;
 }
 
 iframe {
-  width: 80%;
-  aspect-ratio: 16/9;
   border: 5px solid grey;
 }
 
@@ -62,9 +56,35 @@ iframe {
 .video_section {
   display: flex;
   flex-wrap: wrap;
-   justify-content: space-around;
+  justify-content: space-around;
 }
 
 .individual_video {
-margin-left: 40px;
+  //background-color: orange;
+  width: 33%;
+}
+
+@media (max-width: 960px) {
+  .individual_video {
+    width: 50%;
+  }
+}
+
+@media (max-width: 632px) {
+  .individual_video {
+    width: 100%;
+  }
+  p {
+    height: 40%;
+  }
+}
+
+@media (max-width: 330px) {
+iframe {
+ width:80%;
+
+}
+
+}
+
 }
