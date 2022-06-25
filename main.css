@@ -8,8 +8,8 @@
 body {}
 
 .wrapper {
-  height: 100vh;
-  width: 100vw;
+  //  height: 100vh;
+  //  width: 100vw;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-areas:
@@ -32,12 +32,13 @@ li {
   padding: .3em;
   border-bottom: 3px solid white;
 }
-.small{
+
+.small {
   font-size: 20px;
   text-decoration: none;
   position: absolute;
-  left:10px;
-  top:10px;
+  left: 10px;
+  top: 10px;
 }
 
 .important {
@@ -76,7 +77,8 @@ li {
 .aside {
   grid-area: aside;
   background-image: linear-gradient(to right, #dedbd2ff, #847b62);
-  height: 480vh;
+  //  height: 480vh;
+  height: auto;
   border-right: 3px solid white;
 }
 
@@ -110,9 +112,10 @@ li {
     "tag9 tag10"
     "video9 video10"
     "tag11 tag12"
-    "video11  video12" ;
+    "video11  video12";
   background-color: #595959;
-  height: 480vh;
+  //  height: 480vh;
+  height: auto;
   align-content: flex-start;
   padding: 1.5em;
   color: white;
@@ -167,18 +170,22 @@ li {
   margin: 1em .5em 1em .5em;
   padding-top: 1em;
 }
+
 .videotag9 {
   grid-area: tag9;
   margin: 1em .5em 1em .5em;
 }
+
 .videotag10 {
   grid-area: tag10;
   margin: 2em .5em 1em .5em;
 }
+
 .videotag11 {
   grid-area: tag11;
   margin: 1em .5em 1em .5em;
 }
+
 .videotag12 {
   grid-area: tag12;
   margin: 1em .5em 1em .5em;
@@ -219,7 +226,6 @@ li {
   width: 100%;
   height: 100%;
 }
-
 
 /*this is a group1 for an iframe*/
 .iframe-container3 {
@@ -329,6 +335,7 @@ li {
   width: 100%;
   height: 100%;
 }
+
 .iframe-container9 {
   grid-area: video9;
   position: relative;
@@ -345,8 +352,8 @@ li {
   left: 0;
   width: 100%;
   height: 110%;
-
 }
+
 .iframe-container10 {
   grid-area: video10;
   position: relative;
@@ -355,7 +362,7 @@ li {
   height: 0;
 }
 
-.videoclip10{
+.videoclip10 {
   margin: 1em .5em 1em .5em;
   border: 5px solid white;
   position: absolute;
@@ -364,6 +371,7 @@ li {
   width: 100%;
   height: 100%;
 }
+
 .iframe-container11 {
   grid-area: video11;
   position: relative;
@@ -372,7 +380,7 @@ li {
   height: 0;
 }
 
-.videoclip11{
+.videoclip11 {
   margin: 1em .5em 1em .5em;
   border: 5px solid white;
   position: absolute;
@@ -447,7 +455,7 @@ li {
       "video11"
       "tag12"
       "video12";
-    height: 1200vh;
+    //  height: 1200vh;
   }
 
   .main-title {
@@ -457,28 +465,28 @@ li {
 
 @media (max-width: 740px) {
   .main {
-    height: 1200vh;
+    //  height: 1200vh;
   }
 }
 
 @media (max-width: 560px) {
   .main {
-    height: 1200vh;
+    //height: 1200vh;
   }
 
   @media (max-width: 465px) {
     .main {
-      height: 620vh;
+      //  height: 620vh;
     }
 
     @media (max-width: 350px) {
       .main {
-        height: 630vh;
+        //  height: 630vh;
       }
     }
 
     @media (max-width: 252px) {
       .main {
-        height: 630vh;
+        //  height: 630vh;
       }
     }
