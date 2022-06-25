@@ -5,10 +5,7 @@
   padding: 0px;
 }
 
-
-
 .wrapper {
-
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-areas:
@@ -40,13 +37,6 @@ li {
   top: 10px;
 }
 
-.important {
-  grid-area: important;
-  background-color: gold;
-  text-align: center;
-  font-size: 2em;
-}
-
 .mainnav {
   grid-area: mainnav;
   background-color: black;
@@ -76,7 +66,6 @@ li {
 .aside {
   grid-area: aside;
   background-image: linear-gradient(to right, #dedbd2ff, #847b62);
-
   height: auto;
   border-right: 3px solid white;
 }
@@ -113,7 +102,6 @@ li {
     "tag11 tag12"
     "video11  video12";
   background-color: #595959;
-
   height: auto;
   align-content: flex-start;
   padding: 1.5em;
@@ -454,13 +442,13 @@ li {
       "video11"
       "tag12"
       "video12";
-
   }
 
   .main-title {
     width: 100%;
   }
 }
+
 /*
 @media (max-width: 740px) {
   .main {
