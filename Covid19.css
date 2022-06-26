@@ -3,9 +3,11 @@
   padding: 0px;
   margin: 0px;
 }
+
 h1 {
   text-align: center;
 }
+
 .wrapper {
   display: grid;
   grid-template-columns: 25% 25% 25% 25%;
@@ -15,6 +17,7 @@ h1 {
     'sidemenu main main main';
   grid-gap: 3px;
 }
+
 .header {
   grid-area: header;
   font-size: 4em;
@@ -23,6 +26,7 @@ h1 {
   padding: 20px;
   color: black;
 }
+
 .mainnav {
   grid-area: mainnav;
 }
@@ -43,16 +47,17 @@ h1 {
 
 .mainnav a:hover {
   color: #edafb8ff;
-
 }
+
 aside {
   grid-area: sidemenu;
-  height: 1000px;
+  height: auto;
   text-align: center;
   background-image: linear-gradient(to right, #dedbd2ff, #847b62);
   font-size: 2em;
   font-weight: bold;
 }
+
 aside ul {
   font-size: .5em;
   text-align: left;
@@ -73,10 +78,11 @@ aside li a:hover {
 aside h4 {
   padding-bottom: 5px;
 }
+
 .main {
   grid-area: main;
-  height: 1000px;
-  background-color:#595959;
+  height: auto;
+  background-color: #595959;
   display: flex;
   flex-wrap: wrap;
   color: white;
@@ -84,15 +90,16 @@ aside h4 {
 }
 
 .main>h1 {
+  font-size: 4em;
   width: 100%;
   height: 20px;
-
+  
+  padding-bottom: 2em;
 }
 
 .main h2 {
   font-style: italic;
   height: 110px;
-
 }
 
 .main div {
@@ -105,30 +112,37 @@ aside h4 {
   width: 75%;
   aspect-ratio: 16/9;
 }
-.alert{
 
-font-size: 50px;
-color:red;
-padding:20px;
-
-
+.alert {
+  font-size: 50px;
+  color: red;
+  padding: 20px;
 }
+
 .highlight {
+  color: orange;
+}
 
-  color:orange;
+.flashit {
+  animation: flash linear 1.5s infinite
 }
-.flashit{
-  animation:flash linear 1.5s infinite
-}
+
 @keyframes flash {
-   0% {opacity: 1}
-   50% {opacity: .1}
-   100% {opacity:1}
+  0% {
+    opacity: 1
+  }
 
+  50% {
+    opacity: .1
+  }
+
+  100% {
+    opacity: 1
+  }
 }
+
 @media (max-width: 1200px) {
   .main {
-    height: 1600px;
     display: block;
   }
 
@@ -139,77 +153,44 @@ padding:20px;
   h2 {
     margin: 10px 0px;
   }
+}
 
-  aside {
-    height: 1600px;
+.main div {
+  width: 50%;
+  height: auto;
+}
+
+@media (max-width: 875px) {
+  .wrapper {
+    grid-template-columns: auto;
+    grid-template-areas:
+      'header'
+      'mainnav'
+      'main'
+      'sidemenu';
+  }
+
+  .mainnav ul {
+    flex-direction: column;
+  }
+
+  .mainnav ul li {
+    text-align: center;
   }
 }
 
-  }
-  .main div {
-    width: 50%;
-    height: auto;
-  }
-  @media (max-width: 875px) {
-    .wrapper {
-      grid-template-columns: auto;
-      grid-template-areas:
-        'header'
-        'mainnav'
-        'main'
-        'sidemenu';
-    }
-
-    .mainnav ul {
-      flex-direction: column;
-    }
-
-    .mainnav ul li {
-      text-align: center;
-    }
-    .main {
-      height:1800px;
-    }
-    aside{
-      height:1500px;
-    }
-  }
-  .hightlight{
-    color:red;
-  }
+.hightlight {
+  color: red;
+}
 
 @media (max-width: 500px) {
-  .main {
-    height: 200px;
-
-  }
-  aside{
-    height:500px;
-  }
   .main div {
     width: 50%;
     height: auto;
     font-size: 10px;
   }
 
-@media (min-width: 209px) {
-
-.main {
-  height:1200px;
-}
-}
-@media (max-width: 740px) {
-
-.main {
-  height:1200;
-}
-
-
-}
-
-
-
-/*CSS HEX
+  /*CSS HEX
 --light-pink: #edafb8ff;
 --champagne-pink: #f7e1d7ff;
 --timberwolf: #dedbd2ff;
