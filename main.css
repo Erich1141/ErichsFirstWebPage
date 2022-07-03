@@ -376,6 +376,23 @@ li {
   width: 100%;
   height: 100%;
 }
+.iframe-container12 {
+  grid-area: video12;
+  position: relative;
+  width: 96%;
+  padding-bottom: 62%;
+  height: 0;
+}
+
+.videoclip12 {
+  margin: 1em .5em 1em .5em;
+  border: 5px solid white;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
 
 .highlight {
   color: red;
