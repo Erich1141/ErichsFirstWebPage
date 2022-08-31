@@ -1,28 +1,7 @@
-var x = document.getElementsByClassName("sound");
-console.log(x.length)
 
-x[0].addEventListener("mouseover", myFunction);
-x[1].addEventListener("mouseover", myFunction);
-x[2].addEventListener("mouseover", myFunction);
-x[3].addEventListener("mouseover", myFunction);
-x[4].addEventListener("mouseover", myFunction);
-x[5].addEventListener("mouseover", myFunction);
-x[6].addEventListener("mouseover", myFunction);
-x[7].addEventListener("mouseover", myFunction);
-x[8].addEventListener("mouseover", myFunction);
-x[9].addEventListener("mouseover", myFunction);
-x[10].addEventListener("mouseover", myFunction);
-x[11].addEventListener("mouseover", myFunction);
-x[12].addEventListener("mouseover", myFunction);
-x[13].addEventListener("mouseover", myFunction);
-x[14].addEventListener("mouseover", myFunction);
-x[15].addEventListener("mouseover", myFunction);
 
-function myFunction(ev) {
-  var file = document.getElementById('tick')
-  file.play();
 
-}
+
 
 function calculateSQFT() {
   var width = document.getElementById("w1").value;
@@ -117,6 +96,7 @@ document.getElementById('resultsod2').innerHTML = `$ ${total.toFixed(2)}`
 
 
 function reset() {
+
   document.getElementById("w1").value = "";
   document.getElementById("l1").value = "";
   document.getElementById("w2").value = "";
@@ -135,3 +115,15 @@ function reset() {
 
 
 }
+//&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+var key="7ed20d6c-8ed2-4411-9ebb-bfe82a019664";
+
+
+  async function cimis(){
+
+var response=await fetch("http://et.water.ca.gov/api/data?appKey=7ed20d6c-8ed2-4411-9ebb-bfe82a019664&targets=2,8,127&startDate=2010-01-01&endDate=2010-01-05,{accept:'application/json'}");
+var jsn=await response.JSON.parse();
+console.log(jsn)
+
+  }
+cimis()
