@@ -121,7 +121,7 @@ var key="7ed20d6c-8ed2-4411-9ebb-bfe82a019664";
 
   async function cimis(){
 
-var response=await fetch("http://et.water.ca.gov/api/data?appKey=7ed20d6c-8ed2-4411-9ebb-bfe82a019664&targets=2,8,127&startDate=2010-01-01&endDate=2010-01-05,{accept:'application/json'}");
+var response=await fetch("http://et.water.ca.gov/api/data?appKey=7ed20d6c-8ed2-4411-9ebb-bfe82a019664&targets=2,8,127&startDate=2010-01-01&endDate=2010-01-05");
 var jsn=await response.JSON.parse();
 console.log(jsn)
 
