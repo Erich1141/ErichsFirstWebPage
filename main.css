@@ -142,7 +142,7 @@ height: 234px;
   margin-left: 50px;
   border-radius: 5%;
   border: 5px solid white;
-  apspect-ratio:16/16;
+
 }
 
 .main-title {
@@ -195,15 +195,32 @@ height: 234px;
     width: 100%;
   }
 }
-@media (max-width: 770px) {
+@media (max-width: 854px) {
+
+#videoarea{
+  //align-content: center;
+
+}
+
+
+
 
 #videoarea div{
    width:100%;
+justify-content:center
 
 
   }
+  iframe{
+    margin-left: 25%;
+    margin-right: auto;
+  }
 p{
-  width:50%;
+  width:366px;
+  margin-left: 25%;
+  margin-right: auto;
+
+
 }
 
 
