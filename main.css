@@ -222,6 +222,19 @@ p{
 
 
 }
+@media (max-width: 700px) {
 
+
+}  iframe{
+    margin-left: 15%;
+    margin-right: auto;
+  }
+p{
+  width:366px;
+  margin-left: 15%;
+  margin-right: auto;
+
+
+}
 
 }
