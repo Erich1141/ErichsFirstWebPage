@@ -4,13 +4,17 @@
   border: 0px;
   padding: 0px;
 }
+body{
+  height:100vh;
+
+}
 
 .wrapper {
+  height:100%;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-areas:
     "header header header header"
-    "important important important important"
     "mainnav mainnav mainnav mainnav"
     "aside main main main";
 }
@@ -28,18 +32,15 @@ li {
   padding: .3em;
   border-bottom: 3px solid white;
 }
-.trump{
-width:50px;
-height: 50px;
-position: absolute;
-left:0px;
-top:90px;
-border-radius: 50%;
 
-
-
+.trump {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  left: 0px;
+  top: 90px;
+  border-radius: 50%;
 }
-
 
 .small {
   font-size: 20px;
@@ -55,7 +56,7 @@ border-radius: 50%;
   border-bottom: 3px solid white;
 }
 
-.mainnav ul {}
+
 
 .mainnav ul li {
   display: inline-block;
@@ -94,316 +95,50 @@ border-radius: 50%;
 .aside a {
   text-decoration: none;
 }
+main {
+   grid-area: main;
+   background-color:#595959;
+   height:auto;
 
-.main {
-  grid-area: main;
+
+
+
+}
+
+#videoarea {
   display: grid;
-  grid-template-columns: 50% 50%;
-  grid-template-areas:
-    "maintitle maintitle"
-    "tag1 tag2"
-    "video1 video2"
-    "tag3 tag4"
-    "video3 video4"
-    "tag5 tag6"
-    "video5 video6"
-    "tag7 tag8"
-    "video7 video8"
-    "tag9 tag10"
-    "video9 video10"
-    "tag11 tag12"
-    "video11  video12";
   background-color: #595959;
   height: auto;
-  align-content: flex-start;
-  padding: 1.5em;
+
+
+  grid-template-columns: 1fr 1fr;
+  margin-top: 50px;
+}
+
+main p {
   color: white;
+  font-size: 2em;
   font-style: italic;
+  font-weight: bold;
+  margin-left: 50px;
+  margin-bottom: 20px;
+  height: 7em;
+}
+
+iframe {
+  height: 234px;
+  width: 366px;
+  margin-left: 50px;
+  border-radius: 5%;
+  border: 5px solid white;
 }
 
 .main-title {
-  grid-area: "maintitle";
+  color:#595959;
+
   font-size: 4em;
   text-align: center;
-  width: 200%;
-}
-
-.videotag1 {
-  grid-area: tag1;
-  margin: 1em .5em 1em .5em;
-}
-
-.videotag2 {
-  grid-area: tag2;
-  margin: 1em .5em 1em .5em;
-}
-
-.videotag3 {
-  grid-area: tag3;
-  margin: 1em .5em 1em .5em;
-}
-
-.videotag4 {
-  grid-area: tag4;
-  margin: 1em .5em 1em .5em;
-}
-
-.videotag5 {
-  grid-area: tag5;
-  margin: 1em .5em 1em .5em;
-}
-
-.videotag6 {
-  grid-area: tag6;
-  margin: 1em .5em 1em .5em;
-}
-
-.videotag7 {
-  grid-area: tag7;
-  margin: 1em .5em 1em .5em;
-  padding-top: 1em;
-}
-
-.videotag8 {
-  grid-area: tag8;
-  margin: 1em .5em 1em .5em;
-  padding-top: 1em;
-}
-
-.videotag9 {
-  grid-area: tag9;
-  margin: 1em .5em 1em .5em;
-}
-
-.videotag10 {
-  grid-area: tag10;
-  margin: 2em .5em 1em .5em;
-}
-
-.videotag11 {
-  grid-area: tag11;
-  margin: 1em .5em 1em .5em;
-}
-
-.videotag12 {
-  grid-area: tag12;
-  margin: 1em .5em 1em .5em;
-}
-
-.iframe-container1 {
-  grid-area: video1;
-  position: relative;
-  width: 96%;
-  padding-bottom: 62.25%;
-  height: 0;
-}
-
-.videoclip1 {
-  margin: 1em .5em 1em .5em;
-  border: 5px solid white;
-  position: absolute;
-  top: 0;
-  left: 0;
   width: 100%;
-  height: 100%;
-}
-
-.iframe-container2 {
-  grid-area: video2;
-  position: relative;
-  width: 96%;
-  padding-bottom: 62.25%;
-  height: 0;
-}
-
-.videoclip2 {
-  margin: 1em .5em 1em .5em;
-  border: 5px solid white;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-
-/*this is a group1 for an iframe*/
-.iframe-container3 {
-  grid-area: video3;
-  position: relative;
-  width: 96%;
-  padding-bottom: 66%;
-  height: 0;
-}
-
-.videoclip3 {
-  margin: 1em .5em 1em .5em;
-  border: 5px solid white;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 95%;
-}
-
-.iframe-container4 {
-  grid-area: video4;
-  position: relative;
-  width: 96%;
-  padding-bottom: 66%;
-  height: 0;
-}
-
-.videoclip4 {
-  margin: 1em .5em 1em .5em;
-  border: 5px solid white;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 95%;
-}
-
-.iframe-container5 {
-  grid-area: video5;
-  position: relative;
-  width: 96%;
-  padding-bottom: 56.25%;
-  height: 0;
-}
-
-.videoclip5 {
-  margin: 1em .5em 1em .5em;
-  border: 5px solid white;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.iframe-container6 {
-  grid-area: video6;
-  position: relative;
-  width: 96%;
-  padding-bottom: 56.25%;
-  height: 0;
-}
-
-.videoclip6 {
-  margin: 1em .5em 1em .5em;
-  border: 5px solid white;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.iframe-container7 {
-  grid-area: video7;
-  position: relative;
-  width: 96%;
-  padding-bottom: 56.25%;
-  height: 0;
-}
-
-.videoclip7 {
-  margin: 1em .5em 1em .5em;
-  border: 5px solid white;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.iframe-container8 {
-  grid-area: video8;
-  position: relative;
-  width: 87%;
-  padding-bottom: 56.25%;
-  height: 0;
-}
-
-.videoclip8 {
-  margin: 1em .5em 1em .5em;
-  border: 5px solid white;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.iframe-container9 {
-  grid-area: video9;
-  position: relative;
-  width: 87%;
-  padding-bottom: 56.25%;
-  height: 0;
-}
-
-.videoclip9 {
-  margin: 1em .5em 1em .5em;
-  border: 5px solid white;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 110%;
-}
-
-.iframe-container10 {
-  grid-area: video10;
-  position: relative;
-  width: 96%;
-  padding-bottom: 62%;
-  height: 0;
-}
-
-.videoclip10 {
-  margin: 1em .5em 1em .5em;
-  border: 5px solid white;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.iframe-container11 {
-  grid-area: video11;
-  position: relative;
-  width: 96%;
-  padding-bottom: 62%;
-  height: 0;
-}
-
-.videoclip11 {
-  margin: 1em .5em 1em .5em;
-  border: 5px solid white;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-.iframe-container12 {
-  grid-area: video12;
-  position: relative;
-  width: 96%;
-  padding-bottom: 62%;
-  height: 0;
-}
-
-.videoclip12 {
-  margin: 1em .5em 1em .5em;
-  border: 5px solid white;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
 }
 
 .highlight {
@@ -437,7 +172,7 @@ border-radius: 50%;
     grid-template-columns: 100%;
     grid-template-areas:
       'header'
-      'important'
+
       'mainnav'
       'main'
       'aside';
