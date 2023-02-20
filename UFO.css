@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=News+Cycle&display=swap');
-
+@font-face {
+  font-family: "Stardate_81316";
+  src:url(Stardate81316-aolE.ttf);
+}
 * {
   box-sizing: border-box;
   padding: :0px;
@@ -8,6 +11,7 @@
 
 body {
   background-color: #fbf2ea;
+  font-family: "NewsCycle";
 }
 
 /*body::-webkit-scrollbar {
@@ -22,7 +26,8 @@ body {
 }
 
 .header {
-  font-size: 5em;
+  font-family: "Stardate_81316";
+  font-size: 7em;
   font-weight: bold;
   text-align: center;
   border-bottom: 3px solid black;
@@ -62,7 +67,7 @@ body {
 
 .Ufophenomena header {
   font-size: 5em;
-  font-weight: bold;
+  //font-weight: bold;
   text-align: center;
 }
 
@@ -78,7 +83,7 @@ body {
 }
 .Uforesources ul  {
   list-style:none;
-  font-weight: bold;
+font-weight: bold;
   font-style: italic;
   background-color: lightblue;
   border: 2px solid dodgerblue;
