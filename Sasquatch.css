@@ -1,58 +1,73 @@
+@font-face {
+  font-family: "StrangerCreature";
+  src:url(StrangerCreature-MVpBr.ttf);
+}
+
+
+
 * {
   box-sizing: border-box;
   padding: 0px;
   margin: 0px;
 }
+body{
+  height:100vh;
+  background-color: #595959;
+  position:relative;
+}
 
-.mainnav ul {
-  width: 100vw;
-  background-color: black;
+header {
+  font-family: "StrangerCreature";
+  font-size: 6em;
+  text-align: center;
+  background-image: linear-gradient(#b0c4b1ff, #6e916f);
+  padding-bottom:  30px;
+
+}
+ul {
   display: flex;
-}
-
-.mainnav ul li {
   flex-wrap: wrap;
-  list-style: none;
-  font-size: 1.5em;
+  justify-content: space-around;
   background-color: black;
-  padding: 0px 20px;
+  border-left: 3px solid white;
+  border-top: 3px solid white;
+  border-right: 3px solid white;
 }
 
-.mainnav ul li a {
-  display: inline-block;
+li {
+  list-style: none;
+}
+
+a {
   text-decoration: none;
   color: white;
+  font-size: 1.5em;
 }
 
-.mainnav li a:hover {
+a:hover {
   color: #edafb8ff;
 }
-main{
+
+main {
   display: flex;
   flex-wrap: wrap;
-  width:100vw;
-}
-
-.video {
- padding-left: 30px;
-  margin-top: 100px;
-
-
-}
-
-.construction {
-
-  font-size: 2em;
-  color: red;
   width: 100%;
-  text-align: center;
-//  transform: rotate(-45deg);
-
+  justify-content: space-around;
+  //background-color: #595959;
+  border: 3px solid white;
 }
-.paragraph{
-  font-size: 2em;
-  color: red;
-  width: 100%;
-  text-align: center;
-  padding-top: 100px;
+
+iframe {
+  border: 3px solid dodgerblue;
+  width: 300px;
+  aspect-ratio: 16/9;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+img {
+width:100px;
+position:absolute;
+left:0px;
+top:0px;
+
 }

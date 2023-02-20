@@ -42,8 +42,8 @@ function createPage(tempArray) {
 
   for (var i of tempArray) {
     var iframe = document.createElement("iframe")
-    iframe.setAttribute("allowfullscreen", "allow=accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture")
-    iframe.setAttribute("allow", "")
+    iframe.setAttribute("allow", "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture")
+    iframe.setAttribute("allowfullscreen", "")
     var h = document.createElement("p")
     var div = document.createElement("div")
     h.textContent = i.title;
