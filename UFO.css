@@ -1,8 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=News+Cycle&display=swap');
+
 @font-face {
   font-family: "Stardate_81316";
-  src:url(Stardate81316-aolE.ttf);
+  src: url(Stardate81316-aolE.ttf);
 }
+
 * {
   box-sizing: border-box;
   padding: :0px;
@@ -17,7 +19,6 @@ body {
 /*body::-webkit-scrollbar {
   display: none;
 }*/
-
 .videopartext {
   padding: 20px 30px;
   font-style: italic;
@@ -43,7 +44,7 @@ body {
   grid-template-columns: 1fr 2fr 1fr;
   grid-template-areas:
     "newsarticles Ufophenomena Uforesources";
-    overflow-y: hidden;
+  overflow-y: hidden;
 }
 
 .newsarticles {
@@ -75,19 +76,21 @@ body {
   grid-area: Uforesources;
   height: 100vh;
 }
- li a:hover {
+
+li a:hover {
   color: #edafb8ff;
 }
-.Uforesources ul li a{
+
+.Uforesources ul li a {
   text-decoration: none;
 }
-.Uforesources ul  {
-  list-style:none;
-font-weight: bold;
+
+.Uforesources ul {
+  list-style: none;
+  font-weight: bold;
   font-style: italic;
   background-color: lightblue;
   border: 2px solid dodgerblue;
-
 }
 
 .Uforesources header {
@@ -129,6 +132,7 @@ font-weight: bold;
   height: 90%;
   padding-left: 20px;
 }
+
 .iframe-container3 {
   position: relative;
   width: 96%;
@@ -147,13 +151,11 @@ font-weight: bold;
 }
 
 @media (max-width: 599px) {
-
-.wrapper {
-  grid-template-columns: 100%;
-  grid-template-areas:
-  "Ufophenomena"
-  "newsarticles"
-  "Uforesources";
-}
-
+  .wrapper {
+    grid-template-columns: 100%;
+    grid-template-areas:
+      "Ufophenomena"
+      "newsarticles"
+      "Uforesources";
+  }
 }

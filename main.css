@@ -4,13 +4,13 @@
   border: 0px;
   padding: 0px;
 }
-body{
-  height:100vh;
 
+body {
+  height: 100vh;
 }
 
 .wrapper {
-  height:100%;
+  height: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-areas:
@@ -54,16 +54,19 @@ li {
   grid-area: mainnav;
   background-color: black;
   border-bottom: 3px solid white;
+
+}
+.mainnav ul{
+
+  display:flex;
 }
 
-
-
 .mainnav ul li {
-  display: inline-block;
   margin: .1em .8em .1em .8em;
   text-decoration: none;
   background-color: black;
   list-style: none;
+
 }
 
 .mainnav ul li a {
@@ -95,36 +98,27 @@ li {
 .aside a {
   text-decoration: none;
 }
+
 main {
-   grid-area: main;
-   background-color:#595959;
-   height:auto;
-
-
-
+  grid-area: main;
+  background-color: #595959;
 
 }
 
 #videoarea {
-  display:flex;
+  display: flex;
   flex-wrap: wrap;
-
   background-color: #595959;
   height: auto;
-
-
-
-//  grid-template-columns: 1fr 1fr;
+  
   margin-top: 50px;
 }
+
 #videoarea div {
-
-width:50%;
-
-
+  width: 50%;
 }
 
- p{
+p {
   color: white;
   font-size: 2em;
   font-style: italic;
@@ -132,22 +126,18 @@ width:50%;
   margin-left: 50px;
   margin-bottom: 20px;
   height: auto;
-
-
 }
 
 iframe {
-height: 234px;
+  height: 234px;
   width: 366px;
   margin-left: 50px;
   border-radius: 5%;
   border: 5px solid white;
-
 }
 
 .main-title {
-  color:white;
-
+  color: white;
   font-size: 4em;
   text-align: center;
   width: 100%;
@@ -189,49 +179,36 @@ height: 234px;
       'aside';
   }
 
-
-
   .main-title {
     width: 100%;
   }
 }
+
 @media (max-width: 854px) {
-
-
-
-
-
-
-#videoarea div{
-   width:100%;
-justify-content:center
-
-
+  #videoarea div {
+    width: 100%;
+    justify-content: center
   }
-  iframe{
+
+  iframe {
     margin-left: 25%;
     margin-right: auto;
   }
-p{
-  width:366px;
-  margin-left: 25%;
-  margin-right: auto;
 
-
-}
-@media (max-width: 700px) {
-
-
-}  iframe{
-
-margin-left: 1%;
+  p {
+    width: 366px;
+    margin-left: 25%;
+    margin-right: auto;
   }
-p{
-  margin-left: 1%;
-  width:366px;
 
+  @media (max-width: 700px) {}
 
+  iframe {
+    margin-left: 1%;
+  }
 
-}
-
+  p {
+    margin-left: 1%;
+    width: 366px;
+  }
 }
