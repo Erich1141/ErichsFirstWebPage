@@ -39,6 +39,7 @@ h1 {
 
 .mainnav ul {
   display: flex;
+  flex-wrap: wrap;
   list-style: none;
   background-color: black;
 }
@@ -136,7 +137,50 @@ iframe {
   border-radius: 5%;
   border: 5px solid white;
 }
+@media (max-width: 1000px) {
+  .wrapper {
+    grid-template-columns: 100%;
+    grid-template-areas:
+      'header'
+      'mainnav'
+      'main'
+      'sidemenu';
+  }
 
+  .header {
+    width: 100%;
+  }
+  main{
+ border:3px solid white;
+ border-top: none;
+
+  }
+  @media (max-width: 854px) {
+    #videoarea div {
+      width: 100%;
+      justify-content: center
+    }
+    iframe {
+      margin-left: 25%;
+      margin-right: auto;
+    }
+    p {
+      width: 366px;
+      margin-left: 25%;
+      margin-right: auto;
+    }
+
+      @media (max-width: 700px) {}
+
+      iframe {
+        margin-left: 1%;
+      }
+
+      p {
+        margin-left: 1%;
+        width: 366px;
+      }
+    }
 
 
 

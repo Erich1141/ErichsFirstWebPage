@@ -10,7 +10,7 @@ body {
 }
 
 .wrapper {
-  height: 100%;
+  //height: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-areas:
@@ -59,6 +59,7 @@ li {
 .mainnav ul{
 
   display:flex;
+  flex-wrap: wrap;
 }
 
 .mainnav ul li {
@@ -110,7 +111,7 @@ main {
   flex-wrap: wrap;
   background-color: #595959;
   height: auto;
-  
+
   margin-top: 50px;
 }
 
