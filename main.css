@@ -213,3 +213,18 @@ iframe {
     width: 366px;
   }
 }
+@media (max-width: 400px) {
+
+iframe {
+  height: 164px;
+  width: 256px;
+}
+
+p {
+width: 256px;
+
+}
+.header{
+  font-size: 4em;
+}
+}

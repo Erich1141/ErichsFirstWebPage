@@ -128,7 +128,7 @@ p {
   font-weight: bold;
   margin-left: 50px;
   margin-bottom: 20px;
-  height: auto;
+  //height: auto;
 }
 iframe {
   height: 234px;
@@ -155,10 +155,12 @@ iframe {
  border-top: none;
 
   }
-  @media (max-width: 854px) {
+}
+  @media (max-width: 855px) {
     #videoarea div {
       width: 100%;
       justify-content: center
+
     }
     iframe {
       margin-left: 25%;
@@ -169,8 +171,8 @@ iframe {
       margin-left: 25%;
       margin-right: auto;
     }
-
-      @media (max-width: 700px) {}
+}
+      @media (max-width: 700px) {
 
       iframe {
         margin-left: 1%;
@@ -182,6 +184,21 @@ iframe {
       }
     }
 
+    @media (max-width: 400px) {
+
+    iframe {
+      height: 164px;
+      width: 256px;
+    }
+
+    p {
+width: 256px;
+
+    }
+    .header{
+      font-size: 4em;
+    }
+  }
 
 
 
