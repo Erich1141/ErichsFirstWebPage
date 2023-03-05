@@ -32,6 +32,11 @@ var objectArray = [{
     video: "https://www.youtube.com/embed/FsQjnv9Dwco"
 
   },
+  {
+    title: "Mark of the Beast | 'If I Were the Devil...' - Paul Harvey | Are We NOW Entering Into the Mark of the Beast System?",
+    video: "https://rumble.com/embed/v1uind0/?pub=c8ff5"
+
+  },
 
 ];
 createPage(objectArray);
@@ -40,7 +45,7 @@ if (rearangeVideos === false) {
 
 } else {
   var arrangeOrder = [
-    [0,5],[1,7],[2,6],[5,7]
+    [0,5],[1,7],[2,6],[5,7],[3,8],[2,3],[0,2]
   ];
   videoarea.innerHTML = "";
   main = document.querySelector("main")
