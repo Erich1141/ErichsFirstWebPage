@@ -39,13 +39,38 @@ body {
   text-align: center;
   border-bottom: 3px solid black;
 }
+.mainnav {
+  grid-area: mainnav;
+  border-bottom: 3px solid white;
+}
+
+.mainnav ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  background-color: black;
+  justify-content: space-around;
+}
+
+.mainnav a {
+  text-align: center;
+  text-decoration: none;
+  color: white;
+ font-size: 20px;
+  padding: 2px 10px;
+}
+
+.mainnav a:hover {
+  color: dodgerblue;
+}
+
 
 .wrapper {
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
   grid-template-areas:
     "newsarticles Ufophenomena Uforesources";
-  height: 75vh;
+  height: 70vh;
 }
 
 .newsarticles {
@@ -133,10 +158,22 @@ li a:hover {
       "newsarticles"
       "Uforesources";
     height: auto;
+  }x;
+  .newsarticles {
+  margin-bottom: 75px;
   }
 
   .Ufophenomena {
-    //height:40%;
+
+  //  border-bottom: 3px solid black;
+    overflow-y:auto;
+  }
+
+  .newsarticles {
+    //margin-bottom: 75px;
+    margin-top: 75px;
+    border-bottom: 3px solid black;
+    border-top: 3px solid black;
   }
 }
 
