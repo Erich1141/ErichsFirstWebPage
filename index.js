@@ -2,26 +2,20 @@ var videoarea = document.querySelector("#videoarea")
 
 var rearangeVideos = true;
 var objectArray = [{
-    title: "Pfizer Director Concerned Over Women's Reproductive Health After COVID-19 Vaccination",
-    video: "https://rumble.com/embed/v25is2a/?pub=c8ff5"
+    title: "CDC Virologist EXPOSES Covid 'Viral Cleavage Site' as Evidence of Lab Origin",
+    video: "https://www.youtube.com/embed/rZAPAyZyhVA"
   },
   {
-    title: "Jordan Trishton Walker, Director of Research and Development Admitting, 'Pfizer Exploring Mutating Covid19 and Preemptively Developing a Vaccine'",
-    video: "https://rumble.com/embed/v24ih1i/?pub=c8ff5"
-  }, {
-    title: "James O'Keefe of Project Veritas Confronting Jordan Trishton Walker, Director of Research for Pfizer, about The Directed Evolution of Covid19 by Pfizer.",
-    video: "https://www.youtube.com/embed/u5n7RRKgDog"
-  }, {
+    title: "Interview with Father Lampert Clip",
+    video: "https://www.youtube.com/embed/oiyCGd3q4P0?start=4252"
+
+  },
+
+  {
     title: " Pink-Haired Communists Teaching Our Kids!': Trump Reveals Plan To 'Save American Education'",
     video: "https://www.youtube.com/embed/EdOR880Ribo"
-  }, {
-    title: "New Documentary-'Died Suddenly'",
-    video: "https://rumble.com/embed/v1to6s2/?pub=c8ff5"
   },
-  {
-    title: "Former Navy pilot shares his encounter with UFO",
-    video: "https://www.youtube.com/embed/mljQRYLM2yU"
-  },
+
   {
     title: "Trump Calls for ‘Quantum Leap’ In U.S. Standard of Living With Creation of ‘Freedom Cities’",
     video: "https://rumble.com/embed/v2909ri/?pub=c8ff5"
@@ -45,12 +39,13 @@ if (rearangeVideos === false) {
 
 } else {
   var arrangeOrder = [
-    [0,5],[1,7],[2,6],[5,7],[3,8],[2,3],[0,2]
+    [1, 4],
+    [2, 3],[1,4]
   ];
   videoarea.innerHTML = "";
   main = document.querySelector("main")
   var newArray = changeOrder(objectArray, arrangeOrder)
-//console.log(newArray)
+  //console.log(newArray)
   createPage(newArray)
 }
 
@@ -77,16 +72,16 @@ function createPage(tempArray) {
 }
 //$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 function changeOrder(objectArray, arrangeOrder) {
-var tempArray=[...objectArray]
+  var tempArray = [...objectArray]
   for (var i of arrangeOrder) {
 
     var temp = tempArray[i[0]]
     console.dir(`temp: ${temp.title}`)
     tempArray[i[0]] = tempArray[i[1]]
-     console.log(`tempArray 0: ${tempArray[i[0]].title}`,)
+    console.log(`tempArray 0: ${tempArray[i[0]].title}`, )
     tempArray[i[1]] = temp
-     console.log(`tempArray 1: ${tempArray[i[1]].title}`,)
-console.log(tempArray)
+    console.log(`tempArray 1: ${tempArray[i[1]].title}`, )
+    console.log(tempArray)
 
   }
 

@@ -1,9 +1,27 @@
 var videoarea = document.querySelector("#videoarea")
 
 var rearangeVideos = false;
-var objectArray = [{
+var objectArray = [
+
+  {
+    title: "Gop Oversight: Select Subcommittee Hearing: Investigating the Origins of COVID-19 - March 8, 2023",
+    video: "https://rumble.com/embed/v29owfs/?pub=4"
+  },
+  {
+    title: "New Documentary-'Died Suddenly'",
+    video: "https://rumble.com/embed/v1to6s2/?pub=c8ff5"
+  }, {
     title: "Pfizer Unable To Finish Press Conference As Spokespeople Keep Collapsing",
     video: "https://www.youtube.com/embed/FsQjnv9Dwco"
+  }, {
+    title: "Jordan Trishton Walker, Director of Research and Development Admitting, 'Pfizer Exploring Mutating Covid19 and Preemptively Developing a Vaccine'",
+    video: "https://rumble.com/embed/v24ih1i/?pub=c8ff5"
+  }, {
+    title: "James O'Keefe of Project Veritas Confronting Jordan Trishton Walker, Director of Research for Pfizer, about The Directed Evolution of Covid19 by Pfizer.",
+    video: "https://www.youtube.com/embed/u5n7RRKgDog"
+  }, {
+    title: "Pfizer Director Concerned Over Women's Reproductive Health After COVID-19 Vaccination",
+    video: "https://rumble.com/embed/v25is2a/?pub=c8ff5"
   },
   {
     title: "Robert F. Kennedy, Jr. warns America: 'We all need to resist vaccine tyranny'",
@@ -25,7 +43,9 @@ createPage(objectArray);
 if (rearangeVideos === false) {
 
 } else {
-  var arrangeOrder = [[0, 5]];
+  var arrangeOrder = [
+    [0, 5]
+  ];
   videoarea.innerHTML = "";
   main = document.querySelector("main")
   var newArray = changeOrder(objectArray, arrangeOrder)
