@@ -7,7 +7,7 @@
 
 * {
   box-sizing: border-box;
-  padding: :0px;
+  padding: 0px;
   margin: 0px;
 }
 
@@ -53,12 +53,16 @@ body {
   justify-content: space-around;
 }
 
-.mainnav a {
+
+ .mainnav a {
   text-align: center;
   text-decoration: none;
   color: white;
   font-size: 20px;
   padding: 2px 10px;
+  background-color: #737373;
+  border-radius: 20px;
+
 }
 
 .mainnav a:hover {
@@ -173,20 +177,25 @@ body {
   height: 100%
 }
 
+
 li a:hover {
   color: #edafb8ff;
 }
 
 .Uforesources ul li a {
   text-decoration: none;
+
 }
 
 .Uforesources ul {
   list-style: none;
   font-weight: bold;
   font-style: italic;
-  background-color: lightblue;
-  border: 2px solid dodgerblue;
+  padding:10px;
+
+
+ 
+
 }
 
 .Uforesources header {
