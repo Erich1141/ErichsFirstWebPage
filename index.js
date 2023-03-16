@@ -1,7 +1,15 @@
 var videoarea = document.querySelector("#videoarea")
 
 var rearangeVideos = true;
-var objectArray = [{
+var objectArray = [
+
+  {
+    title: "Hit Song 'Trump Won !!' Natasha Owens",
+    video: "https://rumble.com/embed/v28pxm4/?pub=4"
+  },
+
+
+  {
     title: "CDC Virologist EXPOSES Covid 'Viral Cleavage Site' as Evidence of Lab Origin",
     video: "https://www.youtube.com/embed/rZAPAyZyhVA"
   },
@@ -40,7 +48,8 @@ if (rearangeVideos === false) {
 } else {
   var arrangeOrder = [
     [1, 4],
-    [2, 3],[1,4]
+    [2, 3],
+    [1, 4]
   ];
   videoarea.innerHTML = "";
   main = document.querySelector("main")
