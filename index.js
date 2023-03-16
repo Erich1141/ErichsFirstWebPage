@@ -4,6 +4,11 @@ var rearangeVideos = true;
 var objectArray = [
 
   {
+    title: "Missing 411- Special Edition of the NEWS January 6.",
+    video: "https://www.youtube.com/embed/VDnXEEZnGbI"
+  },
+
+  {
     title: "Hit Song 'Trump Won !!' Natasha Owens",
     video: "https://rumble.com/embed/v28pxm4/?pub=4"
   },
