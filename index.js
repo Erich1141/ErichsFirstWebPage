@@ -4,6 +4,10 @@ var rearangeVideos = true;
 var objectArray = [
 
   {
+    title: "EXPLOSIVE testimony today at the Sen. Elections and House O/sight hearings by Jacqueline Breger",
+    video: "https://rumble.com/embed/v289ong/?pub=4"
+  },
+  {
     title: "Missing 411- Special Edition of the NEWS January 6.",
     video: "https://www.youtube.com/embed/VDnXEEZnGbI"
   },
