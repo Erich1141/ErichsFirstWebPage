@@ -3,6 +3,16 @@ var videoarea = document.querySelector("#videoarea")
 var rearangeVideos = true;
 var objectArray = [
 
+
+
+
+
+
+
+  {
+    title: "Breaking Trump Arrest Expected To Happen Next week As Democrats Make Preparations For His Perp Walk",
+    video: "https://madmaxworld.tv/watch?id=64150385605edf539c55e627"
+  },
   {
     title: "EXPLOSIVE testimony today at the Sen. Elections and House O/sight hearings by Jacqueline Breger",
     video: "https://rumble.com/embed/v289ong/?pub=4"
