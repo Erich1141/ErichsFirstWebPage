@@ -3,12 +3,10 @@ var videoarea = document.querySelector("#videoarea")
 var rearangeVideos = true;
 var objectArray = [
 
-
-
-
-
-
-
+  {
+    title: "Dr. McCullough--Uncensored Raw Medical Truth!",
+    video: "https://madmaxworld.tv/watch?id=642b1b667159da6493c21209"
+  },
   {
     title: "Breaking Trump Arrest Expected To Happen Next week As Democrats Make Preparations For His Perp Walk",
     video: "https://madmaxworld.tv/watch?id=64150385605edf539c55e627"
