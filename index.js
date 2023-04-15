@@ -3,14 +3,17 @@ var videoarea = document.querySelector("#videoarea")
 var rearangeVideos = true;
 var objectArray = [
 
+{
+  title: "Jonathan Cahn: The Stunning Secret Behind The Shooting At The Christian School in Nashville",
+  video: "https://www.youtube.com/embed/_TMhHIqfrrA"
+},
+
+
   {
     title: "Dr. McCullough--Uncensored Raw Medical Truth!",
     video: "https://madmaxworld.tv/watch?id=642b1b667159da6493c21209"
   },
-  {
-    title: "Breaking Trump Arrest Expected To Happen Next week As Democrats Make Preparations For His Perp Walk",
-    video: "https://madmaxworld.tv/watch?id=64150385605edf539c55e627"
-  },
+
   {
     title: "EXPLOSIVE testimony today at the Sen. Elections and House O/sight hearings by Jacqueline Breger",
     video: "https://rumble.com/embed/v289ong/?pub=4"
