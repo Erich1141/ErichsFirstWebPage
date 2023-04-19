@@ -4,6 +4,14 @@ var rearangeVideos = true;
 var objectArray = [
 
 {
+  title: "Hacking Democracy [Documentary] (2006)",
+  video: "https://rumble.com/embed/v8uoxz/?pub=4"
+},
+{
+  title: "Kill Chain The Cyber War on America’s Elections (2020)",
+  video: "https://rumble.com/embed/vojnll/?pub=4"
+},
+{
   title: "Jonathan Cahn: The Stunning Secret Behind The Shooting At The Christian School in Nashville",
   video: "https://www.youtube.com/embed/_TMhHIqfrrA"
 },
