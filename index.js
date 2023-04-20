@@ -3,18 +3,23 @@ var videoarea = document.querySelector("#videoarea")
 var rearangeVideos = true;
 var objectArray = [
 
-{
-  title: "Hacking Democracy [Documentary] (2006)",
-  video: "https://rumble.com/embed/v8uoxz/?pub=4"
-},
-{
-  title: "Kill Chain The Cyber War on America’s Elections (2020)",
-  video: "https://rumble.com/embed/vojnll/?pub=4"
-},
-{
-  title: "Jonathan Cahn: The Stunning Secret Behind The Shooting At The Christian School in Nashville",
-  video: "https://www.youtube.com/embed/_TMhHIqfrrA"
-},
+  {
+    title: "Hacking Democracy [Documentary] (2006)",
+    video: "https://rumble.com/embed/v8uoxz/?pub=4"
+  },
+  {
+    title: "Kill Chain The Cyber War on America’s Elections (2020)",
+    video: "https://rumble.com/embed/vojnll/?pub=4"
+  },
+
+  {
+    title: "Mike Lindell Responds to Fox News Settlement with Dominion",
+    video: "https://home.frankspeech.com/embed/MTIxMTQ1"
+  },
+  {
+    title: "Jonathan Cahn: The Stunning Secret Behind The Shooting At The Christian School in Nashville",
+    video: "https://www.youtube.com/embed/_TMhHIqfrrA"
+  },
 
 
   {
