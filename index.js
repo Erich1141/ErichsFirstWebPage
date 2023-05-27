@@ -104,9 +104,9 @@ function createPage(tempArray) {
 
   for (var i of tempArray) {
     var iframe = document.createElement("iframe")
-    iframe.setAttribute("allow", "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture")
+    iframe.setAttribute("allow", "accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture")
     iframe.setAttribute("allowfullscreen", "")
-    iframe.muted=true
+
     console.log(iframe.muted)
     var h = document.createElement("p")
     var div = document.createElement("div")
