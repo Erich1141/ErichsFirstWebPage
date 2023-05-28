@@ -2,7 +2,12 @@ var videoarea = document.querySelector("#videoarea")
 
 var rearangeVideos = false;
 var objectArray = [
-//https://youtube.com/shorts/FCPtGoAe4ls?feature=share realm of the spirit
+
+
+  {
+    title: "Dr David E Martin PhD Addresses European Parliament True Origins And History of SARS CoV 2 COVID-19",
+    video: "https://rumble.com/embed/v2nmuta/?pub=4"
+  },
   {
     title: "Former Child Star Speaks Out About Satanic Ritual Sacrifice",
     video: "https://madmaxworld.tv/watch?id=646cdfe661bacaf6a627f8f4"
@@ -106,8 +111,6 @@ function createPage(tempArray) {
     var iframe = document.createElement("iframe")
     iframe.setAttribute("allow", "accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture")
     iframe.setAttribute("allowfullscreen", "")
-
-    console.log(iframe.muted)
     var h = document.createElement("p")
     var div = document.createElement("div")
     h.textContent = i.title;
