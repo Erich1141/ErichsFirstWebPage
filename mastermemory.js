@@ -1,9 +1,9 @@
-
-
 //GLOBAL VARIABLES
 var src = tilebacks();
 placeTileSource(src);
+var navigation = false;
 addNav()
+
 var successfulAttemptsPlayer1;
 var successfulAttemptsPlayer2;
 var failedAttemptsPlayer1;
@@ -38,7 +38,7 @@ function hitIt(e) {
 
 //************************************************************************************************************************************
 function startGame() { //starts the game
-removeNav()
+  removeNav()
   reinstateBoard();
   eraseScores()
 
@@ -182,7 +182,8 @@ function stopTheGame() { // this stope the game and refreshes the page. Stand al
 
 
     placeTileSource(src)
-    addNav()
+    if (navigation === false){
+      addNav()
 
   }
 
@@ -190,7 +191,7 @@ function stopTheGame() { // this stope the game and refreshes the page. Stand al
   document.getElementsByClassName("player2_Score")[0].innerHTML = "";
 
 }
-
+}
 //********************************************************************************************************************************************
 function keepScore(scorePlayer1, scorePlayer2, player1, player2, onePlayer) { // keeps score and puts it in score board. Stand alone function
   if (onePlayer) {
@@ -234,8 +235,11 @@ function checkTilecount(tileCount) { //checks if the game is out of tiles to end
 
 
     //storePerson()
-xxxx()
-addNav()
+    xxxx()
+    if (navigation === false) {
+      addNav()
+
+    }
   }
 
 }
@@ -404,11 +408,11 @@ function xxxx() {
   }
 
   for (var i of playerGroup) {
-    var evaluate=localStorage.getItem(i.name)
+    var evaluate = localStorage.getItem(i.name)
     if (evaluate === null) {
       var total = i.successfulAttempts + i.failedAttempts
       var result = i.successfulAttempts / total;
-      i.matchPercentage=result
+      i.matchPercentage = result
 
       var arr = [];
       arr.push(i)
@@ -418,7 +422,7 @@ function xxxx() {
     } else {
       var total = i.successfulAttempts + i.failedAttempts
       var result = i.successfulAttempts / total;
-      i.matchPercentage=result
+      i.matchPercentage = result
       var unfolded = JSON.parse(evaluate)
 
       var improve = i.matchPercentage - unfolded[0].matchPercentage;
@@ -454,7 +458,7 @@ function CreatePlayerObjects(date, time, name, successfulAttempts, failedAttempt
   this.idMemoryimprovement = idMemoryimprovement;
   this.successfulAttempts = successfulAttempts;
   this.failedAttempts = failedAttempts;
-  this.matchPercentage=0
+  this.matchPercentage = 0
 
 }
 /*-----------this is the memory module memor.js------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
@@ -506,7 +510,7 @@ function createImageArray() {
 
 
   var flowerImages = [];
-//flowerImages.push(dahlia, dahlia1, blueSalvia, blueSalvia1, sunflower, sunflower1, hibiscus, hibiscus1, ranunculus, ranunculus1)
+  //flowerImages.push(dahlia, dahlia1, blueSalvia, blueSalvia1, sunflower, sunflower1, hibiscus, hibiscus1, ranunculus, ranunculus1)
   flowerImages.push(dahlia, dahlia1, blueSalvia, blueSalvia1, sunflower, sunflower1, hibiscus, hibiscus1, ranunculus, ranunculus1, tigerlily, tigerlily1, icelandPoppy, icelandPoppy1, pansy, pansy1, snapdragon, snapdragon1, alysum, alysum1, lobelia, lobelia1, hydrangea, hydrangea1, marigold, marigold1, calibrachoa, calibrachoa1)
 
 
@@ -577,11 +581,13 @@ function tilebacks() {
   return ceramicTiles
 }
 //&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
-function addNav(){
+function addNav() {
 
 
-var inq=document.body
-inq.insertAdjacentHTML("beforeend", `<nav class="nav">
+    navigation=true;
+
+    var inq = document.body
+     inq.insertAdjacentHTML("beforeend", `<nav class="nav">
    <ul>
      <li><a href="Covid19.html" >Covid19</a></li>
      <li><a href="UFO.html" >UFO</a></li>
@@ -595,15 +601,10 @@ inq.insertAdjacentHTML("beforeend", `<nav class="nav">
 
 }
 //********************************************************************************************
-function removeNav(){
-
-var parent=document.body
-var child=parent.getElementsByClassName("nav")[0]
-parent.removeChild(child)
-
-
-
-
-
+function removeNav() {
+  navigation=false
+  var parent = document.body
+  var child = parent.getElementsByClassName("nav")[0]
+  parent.removeChild(child)
 
 }
