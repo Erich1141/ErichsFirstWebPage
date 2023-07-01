@@ -27,32 +27,32 @@ img {
 
 .console {
   width: auto;
-  height: 20%;
+  height: 17%;
   color: white;
   position: relative;
 }
 
 .start_game_button {
-  width: 120px;
-  height: 30px;
+  width: 100px;
+  height: 24px;
   background-color: slateblue;
   border-radius: 10%;
   position: absolute;
   left: 10px;
-  ;
+
   border: 3px solid black;
   text-align: center;
   padding-top: 4px;
 }
 
 .stop_game_button {
-  width: 120px;
-  height: 30px;
+  width: 100px;
+  height: 24px;
   background-color: slateblue;
   border-radius: 10%;
   position: absolute;
   left: 10px;
-  top: 70px;
+  top: 40px;
   border: 3px solid black;
   text-align: center;
   padding-top: 4px;
@@ -60,8 +60,8 @@ img {
 
 .score_board {
   font-size: 1em;
-  width: 600px;
-  height: 100px;
+  width: 300px;
+  height: 75px;
   background-color: slateblue;
   border: 3px solid black;
   position: absolute;
@@ -70,37 +70,37 @@ img {
 }
 
 .player1 {
-  font-size: 1.5em;
+  font-size: 1em;
   width: 120px;
-  height: 30px;
+  height: 20px;
   //  background-color: pink;
   border-bottom: 3px solid black;
 }
 
 .player1_Score {
   width: 120px;
-  height: 50%;
-  font-size: 2em;
+  height: 30%;
+  font-size: 1em;
   // background-color: yellow;
 }
 
 .player2_Score {
   width: 120px;
-  height: 50%;
-  font-size: 2em;
+  height: 30%;
+  font-size: 1em;
   //  background-color: yellow;
   position: absolute;
-  left: 14.8em;
-  bottom: .0001em;
+  left: 10em;
+  bottom: .6em;
 }
 
 .player2 {
-  font-size: 1.5em;
+  font-size: 1em;
   width: 120px;
-  height: 30px;
+  height: 20px;
   border-bottom: 3px solid black;
   position: absolute;
-  left: 19.8em;
+  left: 10em;
   top: 20px;
   bottom: 2.9em;
 }
