@@ -34,7 +34,7 @@ img {
 
 .start_game_button {
   color:lightgreen;
-  width: 100px;
+  width: 115px;
   height: 24px;
   background-color: slateblue;
   border-radius: 10%;
@@ -48,7 +48,7 @@ img {
 
 .stop_game_button {
   color:orangered;
-  width: 100px;
+  width: 115px;
   height: 24px;
   background-color: slateblue;
   border-radius: 10%;
@@ -80,7 +80,7 @@ img {
 }
 
 .player1_Score {
-  width: 125px;
+  width: 120px;
   height: 30%;
   font-size: 1em;
   // background-color: yellow;
