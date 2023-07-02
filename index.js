@@ -10,7 +10,7 @@ var objectArray = [
   },
   {
     title: "We Challenge All Evolutionists to Watch This Video!",
-    video: "https://youtu.be/Dn6i91NRMu8"
+    video: "https://www.youtube.com/embed/Dn6i91NRMu8"
   },
   {
     title: "Former Child Star Speaks Out About Satanic Ritual Sacrifice",
