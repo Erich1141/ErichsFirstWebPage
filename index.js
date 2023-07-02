@@ -9,6 +9,10 @@ var objectArray = [
     video: "https://rumble.com/embed/v2nmuta/?pub=4"
   },
   {
+    title: "We Challenge All Evolutionists to Watch This Video!",
+    video: "https://youtu.be/Dn6i91NRMu8"
+  },
+  {
     title: "Former Child Star Speaks Out About Satanic Ritual Sacrifice",
     video: "https://madmaxworld.tv/watch?id=646cdfe661bacaf6a627f8f4"
   },
