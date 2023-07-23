@@ -1,28 +1,5 @@
 
 
-async function spoonacular() { //THIS FUNCTION GETS THE LATEST FORECAST DISCUSSION FOR NWS SAN DIEGO
-  //https://api.weather.gov/products/types/%22AFD%22/locations/%22SGX%22---GETS THE AFD OBJECT WITH MANY TIME PERIODS
-  //https://api.weather.gov/products/%222f09d69d-6718-4d12-9abc-821190c4ee11%22---GETS THE LATEST AFD OBJECT
-  //MUST HAVE TO FETCH CALLS
-
-  var sanDiegoAFDid = "https://api.edamam.com/api/nutrition-details?app_id='bf697a5e'&app_key='3f7b9ea96d16ce8f928924c95528d34f'";
-  var response = await fetch(sanDiegoAFDid);
-  var convert = await response.json();
-  console.log(convert)
-
-}
-
-
-spoonacular()
-
-
-
-
-
-
-
-
-
 
 var videoarea = document.querySelector("#videoarea")
 
