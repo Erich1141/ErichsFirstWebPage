@@ -3,6 +3,10 @@ var videoarea = document.querySelector("#videoarea");
 var rearangeVideos = false;
 var objectArray = [
   {
+    title: "News Conference: Covid Lab found in Central California",
+    video: "https://www.youtube.com/embed/G5yMcDsfjhE",
+  },
+  {
     title:
       "NWO Mouthpiece Forced To Eat His Words That The World Is Not Run By Cabals",
     video: "https://madmaxworld.tv/watch?id=64c03bd98c997fe53e8d6b66",
