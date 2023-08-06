@@ -3,6 +3,10 @@ var videoarea = document.querySelector("#videoarea");
 var rearangeVideos = false;
 var objectArray = [
   {
+    title: "Nanotechnology Found in Both Vaxxed And Un-Vaxxed",
+    video: "https://madmaxworld.tv/watch?id=64ce3f0a71072a354849b159",
+  },
+  {
     title: "News Conference: Covid Lab found in Central California",
     video: "https://www.youtube.com/embed/G5yMcDsfjhE",
   },
