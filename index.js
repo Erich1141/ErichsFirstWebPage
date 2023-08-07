@@ -3,6 +3,11 @@ var videoarea = document.querySelector("#videoarea");
 var rearangeVideos = false;
 var objectArray = [
   {
+    title:
+      "Something's Not Right: COVID-19's Return and What You Should Know - Dr. Stella Immanuel",
+    video: "https://madmaxworld.tv/watch?id=64cfefa771072a3548ab59ea",
+  },
+  {
     title: "Nanotechnology Found in Both Vaxxed And Un-Vaxxed",
     video: "https://madmaxworld.tv/watch?id=64ce3f0a71072a354849b159",
   },
