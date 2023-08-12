@@ -3,6 +3,10 @@ var videoarea = document.querySelector("#videoarea");
 var rearangeVideos = false;
 var objectArray = [
   {
+    title: "Judith Curry: How Climate “Science” Got Hijacked by Alarmists",
+    video: "https://www.youtube.com/embed/vVi01vJ4nxM",
+  },
+  {
     title:
       "Something's Not Right: COVID-19's Return and What You Should Know - Dr. Stella Immanuel",
     video: "https://madmaxworld.tv/watch?id=64cfefa771072a3548ab59ea",
