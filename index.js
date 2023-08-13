@@ -3,6 +3,11 @@ var videoarea = document.querySelector("#videoarea");
 var rearangeVideos = false;
 var objectArray = [
   {
+    title:
+      "Supervisors: California told County 'Do not explain what is taking place' at illegal lab in Reedley",
+    video: "https://www.youtube.com/embed/gsFphUT0X8w",
+  },
+  {
     title: "Judith Curry: How Climate “Science” Got Hijacked by Alarmists",
     video: "https://www.youtube.com/embed/vVi01vJ4nxM",
   },
