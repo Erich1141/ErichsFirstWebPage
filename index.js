@@ -4,7 +4,7 @@ var rearangeVideos = false;
 var objectArray = [
   {
     title:
-      "BREAKING: Dr. Sella Immanuel Reports on Exploding COVID Cases, and New Lockdown Developments",
+      "BREAKING: Dr. Stella Immanuel Reports on Exploding COVID Cases, and New Lockdown Developments",
     video: "https://madmaxworld.tv/watch?id=64e5307ef97999ddf0063e91",
   },
   {
