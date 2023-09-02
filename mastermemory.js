@@ -589,7 +589,7 @@ function addNav() {
     var inq = document.body
      inq.insertAdjacentHTML("beforeend", `<nav class="nav">
    <ul>
-     <li><a href="Covid19.html" >Covid19</a></li>
+     <li><a href="Covid19.html" >Health and Wellness</a></li>
      <li><a href="UFO.html" >UFO</a></li>
      <li><a href="Sasquatch.html" >Sasquatch</a></li>
      <li><a href="Useful_Info.html" >Useful Information</a></li>
