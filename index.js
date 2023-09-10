@@ -1,39 +1,5 @@
 
 
-async function mid(){
-
-  const url = "https://mesowest.utah.edu/cgi-bin/request/display_station_data.cgi?station=MFLC1&data_type=Precip&time_type=1hr&submit=Submit";
-  
-  const response = await fetch(url);
-  
-  if (response.status === 200) {
-    const data = await response.json();
-    console.log(data);
-  } else {
-    console.log("Error getting data from MesoWest");
-  }
-  
-  }
-  
-  mid()
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//******************************************************************************** */
-
 var videoarea = document.querySelector("#videoarea");
 
 var rearangeVideos = false;
