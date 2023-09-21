@@ -4,6 +4,13 @@ var videoarea = document.querySelector("#videoarea");
 
 var rearangeVideos = false;
 var objectArray = [
+  
+
+  {
+    title:
+      "RFK Jr. Talks About Real Reason for America\’s Housing Problems, Calls Out 3 Giant Corporations",
+    video: "https://www.youtube.com/embed/u3TVUgPJ3nA",
+  },
   {
     title:
       "BREAKING: Dr. Stella Immanuel Reports on Exploding COVID Cases, and New Lockdown Developments",
