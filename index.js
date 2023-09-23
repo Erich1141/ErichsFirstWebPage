@@ -19,6 +19,11 @@ var objectArray = [
   },
   {
     title:
+      "LIVE WITH JULIE: A MASSIVE EVENT IS ABOUT TO TAKE PLACE",
+    video: "https://rumble.com/embed/v3e60tm/?pub=c8ff5",
+  },
+  {
+    title:
       "RFK Jr. Talks About Real Reason for America’s Housing Problems, Calls Out 3 Giant Corporations",
     video: "https://www.youtube.com/embed/u3TVUgPJ3nA",
   },
