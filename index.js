@@ -8,6 +8,11 @@ var objectArray = [
 
   {
     title:
+      "Kim Clement Prophecies At Reawaken America Tour - Las Vegas - 2023",
+    video: "https://rumble.com/embed/v3c5cdq/?pub=c8ff5",
+  },
+  {
+    title:
       "Former Homeland Security tactical team leader Doug Thornton - America's approaching CIVIL WAR",
     video: "https://rumble.com/embed/v3hbe3q/?pub=c8ff5",
   },
