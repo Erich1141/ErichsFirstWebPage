@@ -1,16 +1,17 @@
-
-
 var videoarea = document.querySelector("#videoarea");
 
 var rearangeVideos = false;
 var objectArray = [
-  
-
   {
-    title:
-      "Kim Clement Prophecies At Reawaken America Tour - Las Vegas - 2023",
+    title: "Kim Clement Prophecies At Reawaken America Tour - Las Vegas - 2023",
     video: "https://rumble.com/embed/v3c5cdq/?pub=c8ff5",
   },
+  {
+    title:
+      "Prophets and Patriots Episode 74: Clay Clark - Things in the Bible Happening Right Now!",
+      video: "https://rumble.com/embed/v386tui/?pub=c8ff5"
+  },
+
   {
     title:
       "Former Homeland Security tactical team leader Doug Thornton - America's approaching CIVIL WAR",
@@ -18,7 +19,7 @@ var objectArray = [
   },
   {
     title:
-      "RFK Jr. Talks About Real Reason for America\’s Housing Problems, Calls Out 3 Giant Corporations",
+      "RFK Jr. Talks About Real Reason for America’s Housing Problems, Calls Out 3 Giant Corporations",
     video: "https://www.youtube.com/embed/u3TVUgPJ3nA",
   },
   {
@@ -194,6 +195,5 @@ function changeOrder(objectArray, arrangeOrder) {
 
   return tempArray;
 }
-
 
 //^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
