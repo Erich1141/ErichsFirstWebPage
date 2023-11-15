@@ -2,7 +2,10 @@ var videoarea = document.querySelector("#videoarea");
 
 var rearangeVideos = false;
 var objectArray = [
-
+  {
+    title: "SHOCKING interview with Hamas Leader’s son",
+    video: "https://www.youtube.com/embed/bBycxzyVyd4?si=PUeEti742hJnWnjx",
+  },
   {
     title: "The Blessing Projects webinar with Lady Brigitte",
     video: "https://www.youtube.com/embed/EdP6qMwSbrU?si=wLGNvAOfW5OK21OP",
@@ -12,8 +15,9 @@ var objectArray = [
     video: "https://rumble.com/embed/v3c5cdq/?pub=c8ff5",
   },
   {
-    title:"Prophets and Patriots Episode 74: Clay Clark - Things in the Bible Happening Right Now!",
-      video: "https://rumble.com/embed/v386tui/?pub=c8ff5"
+    title:
+      "Prophets and Patriots Episode 74: Clay Clark - Things in the Bible Happening Right Now!",
+    video: "https://rumble.com/embed/v386tui/?pub=c8ff5",
   },
 
   {
@@ -22,8 +26,7 @@ var objectArray = [
     video: "https://rumble.com/embed/v3hbe3q/?pub=c8ff5",
   },
   {
-    title:
-      "LIVE WITH JULIE: A MASSIVE EVENT IS ABOUT TO TAKE PLACE",
+    title: "LIVE WITH JULIE: A MASSIVE EVENT IS ABOUT TO TAKE PLACE",
     video: "https://rumble.com/embed/v3e60tm/?pub=c8ff5",
   },
   {
