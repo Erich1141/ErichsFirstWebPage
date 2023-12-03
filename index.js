@@ -16,6 +16,10 @@ var clips = [
     "https://rumble.com/embed/v3wlpw2/?pub=c8ff5",
   ],
   [
+    "New Zealand Police Are Raiding Home Of Whistleblower Who Leaked Covid-19 Vaccine Mortality Data!",
+    "https://rumble.com/embed/v3wqf2e/?pub=c8ff5",
+  ],
+  [
     "Steve Kirsch Makes Major Announcement: New Zealand Covid Whistleblower Biggest Bombshell Yet!",
     "https://madmaxworld.tv/watch?id=656a5c4e0681e68064e50415",
   ],
@@ -27,7 +31,27 @@ var clips = [
     "Special Report: Experts Believe Malaysian Flight 370 May Have Been Attacked by Secret Pentagon Technology",
     "https://madmaxworld.tv/watch?id=656a6b180681e68064e866ff",
   ],
+  [
+    "GOP lawmaker calls for transparency on UFOs: ‘Our public wants to know what’s going on’",
+    "https://www.youtube.com/embed/iBm_EbQLcII?si=Y3Stxq0PPfcsXqIk",
+  ],
+  
 ];
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 class VideoMaker {
   constructor(title, video) {
