@@ -8,6 +8,14 @@ var clips = [
     "https://madmaxworld.tv/watch?id=656b9e0f0681e68064f01ea7",
   ],
   [
+    "New Zealand Covid-19 vaccination database admin turns whistleblower",
+    "https://rumble.com/embed/v3wfhpm/?pub=c8ff5",
+  ],
+  [
+    "BOMBSHELL: NEW ZEALAND WHISTLEBLOWER EXPOSES COVID MASS GENOCIDE PLAN (2DEC23)-FULL VIDEO",
+    "https://rumble.com/embed/v3wlpw2/?pub=c8ff5",
+  ],
+  [
     "Steve Kirsch Makes Major Announcement: New Zealand Covid Whistleblower Biggest Bombshell Yet!",
     "https://madmaxworld.tv/watch?id=656a5c4e0681e68064e50415",
   ],
