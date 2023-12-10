@@ -35,23 +35,7 @@ var clips = [
     "GOP lawmaker calls for transparency on UFOs: ‘Our public wants to know what’s going on’",
     "https://www.youtube.com/embed/iBm_EbQLcII?si=Y3Stxq0PPfcsXqIk",
   ],
-  
 ];
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 class VideoMaker {
   constructor(title, video) {
@@ -69,7 +53,7 @@ for (var i of clips) {
   objectArray.push(obj);
 }
 
-console.log(objectArray);
+//console.log(objectArray);
 
 createPage(objectArray);
 
@@ -115,12 +99,12 @@ function changeOrder(objectArray, arrangeOrder) {
   var tempArray = [...objectArray];
   for (var i of arrangeOrder) {
     var temp = tempArray[i[0]];
-    console.dir(`temp: ${temp.title}`);
+    // console.dir(`temp: ${temp.title}`);
     tempArray[i[0]] = tempArray[i[1]];
-    console.log(`tempArray 0: ${tempArray[i[0]].title}`);
+    // console.log(`tempArray 0: ${tempArray[i[0]].title}`);
     tempArray[i[1]] = temp;
-    console.log(`tempArray 1: ${tempArray[i[1]].title}`);
-    console.log(tempArray);
+    // console.log(`tempArray 1: ${tempArray[i[1]].title}`);
+    //console.log(tempArray);
   }
 
   return tempArray;
@@ -129,20 +113,45 @@ function changeOrder(objectArray, arrangeOrder) {
 //^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 async function calculateLatest() {
   var response = await fetch(
-    "https://mesonet.agron.iastate.edu/api/1/currents.json?station=MFLC1&minutes=14400"
+   "https://mesonet.agron.iastate.edu/api/1/currents.json?station=MFLC1&minutes=14400"
   );
 
-  var result = await response.json();
+   var result = await response.json();
 
-  console.log("Station: ", result.data[0].station);
-  console.log("Name: ", result.data[0].name);
-  console.log("County: ", result.data[0].county);
-  console.log("State: ", result.data[0].state);
-  console.log("Local Date: ", result.data[0].local_valid);
-  console.log("Precipitation Hour : ", result.data[0].phour);
-  console.log("Precipitation Day : ", result.data[0].pday);
+  var info = [
+    ["Station: ", result.data[0].station],
+    ["Name: ", result.data[0].name],
+    ["County: ", result.data[0].county],
+    ["State: ", result.data[0].state],
+    ["Local Date: ", result.data[0].local_valid],
+    ["Precipitation Hour : ", result.data[0].phour],
+    ["Precipitation Day : ", result.data[0].pday],
+  ];
+
+  var middleData = document.createElement("div");
+  middleData.style.cssText =
+    "position:absolute;width:200px;height:300px;left:10px;top:200px;background-color:black;z-index:10;color:white;border:3px solid dodgerblue";
+  middleData.id = "middleFork";
+
+  for (var i of info) {
+    var temp = document.createElement("div");
+    temp.style.cssText = "color:white;margin-bottom: 5px";
+    temp.textContent = i[0] + i[1];
+    middleData.appendChild(temp);
+  }
+
+  var remove = document.createElement("div");
+  middleData.append(remove);
+  middleData.lastElementChild.style.cssText =
+    "color:red;margin-top:20px;font-size:20px";
+  middleData.lastElementChild.textContent = "Remove Box ";
+  middleData.lastElementChild.id = "remove";
+
+  document.body.appendChild(middleData);
+  var target = document.getElementById("remove");
+  target.addEventListener("click", removeTheBox);
 }
-//calculateLatest()
+
 //***********************************************************************************
 async function calculateLTLC1() {
   var response = await fetch(
@@ -150,6 +159,13 @@ async function calculateLTLC1() {
   );
 
   var result = await response.json();
-  console.log(result);
+  console.dir(result);
 }
 //calculateLTLC1()
+//**********************************************************************************
+
+function removeTheBox() {
+  var box = document.getElementById("middleFork");
+  box.remove();
+}
+//^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
