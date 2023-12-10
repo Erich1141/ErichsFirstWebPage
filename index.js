@@ -113,12 +113,14 @@ function changeOrder(objectArray, arrangeOrder) {
 //^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 async function calculateLatest() {
   var response = await fetch(
-   "https://mesonet.agron.iastate.edu/api/1/currents.json?station=MFLC1&minutes=14400"
+    "https://mesonet.agron.iastate.edu/api/1/currents.json?station=MFLC1&minutes=14400"
   );
 
-   var result = await response.json();
+  var result = await response.json();
 
   var info = [
+    ["Station: ", 1],
+    ["Name: ", 2],
     ["Station: ", result.data[0].station],
     ["Name: ", result.data[0].name],
     ["County: ", result.data[0].county],
@@ -127,6 +129,7 @@ async function calculateLatest() {
     ["Precipitation Hour : ", result.data[0].phour],
     ["Precipitation Day : ", result.data[0].pday],
   ];
+  saveToLocal(info)
 
   var middleData = document.createElement("div");
   middleData.style.cssText =
@@ -169,3 +172,50 @@ function removeTheBox() {
   box.remove();
 }
 //^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+function saveToLocal(info) {
+
+var local=localStorage.getItem("Precipitation")
+var decode=JSON.parse(local)
+
+
+
+
+if(decode===null){
+  
+ var result=processForLocalStorage(info)
+ var process=JSON.stringify(result)
+  
+  localStorage.setItem("Precipitation",process)
+}else{
+var answer=processForLocalStorage(info)
+decode.push(answer)
+var end=JSON.stringify(decode)
+
+localStorage.setItem("Precipitation",end)
+
+
+
+}
+
+
+}
+//********************************************************************************* 
+function processForLocalStorage(info){
+
+
+  var obj=[]
+  var arr=[];
+  for(var i of info){
+    
+   var temp= i[0].split(" ").join("")
+   arr.push([temp.split(":").join(""),i[1]])
+
+  }
+  var entries=new Map(arr)
+  var final=Object.fromEntries(entries)
+  obj.push(final)
+ 
+  return obj
+
+
+}
