@@ -133,7 +133,7 @@ async function calculateLatest() {
 
   var middleData = document.createElement("div");
   middleData.style.cssText =
-    "position:absolute;width:200px;height:300px;left:10px;top:200px;background-color:black;z-index:10;color:white;border:3px solid dodgerblue";
+    "position:absolute;width:200px;height:380px;left:10px;top:200px;background-color:black;z-index:10;color:white;border:3px solid dodgerblue";
   middleData.id = "middleFork";
 
   for (var i of info) {
