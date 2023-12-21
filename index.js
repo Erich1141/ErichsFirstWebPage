@@ -117,7 +117,7 @@ async function calculateLatest() {
   );
 
   var result = await response.json();
-
+ 
   var info = [
     ["Station: ", 1],
     ["Name: ", 2],
@@ -125,11 +125,13 @@ async function calculateLatest() {
     ["Name: ", result.data[0].name],
     ["County: ", result.data[0].county],
     ["State: ", result.data[0].state],
-    ["Local Date: ", result.data[0].local_valid],
+    ["Local Date: ", new Date(result.data[0].local_valid).toLocaleString()],
     ["Precipitation Hour : ", result.data[0].phour],
     ["Precipitation Day : ", result.data[0].pday],
   ];
-  saveToLocal(info)
+
+  
+  saveToLocal(info);
 
   var middleData = document.createElement("div");
   middleData.style.cssText =
@@ -173,49 +175,33 @@ function removeTheBox() {
 }
 //^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 function saveToLocal(info) {
+  var local = localStorage.getItem("Precipitation");
+  var decode = JSON.parse(local);
 
-var local=localStorage.getItem("Precipitation")
-var decode=JSON.parse(local)
+  if (decode === null) {
+    var result = processForLocalStorage(info);
+    var process = JSON.stringify(result);
 
+    localStorage.setItem("Precipitation", process);
+  } else {
+    var answer = processForLocalStorage(info);
+    decode.push(answer);
+    var end = JSON.stringify(decode);
 
-
-
-if(decode===null){
-  
- var result=processForLocalStorage(info)
- var process=JSON.stringify(result)
-  
-  localStorage.setItem("Precipitation",process)
-}else{
-var answer=processForLocalStorage(info)
-decode.push(answer)
-var end=JSON.stringify(decode)
-
-localStorage.setItem("Precipitation",end)
-
-
-
-}
-
-
-}
-//********************************************************************************* 
-function processForLocalStorage(info){
-
-
-  var obj=[]
-  var arr=[];
-  for(var i of info){
-    
-   var temp= i[0].split(" ").join("")
-   arr.push([temp.split(":").join(""),i[1]])
-
+    localStorage.setItem("Precipitation", end);
   }
-  var entries=new Map(arr)
-  var final=Object.fromEntries(entries)
-  obj.push(final)
- 
-  return obj
+}
+//*********************************************************************************
+function processForLocalStorage(info) {
+  var obj = [];
+  var arr = [];
+  for (var i of info) {
+    var temp = i[0].split(" ").join("");
+    arr.push([temp.split(":").join(""), i[1]]);
+  }
+  var entries = new Map(arr);
+  var final = Object.fromEntries(entries);
+  obj.push(final);
 
-
+  return obj;
 }
