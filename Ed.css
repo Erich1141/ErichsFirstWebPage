@@ -4,9 +4,7 @@
     border: 0px;
     padding: 0px;
   }
-  :root {
-    --width: 100%;
-  }
+  
   body {
     border-bottom: 2px solid black;
   }
@@ -29,27 +27,26 @@
   
   .container {
     display: flex; /* Use flex container */
+    flex-wrap: wrap;
   }
   
-  .section {
-    flex: 1; /* Each column takes up equal space */
+  section {
+   
     padding: 20px; /* Add padding for spacing */
     box-sizing: border-box; /* Include padding in the width */
+    
+
   
-    width: calc(var(--width/3));
+    width:33.33333333333333%;
   }
-  .first {
-    //background-color: aqua;
-    //border-right: 1px solid black;
+  .second{
+border-left: 2px solid black;
+border-right: 2px solid black;
+
+
+
   }
   
-  .second {
-    //background-color: blue;
-    // border-right: 1px solid black;
-  }
-  .third {
-    //background-color: chocolate;
-  }
   h1 {
     font-size: xx-large;
     padding-bottom: 10px;
@@ -77,3 +74,10 @@
   text-indent: 20px;
   }
   
+  @media (max-width: 600px) {
+    section {
+     
+    width:100%
+  
+    }
+  }
