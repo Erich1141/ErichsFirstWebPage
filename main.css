@@ -102,12 +102,29 @@ li {
   text-decoration: none;
 }
 .weather {
-  color:rgb(0, 0, 238)
+  color:rgb(0, 0, 238);
+  font-weight: bold;
+  margin: .3em;
 
 }
 .weather:hover {
   
   color: #edafb8ff;
+}
+input{
+
+border:2px solid black;
+background-color: rgb(236, 224, 210);
+
+}
+.reset{
+
+margin-left: 112px;
+margin-top: 10px;
+font-weight: bold;
+width: 75px;
+text-align: center;
+
 }
 
 main {

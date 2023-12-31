@@ -1,0 +1,79 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    border: 0px;
+    padding: 0px;
+  }
+  :root {
+    --width: 100%;
+  }
+  body {
+    border-bottom: 2px solid black;
+  }
+  
+  header {
+    text-align: center;
+    font-size: 6em;
+  }
+  
+  #border {
+    border-bottom: 2px solid black;
+    border-top: 2px solid black;
+  }
+  
+  #story {
+    text-align: center;
+    font-size: 2em;
+    font-style: italic;
+  }
+  
+  .container {
+    display: flex; /* Use flex container */
+  }
+  
+  .section {
+    flex: 1; /* Each column takes up equal space */
+    padding: 20px; /* Add padding for spacing */
+    box-sizing: border-box; /* Include padding in the width */
+  
+    width: calc(var(--width/3));
+  }
+  .first {
+    //background-color: aqua;
+    //border-right: 1px solid black;
+  }
+  
+  .second {
+    //background-color: blue;
+    // border-right: 1px solid black;
+  }
+  .third {
+    //background-color: chocolate;
+  }
+  h1 {
+    font-size: xx-large;
+    padding-bottom: 10px;
+    text-align: center;
+  }
+  article {
+    padding-bottom: 30px;
+    border-bottom: 1px solid black;
+  }
+  
+  div span {
+    padding-right: 20px;
+  }
+  
+  div span a {
+    color:dodgerblue;
+    font-weight: bolder;
+    font-size: 15px;
+    font-style: normal;
+    padding-bottom: 5px;
+    text-decoration: none;
+  }
+  p {
+  
+  text-indent: 20px;
+  }
+  

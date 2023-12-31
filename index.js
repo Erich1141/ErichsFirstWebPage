@@ -4,6 +4,11 @@ var rearangeVideos = false;
 var objectArray = [];
 var clips = [
   [
+    "The Miraculous Nature of Water",
+    "https://madmaxworld.tv/watch?id=65853bb9d73929b3eeec38c4",
+  ],
+
+  [
     "BOMBSHELL! Government Whistle Blower Exposes Mass Deaths From Covid Shots",
     "https://madmaxworld.tv/watch?id=656b9e0f0681e68064f01ea7",
   ],
@@ -109,6 +114,19 @@ function changeOrder(objectArray, arrangeOrder) {
 
   return tempArray;
 }
+var sub=document.querySelector("#input")
+sub.addEventListener("click", (e) => {
+  
+  var answer = document.querySelector("#pass")
+  var result=answer.value.toUpperCase()
+if(result==="E108832270"){
+console.log(result)
+window.open("Ed.html","_blank")
+}
+answer.value=null
+  console.log(answer.value)
+});
+
 
 //^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 async function calculateLatest() {
@@ -117,7 +135,7 @@ async function calculateLatest() {
   );
 
   var result = await response.json();
- 
+
   var info = [
     ["Station: ", 1],
     ["Name: ", 2],
@@ -130,7 +148,6 @@ async function calculateLatest() {
     ["Precipitation Day : ", result.data[0].pday],
   ];
 
-  
   saveToLocal(info);
 
   var middleData = document.createElement("div");
