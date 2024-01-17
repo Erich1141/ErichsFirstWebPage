@@ -4,6 +4,10 @@ var rearangeVideos = false;
 var objectArray = [];
 var clips = [
   [
+    "ARCHBISHOP CARLO MARIA VIGANO ON 3 JANUARY 2024",
+    "https://rumble.com/embed/v42d6rl/?pub=c8ff5",
+  ],
+  [
     "The Miraculous Nature of Water",
     "https://madmaxworld.tv/watch?id=65853bb9d73929b3eeec38c4",
   ],

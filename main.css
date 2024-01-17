@@ -88,7 +88,14 @@ li {
   height: auto;
   border-right: 3px solid white;
 }
+.aside > ul > header{
 
+font-size: 3em;
+text-align: center;
+
+  
+ 
+}
 .aside li {
   font-weight: bold;
   padding-bottom: .5em;
