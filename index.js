@@ -8,6 +8,10 @@ var clips = [
     "https://rumble.com/embed/v42d6rl/?pub=c8ff5",
   ],
   [
+    "Shot Dead The Movie- Covid 19 vaccine and  Explosive Deaths of Babies and Young People",
+    "https://rumble.com/embed/v3sfcbp/?pub=c8ff5",
+  ],
+  [
     "The Miraculous Nature of Water",
     "https://madmaxworld.tv/watch?id=65853bb9d73929b3eeec38c4",
   ],
