@@ -4,6 +4,10 @@ var rearangeVideos = false;
 var objectArray = [];
 var clips = [
   [
+    `Arizona GOP Chairman Jeff Dewitt Attempts To "BRIBE" Kari Lake Audio Leak`,
+    "https://rumble.com/embed/v46ecd9/?pub=c8ff5",
+  ],
+  [
     "An Incredible encounter with a Chinese Film Crew at a British Airport",
     "https://www.youtube.com/embed/qDqJ0reIsnw?si=4hasoXM5JYtwlLoA",
   ],
