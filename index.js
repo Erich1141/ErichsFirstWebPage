@@ -19,15 +19,7 @@ var clips = [
     "Shot Dead The Movie- Covid 19 vaccine and  Explosive Deaths of Babies and Young People",
     "https://rumble.com/embed/v3sfcbp/?pub=c8ff5",
   ],
-  [
-    "The Miraculous Nature of Water",
-    "https://madmaxworld.tv/watch?id=65853bb9d73929b3eeec38c4",
-  ],
 
-  [
-    "BOMBSHELL! Government Whistle Blower Exposes Mass Deaths From Covid Shots",
-    "https://madmaxworld.tv/watch?id=656b9e0f0681e68064f01ea7",
-  ],
   [
     "New Zealand Covid-19 vaccination database admin turns whistleblower",
     "https://rumble.com/embed/v3wfhpm/?pub=c8ff5",
@@ -40,18 +32,12 @@ var clips = [
     "New Zealand Police Are Raiding Home Of Whistleblower Who Leaked Covid-19 Vaccine Mortality Data!",
     "https://rumble.com/embed/v3wqf2e/?pub=c8ff5",
   ],
-  [
-    "Steve Kirsch Makes Major Announcement: New Zealand Covid Whistleblower Biggest Bombshell Yet!",
-    "https://madmaxworld.tv/watch?id=656a5c4e0681e68064e50415",
-  ],
+
   [
     "WATCH: UAP Transparency; House Oversight VOWS To Tell American People The Truth On UFO's",
     "https://www.youtube.com/embed/cmBNb12xrY8?si=tVKbnbmEmLOxyTUi",
   ],
-  [
-    "Special Report: Experts Believe Malaysian Flight 370 May Have Been Attacked by Secret Pentagon Technology",
-    "https://madmaxworld.tv/watch?id=656a6b180681e68064e866ff",
-  ],
+
   [
     "GOP lawmaker calls for transparency on UFOs: ‘Our public wants to know what’s going on’",
     "https://www.youtube.com/embed/iBm_EbQLcII?si=Y3Stxq0PPfcsXqIk",
