@@ -3,6 +3,11 @@ var videoarea = document.querySelector("#videoarea");
 var rearangeVideos = false;
 var objectArray = [];
 var clips = [
+ 
+  [
+    `Now They Want Us to STOP BACKYARD GARDENING? What’s Next?`,
+    "https://www.youtube.com/embed/59x4zgJvIHg?si=jgy1pInFW4n3vIU4",
+  ],
   [
     `Arizona GOP Chairman Jeff Dewitt Attempts To "BRIBE" Kari Lake Audio Leak`,
     "https://rumble.com/embed/v46ecd9/?pub=c8ff5",
