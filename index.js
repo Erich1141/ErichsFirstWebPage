@@ -3,6 +3,12 @@ var videoarea = document.querySelector("#videoarea");
 var rearangeVideos = false;
 var objectArray = [];
 var clips = [
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/IMsUlHVpnXE?si=pcT9K6AWU3qrZBl9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+
+
+
   [
     `Trump wins in SCOTUS- professors and pundits lose!`,
     "https://www.youtube.com/embed/AQuuO8lnoQM?si=A-KtL77kAER1qnws",
@@ -10,6 +16,11 @@ var clips = [
   [
     `C.O. State Sec. Jena Griswold: 'My larger reaction is disappointment' to SCOTUS ballot ruling`,
     "https://www.youtube.com/embed/pjIpSxEqhiA?si=cd68xaLFooa-ImQ4",
+  ],
+  [
+    
+    `‘The Five’ reacts to Trump’s unanimous Supreme Court victory`,
+    "https://www.youtube.com/embed/IMsUlHVpnXE?si=pcT9K6AWU3qrZBl9",
   ],
   [
     `Now They Want Us to STOP BACKYARD GARDENING? What’s Next?`,
