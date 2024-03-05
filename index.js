@@ -3,7 +3,10 @@ var videoarea = document.querySelector("#videoarea");
 var rearangeVideos = false;
 var objectArray = [];
 var clips = [
- 
+  [
+    `C.O. State Sec. Jena Griswold: 'My larger reaction is disappointment' to SCOTUS ballot ruling`,
+    "https://www.youtube.com/embed/pjIpSxEqhiA?si=cd68xaLFooa-ImQ4",
+  ],
   [
     `Now They Want Us to STOP BACKYARD GARDENING? What’s Next?`,
     "https://www.youtube.com/embed/59x4zgJvIHg?si=jgy1pInFW4n3vIU4",
