@@ -5,7 +5,7 @@ var objectArray = [];
 var clips = [
   [
     `Trump wins in SCOTUS- professors and pundits lose!`,
-    "https://https://www.youtube.com/embed/AQuuO8lnoQM",
+    "https://www.youtube.com/embed/AQuuO8lnoQM?si=A-KtL77kAER1qnws",
   ],
   [
     `C.O. State Sec. Jena Griswold: 'My larger reaction is disappointment' to SCOTUS ballot ruling`,
