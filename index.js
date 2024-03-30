@@ -3,35 +3,20 @@ var videoarea = document.querySelector("#videoarea");
 var rearangeVideos = false;
 var objectArray = [];
 var clips = [
-
-
-
+  [
+    `Response To New Study On Intermittent Fasting, By Dr. Stan Ekberg`,
+    "https://www.youtube.com/embed/aUWSlsivFhM?si=ReYcQFbgmf60Gvat",
+  ],
+  [
+    `Intermittent Fasting Doubles Your Risk of Dying from a Heart Attack`,
+    "https://www.youtube.com/embed/QMsItnMlhuo?si=MhWb4Wh1G4s_ZGmc",
+  ],
 
   [
     `Trump wins in SCOTUS- professors and pundits lose!`,
     "https://www.youtube.com/embed/AQuuO8lnoQM?si=A-KtL77kAER1qnws",
   ],
-  [
-    `C.O. State Sec. Jena Griswold: 'My larger reaction is disappointment' to SCOTUS ballot ruling`,
-    "https://www.youtube.com/embed/pjIpSxEqhiA?si=cd68xaLFooa-ImQ4",
-  ],
-  [
-    
-    `‘The Five’ reacts to Trump’s unanimous Supreme Court victory`,
-    "https://www.youtube.com/embed/IMsUlHVpnXE?si=pcT9K6AWU3qrZBl9",
-  ],
-  [
-    `Now They Want Us to STOP BACKYARD GARDENING? What’s Next?`,
-    "https://www.youtube.com/embed/59x4zgJvIHg?si=jgy1pInFW4n3vIU4",
-  ],
-  [
-    `Arizona GOP Chairman Jeff Dewitt Attempts To "BRIBE" Kari Lake Audio Leak`,
-    "https://rumble.com/embed/v46ecd9/?pub=c8ff5",
-  ],
-  [
-    "An Incredible encounter with a Chinese Film Crew at a British Airport",
-    "https://www.youtube.com/embed/qDqJ0reIsnw?si=4hasoXM5JYtwlLoA",
-  ],
+
   [
     "ARCHBISHOP CARLO MARIA VIGANO ON 3 JANUARY 2024",
     "https://rumble.com/embed/v42d6rl/?pub=c8ff5",
