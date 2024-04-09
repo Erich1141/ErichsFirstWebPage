@@ -3,6 +3,16 @@ var videoarea = document.querySelector("#videoarea");
 var rearangeVideos = false;
 var objectArray = [];
 var clips = [
+
+
+
+
+
+
+  [
+    `CIA Officer/Former FBI Boasts “Can Put Anyone in Jail…Set ’Em Up!” “We Call It a Nudge”`,
+    "https://www.youtube.com/embed/74Wdovjjt3s?si=I5Nw10TmPADETKGc",
+  ],
   [
     `Response To New Study On Intermittent Fasting, By Dr. Stan Ekberg`,
     "https://www.youtube.com/embed/aUWSlsivFhM?si=ReYcQFbgmf60Gvat",

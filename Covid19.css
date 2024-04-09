@@ -3,9 +3,7 @@
   padding: 0px;
   margin: 0px;
 }
-body {
 
-}
 
 h1 {
   text-align: center;
@@ -80,6 +78,7 @@ aside li a {
   text-decoration: none;
 }
 
+
 aside li a:hover {
   color: #edafb8ff;
 }
@@ -115,7 +114,7 @@ aside h4 {
   flex-wrap: wrap;
   background-color: #595959;
   height: auto;
-  //  grid-template-columns: 1fr 1fr;
+  
   margin-top: 50px;
 }
 
@@ -129,7 +128,7 @@ p {
   font-weight: bold;
   margin-left: 50px;
   margin-bottom: 20px;
-  //height: auto;
+ 
 }
 iframe {
   height: 234px;
