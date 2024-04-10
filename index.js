@@ -14,6 +14,10 @@ var clips = [
     "https://www.youtube.com/embed/74Wdovjjt3s?si=I5Nw10TmPADETKGc",
   ],
   [
+    `Audience Goes Nuts as Dr. Phil Debunks Palestine Activist’s Lies”`,
+    "https://rumble.com/embed/v4kulli/?pub=4",
+  ],
+  [
     `Response To New Study On Intermittent Fasting, By Dr. Stan Ekberg`,
     "https://www.youtube.com/embed/aUWSlsivFhM?si=ReYcQFbgmf60Gvat",
   ],
