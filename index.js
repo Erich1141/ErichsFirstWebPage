@@ -18,6 +18,10 @@ var clips = [
     "https://rumble.com/embed/v4kulli/?pub=4",
   ],
   [
+    `Climate: The Movie (The Cold Truth) - Martin Durkin`,
+    "https://rumble.com/embed/v4hzs25/?pub=4",
+  ],
+  [
     `Response To New Study On Intermittent Fasting, By Dr. Stan Ekberg`,
     "https://www.youtube.com/embed/aUWSlsivFhM?si=ReYcQFbgmf60Gvat",
   ],
