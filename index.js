@@ -3,12 +3,10 @@ var videoarea = document.querySelector("#videoarea");
 var rearangeVideos = false;
 var objectArray = [];
 var clips = [
-
-
-
-
-
-
+  [
+    `The biggest crime in the history of medicine`,
+    "https://www.youtube.com/embed/v3N-uFfvU5s?si=_fD9kV1rzBIOpGW9",
+  ],
   [
     `CIA Officer/Former FBI Boasts “Can Put Anyone in Jail…Set ’Em Up!” “We Call It a Nudge”`,
     "https://www.youtube.com/embed/74Wdovjjt3s?si=I5Nw10TmPADETKGc",
