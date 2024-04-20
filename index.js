@@ -12,8 +12,8 @@ var clips = [
     "https://www.youtube.com/embed/74Wdovjjt3s?si=I5Nw10TmPADETKGc",
   ],
   [
-    `Audience Goes Nuts as Dr. Phil Debunks Palestine Activist’s Lies”`,
-    "https://rumble.com/embed/v4kulli/?pub=4",
+    `'Son of Hamas' Tackles University Antisemitism, Exposes Hamas 'Holy War' to Wipe Out Jews`,
+    "https://www.youtube.com/embed/wpnvUIcvNUE?si=pMkH-cX7pqhbcVEL",
   ],
   [
     `Climate: The Movie (The Cold Truth) - Martin Durkin`,
