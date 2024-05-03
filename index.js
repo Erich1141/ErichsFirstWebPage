@@ -3,6 +3,7 @@ var videoarea = document.querySelector("#videoarea");
 var rearangeVideos = false;
 var objectArray = [];
 var clips = [
+   
   [
     `Dr. Peter A. McCullough challenged on covid and vaccine views by radio host in heated interview`,
     "https://www.youtube.com/embed/k3NSmXbPegE?si=v8KYnTgM6nuv9oeX",
