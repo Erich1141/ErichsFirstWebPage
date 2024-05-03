@@ -64,15 +64,7 @@ var clips = [
     "https://rumble.com/embed/v3wqf2e/?pub=c8ff5",
   ],
 
-  [
-    "WATCH: UAP Transparency; House Oversight VOWS To Tell American People The Truth On UFO's",
-    "https://www.youtube.com/embed/cmBNb12xrY8?si=tVKbnbmEmLOxyTUi",
-  ],
-
-  [
-    "GOP lawmaker calls for transparency on UFOs: ‘Our public wants to know what’s going on’",
-    "https://www.youtube.com/embed/iBm_EbQLcII?si=Y3Stxq0PPfcsXqIk",
-  ],
+  
 ];
 
 class VideoMaker {
