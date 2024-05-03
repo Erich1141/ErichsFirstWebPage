@@ -5,6 +5,10 @@ var objectArray = [];
 var clips = [
    
   [
+    `Let My People Go`,
+    "https://rumble.com/embed/v4hirv6/?pub=c8ff5",
+  ],
+  [
     `Dr. Peter A. McCullough challenged on covid and vaccine views by radio host in heated interview`,
     "https://www.youtube.com/embed/k3NSmXbPegE?si=v8KYnTgM6nuv9oeX",
   ],
