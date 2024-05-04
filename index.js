@@ -3,10 +3,11 @@ var videoarea = document.querySelector("#videoarea");
 var rearangeVideos = false;
 var objectArray = [];
 var clips = [
-   
+  [`Let My People Go`, "https://rumble.com/embed/v4hirv6/?pub=c8ff5"],
+
   [
-    `Let My People Go`,
-    "https://rumble.com/embed/v4hirv6/?pub=c8ff5",
+    `The Brutal Reality of the Middle East | Mosab Hassan Yousef | EP 443`,
+    "https://www.youtube.com/embed/I5VPFw0vI6U?si=2jAT1JsyW07JmKXE",
   ],
   [
     `Dr. Peter A. McCullough challenged on covid and vaccine views by radio host in heated interview`,
@@ -63,8 +64,6 @@ var clips = [
     "New Zealand Police Are Raiding Home Of Whistleblower Who Leaked Covid-19 Vaccine Mortality Data!",
     "https://rumble.com/embed/v3wqf2e/?pub=c8ff5",
   ],
-
-  
 ];
 
 class VideoMaker {
