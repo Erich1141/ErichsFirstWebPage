@@ -3,6 +3,10 @@ var videoarea = document.querySelector("#videoarea");
 var rearangeVideos = false;
 var objectArray = [
   {
+    title: "The Bertinet Method: Slap & fold kneading technique",
+    video: "https://www.youtube.com/embed/bWN9mxR_iXI?si=Kz-VtRYV0N_nI76N",
+  },
+  {
     title: "Potassium Chloride Salt Substitute Side Effects",
     video: "https://www.youtube.com/embed/KE8OG2yHZzI?si=7TRcLtJ__7HjwkEy",
   },
