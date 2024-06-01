@@ -3,6 +3,10 @@ var videoarea = document.querySelector("#videoarea");
 var rearangeVideos = false;
 var objectArray = [];
 var clips = [
+  [
+    `A Quick Q&A With Father, Relics, Protestant Deliverance and Mediums`,
+    "https://www.youtube.com/embed/EBc1VMAzIH8?si=MoEnIkhYld9D5_B_&amp;start=1569",
+  ],
   [`Let My People Go`, "https://rumble.com/embed/v4hirv6/?pub=c8ff5"],
 
   [
