@@ -1,8 +1,17 @@
+console.log("what")
 var videoarea = document.querySelector("#videoarea");
 
 var rearangeVideos = false;
 var objectArray = [];
 var clips = [
+  [
+    `Vaxxed the movie`,
+    "https://rumble.com/embed/v1ueeho/?pub=c8ff5",
+  ],
+  [
+    `Vaxxed II the movie`,
+    "https://rumble.com/embed/v2r08s2/?pub=c8ff5",
+  ],
   [
     `A Quick Q&A With Father, Relics, Protestant Deliverance and Mediums`,
     "https://www.youtube.com/embed/EBc1VMAzIH8?si=MoEnIkhYld9D5_B_&amp;start=1569",
@@ -61,20 +70,11 @@ var clips = [
     "https://rumble.com/embed/v3sfcbp/?pub=c8ff5",
   ],
 
-  [
-    "New Zealand Covid-19 vaccination database admin turns whistleblower",
-    "https://rumble.com/embed/v3wfhpm/?pub=c8ff5",
-  ],
-  [
-    "BOMBSHELL: NEW ZEALAND WHISTLEBLOWER EXPOSES COVID MASS GENOCIDE PLAN (2DEC23)-FULL VIDEO",
-    "https://rumble.com/embed/v3wlpw2/?pub=c8ff5",
-  ],
-  [
-    "New Zealand Police Are Raiding Home Of Whistleblower Who Leaked Covid-19 Vaccine Mortality Data!",
-    "https://rumble.com/embed/v3wqf2e/?pub=c8ff5",
-  ],
-];
 
+ 
+ 
+];
+console.log(clips)
 class VideoMaker {
   constructor(title, video) {
     this.title = title;
@@ -91,7 +91,7 @@ for (var i of clips) {
   objectArray.push(obj);
 }
 
-//console.log(objectArray);
+console.log(objectArray);
 
 createPage(objectArray);
 
@@ -253,3 +253,12 @@ function processForLocalStorage(info) {
 
   return obj;
 }
+
+
+
+
+
+
+
+
+
