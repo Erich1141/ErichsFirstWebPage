@@ -1,17 +1,14 @@
-console.log("what")
 var videoarea = document.querySelector("#videoarea");
 
 var rearangeVideos = false;
 var objectArray = [];
 var clips = [
   [
-    `Vaxxed the movie`,
-    "https://rumble.com/embed/v1ueeho/?pub=c8ff5",
+    `3 PROPHETS Explain 3 American SOLAR ECLIPSES | APRIL8 SIGN | Amanda Grace, Brandon Biggs Cioccolanti`,
+    "https://www.youtube.com/embed/Ey0qVzG8_vU?si=C_LAiNhOrevotedP",
   ],
-  [
-    `Vaxxed II the movie`,
-    "https://rumble.com/embed/v2r08s2/?pub=c8ff5",
-  ],
+
+  [`Vaxxed II the movie`, "https://rumble.com/embed/v2r08s2/?pub=c8ff5"],
   [
     `A Quick Q&A With Father, Relics, Protestant Deliverance and Mediums`,
     "https://www.youtube.com/embed/EBc1VMAzIH8?si=MoEnIkhYld9D5_B_&amp;start=1569",
@@ -55,26 +52,8 @@ var clips = [
     `Intermittent Fasting Doubles Your Risk of Dying from a Heart Attack`,
     "https://www.youtube.com/embed/QMsItnMlhuo?si=MhWb4Wh1G4s_ZGmc",
   ],
-
-  [
-    `Trump wins in SCOTUS- professors and pundits lose!`,
-    "https://www.youtube.com/embed/AQuuO8lnoQM?si=A-KtL77kAER1qnws",
-  ],
-
-  [
-    "ARCHBISHOP CARLO MARIA VIGANO ON 3 JANUARY 2024",
-    "https://rumble.com/embed/v42d6rl/?pub=c8ff5",
-  ],
-  [
-    "Shot Dead The Movie- Covid 19 vaccine and  Explosive Deaths of Babies and Young People",
-    "https://rumble.com/embed/v3sfcbp/?pub=c8ff5",
-  ],
-
-
- 
- 
 ];
-console.log(clips)
+console.log(clips);
 class VideoMaker {
   constructor(title, video) {
     this.title = title;
@@ -253,12 +232,3 @@ function processForLocalStorage(info) {
 
   return obj;
 }
-
-
-
-
-
-
-
-
-
