@@ -7,6 +7,10 @@ var clips = [
     `3 PROPHETS Explain 3 American SOLAR ECLIPSES | APRIL8 SIGN | Amanda Grace, Brandon Biggs Cioccolanti`,
     "https://www.youtube.com/embed/Ey0qVzG8_vU?si=C_LAiNhOrevotedP",
   ],
+  [
+    `New Trump Update: Bomb materials found in vehicle of suspected shooter `,
+    "https://www.youtube.com/embed/dWlQmsq5740?si=WzJpaooGa30F5RPO",
+  ],
 
   [`Vaxxed II the movie`, "https://rumble.com/embed/v2r08s2/?pub=c8ff5"],
   [
