@@ -4,6 +4,10 @@ var rearangeVideos = false;
 var objectArray = [];
 var clips = [
   [
+    `Prophit Predicts Trump Assasination Attempt April 2024 (Short Version)`,
+    "https://www.youtube.com/embed/FCGfE9yMnXc?si=gX6gf63dBLlOeO4k",
+  ],
+  [
     `3 PROPHETS Explain 3 American SOLAR ECLIPSES | APRIL8 SIGN | Amanda Grace, Brandon Biggs Cioccolanti`,
     "https://www.youtube.com/embed/Ey0qVzG8_vU?si=C_LAiNhOrevotedP",
   ],
