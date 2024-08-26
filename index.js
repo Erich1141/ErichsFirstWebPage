@@ -4,6 +4,15 @@ var rearangeVideos = false;
 var objectArray = [];
 var clips = [
   [
+    `RFK Jr. Bombshell: Nukes Entire Democrat Party in Historic Speech That Every American NEEDS To See`,
+    "https://www.youtube.com/embed/iVUdXGC-Tg8?si=o2hRF9PP9dUpqGDM",
+  ],
+
+  [
+    `Confessions of a UFO Hunter: Ross Coulthart interviews Lue Elizondo`,
+    "https://www.youtube.com/embed/wgM5V44eQHU?si=V7C0DDzyPKdAnMjT",
+  ],
+  [
     `Prophit Predicts Trump Assasination Attempt April 2024 (Short Version)`,
     "https://www.youtube.com/embed/FCGfE9yMnXc?si=gX6gf63dBLlOeO4k",
   ],
