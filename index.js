@@ -3,6 +3,20 @@ var videoarea = document.querySelector("#videoarea");
 var rearangeVideos = false;
 var objectArray = [];
 var clips = [
+
+
+
+
+
+
+  [
+    `L.A. Marzulli Brokeness`,
+    "https://www.youtube.com/embed/-VvVYlHSVG4?si=5CE3U42RiUY0dgSS&amp;start=884",
+  ],
+  [
+    `DOJ Lawyer Admits FDA War Against Ivermectin was Abuse of Authority, "Millions of Deaths" Resulted`,
+    "https://www.youtube.com/embed/HH2Rh1_owqI?si=jnrhqjz8D-Na8PAf",
+  ],
   [
     `RFK Jr. Bombshell: Nukes Entire Democrat Party in Historic Speech That Every American NEEDS To See`,
     "https://www.youtube.com/embed/iVUdXGC-Tg8?si=o2hRF9PP9dUpqGDM",
