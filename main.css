@@ -35,13 +35,15 @@ li {
 }
 
 .trump {
-  width: 50px;
-  height: 50px;
+  width: 80px;
+  height: 80px;
   position: absolute;
-  left: 0px;
-  top: 90px;
+  left: 30px;
+  top: 70px;
   border-radius: 50%;
   border:1px solid black;
+  background-color: white;
+  
 }
 
 .small {

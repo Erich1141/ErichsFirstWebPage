@@ -101,7 +101,7 @@ for (var i of clips) {
   objectArray.push(obj);
 }
 
-console.log(objectArray);
+
 
 createPage(objectArray);
 
@@ -118,9 +118,11 @@ if (rearangeVideos === false) {
   //console.log(newArray)
   createPage(newArray);
 }
-
+var remAddSwitch= false;
 var latestMFLC1 = document.getElementById("latestMFLC1");
 latestMFLC1.addEventListener("click", calculateLatest);
+
+
 
 //*************************************************************************************************************************************
 
@@ -140,7 +142,7 @@ function createPage(tempArray) {
     div.appendChild(h);
     videoarea.appendChild(div);
   }
-  //console.log(tempArray)
+  
 }
 //$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 function changeOrder(objectArray, arrangeOrder) {
@@ -171,6 +173,8 @@ sub.addEventListener("click", (e) => {
 
 //^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 async function calculateLatest() {
+  
+  if(!remAddSwitch) {
   var response = await fetch(
     "https://mesonet.agron.iastate.edu/api/1/currents.json?station=MFLC1&minutes=14400"
   );
@@ -204,15 +208,24 @@ async function calculateLatest() {
   }
 
   var remove = document.createElement("div");
-  middleData.append(remove);
-  middleData.lastElementChild.style.cssText =
-    "color:red;margin-top:20px;font-size:20px";
+  middleData.appendChild(remove);
+  middleData.lastElementChild.style.cssText =  "color:red;margin-top:20px;font-size:20px";
   middleData.lastElementChild.textContent = "Remove Box ";
   middleData.lastElementChild.id = "remove";
-
   document.body.appendChild(middleData);
+
+ 
+  remAddSwitch=true
+
   var target = document.getElementById("remove");
-  target.addEventListener("click", removeTheBox);
+target.addEventListener("click", removeTheBox);
+  console.log(remAddSwitch)
+} else {
+
+  
+
+}
+  
 }
 
 //***********************************************************************************
@@ -228,8 +241,24 @@ async function calculateLTLC1() {
 //**********************************************************************************
 
 function removeTheBox() {
+  var target2 = document.getElementById("remove");
+  target2.removeEventListener("click", calculateLatest);
+
+  if(remAddSwitch) {
+    
   var box = document.getElementById("middleFork");
-  box.remove();
+  
+  box.parentNode.removeChild(box)
+  
+remAddSwitch= false
+console.log(remAddSwitch)
+//console.log(remAddSwitch)
+  } else{
+
+
+
+  }
+
 }
 //^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 function saveToLocal(info) {
