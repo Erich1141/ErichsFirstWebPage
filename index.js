@@ -10,6 +10,10 @@ var clips = [
 
 
   [
+    'PROJECT BIG BALLS’: D.O.G.E Explained in Detail',
+    "https://rumble.com/embed/v6g9271/?pub=c8ff5",
+  ],
+  [
     `L.A. Marzulli Brokeness`,
     "https://www.youtube.com/embed/-VvVYlHSVG4?si=5CE3U42RiUY0dgSS&amp;start=884",
   ],
