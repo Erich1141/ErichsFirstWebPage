@@ -6,12 +6,16 @@ var clips = [
 
 
 
-
+ 
 
 
   [
     'PROJECT BIG BALLS’: D.O.G.E Explained in Detail',
     "https://rumble.com/embed/v6g9271/?pub=c8ff5",
+  ],
+  [
+    `The Democratic Party's Desperate Attempt To Claim That Elon Musk's DOGE Is Unconstitutional Crashes & Burns`,
+    "https://www.banned.video/watch?id=67a549982a23988368ba5bad",
   ],
   [
     `L.A. Marzulli Brokeness`,
