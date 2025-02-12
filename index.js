@@ -5,10 +5,6 @@ var objectArray = [];
 var clips = [
 
 
-
- 
-
-
   [
     'PROJECT BIG BALLS’: D.O.G.E Explained in Detail',
     "https://rumble.com/embed/v6g9271/?pub=c8ff5",
@@ -16,6 +12,10 @@ var clips = [
   [
     `The Democratic Party's Desperate Attempt To Claim That Elon Musk's DOGE Is Unconstitutional Crashes & Burns`,
     "https://www.banned.video/watch?id=67a549982a23988368ba5bad",
+  ],
+  [
+    `BREAKING EXCLUSIVE: Pennsylvania Investigators Found Strong Evidence Of A Criminal Network Handling Trump's Attempted Assassin In Butler, Penn.`,
+    "https://madmaxworld.tv/watch?id=67aba93ee02deded20f1a9d9",
   ],
   [
     `L.A. Marzulli Brokeness`,
