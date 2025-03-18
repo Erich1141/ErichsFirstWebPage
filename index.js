@@ -3,10 +3,16 @@ var videoarea = document.querySelector("#videoarea");
 var rearangeVideos = false;
 var objectArray = [];
 var clips = [
-
-
   [
-    'PROJECT BIG BALLS’: D.O.G.E Explained in Detail',
+    "ELON MUSK JOINS VERDICT | Verdict Ep. 214",
+    "https://www.youtube.com/embed/BDREZmpkIz8?si=_IOFJrW-pnenORxi",
+  ],
+  [
+    "Karen Bass Leaked Phone Call Jan. 4, 2025 Before The Fires!!",
+    "https://rumble.com/embed/v6lgr4u/?pub=c8ff5",
+  ],
+  [
+    "PROJECT BIG BALLS’: D.O.G.E Explained in Detail",
     "https://rumble.com/embed/v6g9271/?pub=c8ff5",
   ],
   [
@@ -62,35 +68,6 @@ var clips = [
     `Source Code, Fraud Algorithms, and Injecting Votes: Dr. Daugherity - "Let My People Go" Interview`,
     "https://rumble.com/embed/v4q9f0n/?pub=c8ff5",
   ],
-
-  [
-    `Dr. Peter A. McCullough challenged on covid and vaccine views by radio host in heated interview`,
-    "https://www.youtube.com/embed/k3NSmXbPegE?si=v8KYnTgM6nuv9oeX",
-  ],
-  [
-    `The biggest crime in the history of medicine`,
-    "https://www.youtube.com/embed/v3N-uFfvU5s?si=_fD9kV1rzBIOpGW9",
-  ],
-  [
-    `CIA Officer/Former FBI Boasts “Can Put Anyone in Jail…Set ’Em Up!” “We Call It a Nudge”`,
-    "https://www.youtube.com/embed/74Wdovjjt3s?si=I5Nw10TmPADETKGc",
-  ],
-  [
-    `'Son of Hamas' Tackles University Antisemitism, Exposes Hamas 'Holy War' to Wipe Out Jews`,
-    "https://www.youtube.com/embed/wpnvUIcvNUE?si=pMkH-cX7pqhbcVEL",
-  ],
-  [
-    `Climate: The Movie (The Cold Truth) - Martin Durkin`,
-    "https://rumble.com/embed/v4hzs25/?pub=4",
-  ],
-  [
-    `Response To New Study On Intermittent Fasting, By Dr. Stan Ekberg`,
-    "https://www.youtube.com/embed/aUWSlsivFhM?si=ReYcQFbgmf60Gvat",
-  ],
-  [
-    `Intermittent Fasting Doubles Your Risk of Dying from a Heart Attack`,
-    "https://www.youtube.com/embed/QMsItnMlhuo?si=MhWb4Wh1G4s_ZGmc",
-  ],
 ];
 console.log(clips);
 class VideoMaker {
@@ -109,8 +86,6 @@ for (var i of clips) {
   objectArray.push(obj);
 }
 
-
-
 createPage(objectArray);
 
 if (rearangeVideos === false) {
@@ -126,11 +101,9 @@ if (rearangeVideos === false) {
   //console.log(newArray)
   createPage(newArray);
 }
-var remAddSwitch= false;
+var remAddSwitch = false;
 var latestMFLC1 = document.getElementById("latestMFLC1");
 latestMFLC1.addEventListener("click", calculateLatest);
-
-
 
 //*************************************************************************************************************************************
 
@@ -150,7 +123,6 @@ function createPage(tempArray) {
     div.appendChild(h);
     videoarea.appendChild(div);
   }
-  
 }
 //$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 function changeOrder(objectArray, arrangeOrder) {
@@ -181,59 +153,54 @@ sub.addEventListener("click", (e) => {
 
 //^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 async function calculateLatest() {
-  
-  if(!remAddSwitch) {
-  var response = await fetch(
-    "https://mesonet.agron.iastate.edu/api/1/currents.json?station=MFLC1&minutes=14400"
-  );
+  if (!remAddSwitch) {
+    var response = await fetch(
+      "https://mesonet.agron.iastate.edu/api/1/currents.json?station=MFLC1&minutes=14400"
+    );
 
-  var result = await response.json();
+    var result = await response.json();
 
-  var info = [
-    ["Station: ", 1],
-    ["Name: ", 2],
-    ["Station: ", result.data[0].station],
-    ["Name: ", result.data[0].name],
-    ["County: ", result.data[0].county],
-    ["State: ", result.data[0].state],
-    ["Local Date: ", new Date(result.data[0].local_valid).toLocaleString()],
-    ["Precipitation Hour : ", result.data[0].phour],
-    ["Precipitation Day : ", result.data[0].pday],
-  ];
+    var info = [
+      ["Station: ", 1],
+      ["Name: ", 2],
+      ["Station: ", result.data[0].station],
+      ["Name: ", result.data[0].name],
+      ["County: ", result.data[0].county],
+      ["State: ", result.data[0].state],
+      ["Local Date: ", new Date(result.data[0].local_valid).toLocaleString()],
+      ["Precipitation Hour : ", result.data[0].phour],
+      ["Precipitation Day : ", result.data[0].pday],
+    ];
 
-  saveToLocal(info);
+    saveToLocal(info);
 
-  var middleData = document.createElement("div");
-  middleData.style.cssText =
-    "position:absolute;width:200px;height:380px;left:10px;top:200px;background-color:black;z-index:10;color:white;border:3px solid dodgerblue";
-  middleData.id = "middleFork";
+    var middleData = document.createElement("div");
+    middleData.style.cssText =
+      "position:absolute;width:200px;height:380px;left:10px;top:200px;background-color:black;z-index:10;color:white;border:3px solid dodgerblue";
+    middleData.id = "middleFork";
 
-  for (var i of info) {
-    var temp = document.createElement("div");
-    temp.style.cssText = "color:white;margin-bottom: 5px";
-    temp.textContent = i[0] + i[1];
-    middleData.appendChild(temp);
+    for (var i of info) {
+      var temp = document.createElement("div");
+      temp.style.cssText = "color:white;margin-bottom: 5px";
+      temp.textContent = i[0] + i[1];
+      middleData.appendChild(temp);
+    }
+
+    var remove = document.createElement("div");
+    middleData.appendChild(remove);
+    middleData.lastElementChild.style.cssText =
+      "color:red;margin-top:20px;font-size:20px";
+    middleData.lastElementChild.textContent = "Remove Box ";
+    middleData.lastElementChild.id = "remove";
+    document.body.appendChild(middleData);
+
+    remAddSwitch = true;
+
+    var target = document.getElementById("remove");
+    target.addEventListener("click", removeTheBox);
+    console.log(remAddSwitch);
+  } else {
   }
-
-  var remove = document.createElement("div");
-  middleData.appendChild(remove);
-  middleData.lastElementChild.style.cssText =  "color:red;margin-top:20px;font-size:20px";
-  middleData.lastElementChild.textContent = "Remove Box ";
-  middleData.lastElementChild.id = "remove";
-  document.body.appendChild(middleData);
-
- 
-  remAddSwitch=true
-
-  var target = document.getElementById("remove");
-target.addEventListener("click", removeTheBox);
-  console.log(remAddSwitch)
-} else {
-
-  
-
-}
-  
 }
 
 //***********************************************************************************
@@ -252,21 +219,16 @@ function removeTheBox() {
   var target2 = document.getElementById("remove");
   target2.removeEventListener("click", calculateLatest);
 
-  if(remAddSwitch) {
-    
-  var box = document.getElementById("middleFork");
-  
-  box.parentNode.removeChild(box)
-  
-remAddSwitch= false
-console.log(remAddSwitch)
-//console.log(remAddSwitch)
-  } else{
+  if (remAddSwitch) {
+    var box = document.getElementById("middleFork");
 
+    box.parentNode.removeChild(box);
 
-
+    remAddSwitch = false;
+    console.log(remAddSwitch);
+    //console.log(remAddSwitch)
+  } else {
   }
-
 }
 //^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 function saveToLocal(info) {
