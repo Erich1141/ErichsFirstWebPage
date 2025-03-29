@@ -33,6 +33,13 @@ if (rearangeVideos === false) {
   createPage(newArray);
 }
 
+document.getElementById('navigation').addEventListener('change', function() {
+  var url = this.value
+  if (url) {
+    window.location.href = url;
+  }
+});
+
 //*************************************************************************************************************************************
 
 function createPage(tempArray) {
