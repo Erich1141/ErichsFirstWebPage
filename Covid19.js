@@ -3,61 +3,23 @@ var videoarea = document.querySelector("#videoarea");
 var rearangeVideos = false;
 var objectArray = [
   {
-    title: "The Bertinet Method: Slap & fold kneading technique",
-    video: "https://www.youtube.com/embed/bWN9mxR_iXI?si=Kz-VtRYV0N_nI76N",
+    title:
+      "What is Psoriasis and Is Psoriasis Contagious? Explained by Dr.Berg",
+    video: "https://www.youtube.com/embed/3ZYMZpOr3u4?si=gW3BloXCPdVVuXRD",
   },
+
   {
-    title: "Potassium Chloride Salt Substitute Side Effects",
-    video: "https://www.youtube.com/embed/KE8OG2yHZzI?si=7TRcLtJ__7HjwkEy",
+    title: "Psoriasis Treatment – The Best 3 Remedies for Psoriasis – Dr.Berg",
+    video: "https://www.youtube.com/embed/jSYto3FAJUA?si=U5jkJDbUwES31sFG",
   },
+
   {
     title:
-      "Gop Oversight: Select Subcommittee Hearing: Investigating the Origins of COVID-19 - March 8, 2023",
-    video: "https://rumble.com/embed/v29owfs/?pub=4",
+      "How to Get Rid of Psoriasis? – Natural Remedies for Psoriasis by Dr.Berg",
+    video: "https://www.youtube.com/embed/DsJwB3bTzp8?si=GGeH_OsUURadnvcj",
   },
-  {
-    title: "New Documentary-'Died Suddenly'",
-    video: "https://rumble.com/embed/v1to6s2/?pub=c8ff5",
-  },
-  {
-    title:
-      "Pfizer Unable To Finish Press Conference As Spokespeople Keep Collapsing",
-    video: "https://www.youtube.com/embed/FsQjnv9Dwco",
-  },
-  {
-    title:
-      "Jordan Trishton Walker, Director of Research and Development Admitting, 'Pfizer Exploring Mutating Covid19 and Preemptively Developing a Vaccine'",
-    video: "https://rumble.com/embed/v24ih1i/?pub=c8ff5",
-  },
-  {
-    title:
-      "James O'Keefe of Project Veritas Confronting Jordan Trishton Walker, Director of Research for Pfizer, about The Directed Evolution of Covid19 by Pfizer.",
-    video: "https://www.youtube.com/embed/u5n7RRKgDog",
-  },
-  {
-    title:
-      "Pfizer Director Concerned Over Women's Reproductive Health After COVID-19 Vaccination",
-    video: "https://rumble.com/embed/v25is2a/?pub=c8ff5",
-  },
-  {
-    title:
-      "Robert F. Kennedy, Jr. warns America: 'We all need to resist vaccine tyranny'",
-    video:
-      "https://www.brighteon.com/embed/7bc6967a-ac24-4710-a116-88574d0f7ecf",
-  },
-  {
-    title:
-      "Robert Kennedy Jr. and Dr. Judy Mikovitz on The Corruption of The CDC, Dr. Fauci, FDA, NIH, Big Pharma and Vaccines!",
-    video: "https://rumble.com/embed/va5bw5/?pub=c8ff5",
-  },
-  {
-    title: "Stella Immanuel Demands an Apology!",
-    video: "https://rumble.com/embed/vb3bkd/?pub=c8ff5",
-  },
-  {
-    title: "Frontline Doctors Discussing Covid 19 Treatments",
-    video: "https://rumble.com/embed/v84hn9/?pub=c8ff5",
-  },
+
+  
 ];
 createPage(objectArray);
 

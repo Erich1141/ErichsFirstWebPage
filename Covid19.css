@@ -83,6 +83,14 @@ aside li a:hover {
   color: #edafb8ff;
 }
 
+aside ul li label {
+
+color: rgb(0, 0, 238)
+
+
+
+}
+
 aside h4 {
   padding-bottom: 5px;
   color: white;
