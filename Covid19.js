@@ -36,7 +36,8 @@ if (rearangeVideos === false) {
 document.getElementById('navigation').addEventListener('change', function() {
   var url = this.value
   if (url) {
-    window.location.href = url;
+    window.open(url,"_blank")
+    this.selectedIndex=0
   }
 });
 
