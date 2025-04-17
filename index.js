@@ -3,6 +3,13 @@ var videoarea = document.querySelector("#videoarea");
 var rearangeVideos = false;
 var objectArray = [];
 var clips = [
+
+
+
+  [
+    "Tucker Carlson interviewing Rep. Curt Weldon on 9/11 ",
+    "https://www.youtube.com/embed/8SWoEGXk-V8?si=ZiddTm-iNeWds4ap",
+  ],
   [
     "ELON MUSK JOINS VERDICT | Verdict Ep. 214",
     "https://www.youtube.com/embed/BDREZmpkIz8?si=_IOFJrW-pnenORxi",
