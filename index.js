@@ -3,9 +3,10 @@ var videoarea = document.querySelector("#videoarea");
 var rearangeVideos = false;
 var objectArray = [];
 var clips = [
-
-
-
+  [
+    "Catherine Fitts: Power Grids, Bankers vs. the West, Secret Underground Bases, and Extinction Events",
+    "https://www.youtube.com/embed/z8pA2TDXtew?si=TjulMr4YSwP1iKBn",
+  ],
   [
     "Tucker Carlson interviewing Rep. Curt Weldon on 9/11 ",
     "https://www.youtube.com/embed/8SWoEGXk-V8?si=ZiddTm-iNeWds4ap",
