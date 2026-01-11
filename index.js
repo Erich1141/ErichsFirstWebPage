@@ -168,7 +168,28 @@ async function calculateLatest() {
 
     var result = await response.json();
 
-    var info = [
+var info = [
+      ["Station: ", 1],
+      ["Name: ", 2],
+      ["Station: ", "MFLC1"],
+      ["Name: ", "Middle Fork Lytle Creek"],
+      ["County: ", "San Bernardino County"],
+      ["State: ", "Califonria"],
+      ["Local Date: ", new Date().toLocaleString()],
+      ["Precipitation Hour : ", ],
+      ["Precipitation Day : ", ],
+    ];
+
+
+
+
+
+
+
+
+
+
+    /*var info = [
       ["Station: ", 1],
       ["Name: ", 2],
       ["Station: ", result.data[0].station],
@@ -179,7 +200,7 @@ async function calculateLatest() {
       ["Precipitation Hour : ", result.data[0].phour],
       ["Precipitation Day : ", result.data[0].pday],
     ];
-
+*/
     saveToLocal(info);
 
     var middleData = document.createElement("div");
