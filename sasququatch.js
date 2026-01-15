@@ -10,8 +10,8 @@ test.textContent="Press Me"
 test.addEventListener("click", () => {
 
 var request= fetch("https://erichs-real-server.onrender.com/test")
-.then(data => data.text())
-.then(text=> console.log(text))
+.then(data => data.json())
+.then(result=> console.dir(result))
 .catch(console.error)
 
 });
