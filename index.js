@@ -205,12 +205,12 @@ async function calculateLatest() {
       ["Station: ", "MFLC1"],
       ["Name: ", "Middle Fork Lytle Creek"],
       ["County: ", "San Bernardino County"],
-      ["State: ", "Califonria"],
+      ["State: ", "California"],
       ["Local Date: ", new Date().toLocaleString()],
       [`Hourly Precipitation :`,` ${obs.timeValue}`],
-      [`Hourly Time Stamp :`,`${obs.timeHour}`],
+      [`Hourly Time Stamp :`,`${timeSync(obs.timeHour)}`],
       [`Seasonal Precipitation :`,` ${obs.seasonValue}`],
-      [`Seasonal Time Stamp :` ,`${obs.seasonTime}`]
+      [`Seasonal Time Stamp :` ,`${timeSync(obs.seasonTime)}`]
 
     ];
 
