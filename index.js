@@ -120,7 +120,7 @@ function createPage(tempArray) {
     var iframe = document.createElement("iframe");
     iframe.setAttribute(
       "allow",
-      "accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      "accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture",
     );
     iframe.setAttribute("allowfullscreen", "");
     var h = document.createElement("p");
@@ -162,32 +162,57 @@ sub.addEventListener("click", (e) => {
 //^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 async function calculateLatest() {
   if (!remAddSwitch) {
-    var response = await fetch(
-      "https://mesonet.agron.iastate.edu/api/1/currents.json?station=MFLC1&minutes=14400"
+   
+    var weather = await fetch(
+      "https://erichs-real-server.onrender.com/API/weather/latestObservation/MFLC1"
+      
     );
 
-    var result = await response.json();
+    if (!weather.ok) {
+      console.log("Server error:", weather.status, await weather.text());
+      return;
+    }
 
-var info = [
-      ["Station: ", 1],
-      ["Name: ", 2],
+    var result = await weather.json();
+    var section = result.STATION[0];
+
+    console.log(result);
+
+    const {
+      OBSERVATIONS: {
+        precip_accum_one_hour_value_1: {
+          date_time: time_1hour,
+          value: value_1hour,
+        },
+        precip_accum_value_1: { date_time: time_season, value: value_season },
+      },
+    } = section ?? {};
+
+    var obs = {
+      timeHour: time_1hour,
+      timeValue: value_1hour,
+      seasonTime: time_season,
+      seasonValue: value_season,
+    };
+    console.log(obs)
+
+    ___________________________________________________;
+
+    /*var response = await fetch(
+      "https://mesonet.agron.iastate.edu/api/1/currents.json?station=MFLC1&minutes=14400",
+    );
+
+    /*var result = await response.json();
+    console.log(result);
+    var info = [
       ["Station: ", "MFLC1"],
       ["Name: ", "Middle Fork Lytle Creek"],
       ["County: ", "San Bernardino County"],
       ["State: ", "Califonria"],
       ["Local Date: ", new Date().toLocaleString()],
-      ["Precipitation Hour : ", ],
-      ["Precipitation Day : ", ],
+      ["Precipitation Hour : "],
+      ["Precipitation Day : "],
     ];
-
-
-
-
-
-
-
-
-
 
     /*var info = [
       ["Station: ", 1],
@@ -200,7 +225,7 @@ var info = [
       ["Precipitation Hour : ", result.data[0].phour],
       ["Precipitation Day : ", result.data[0].pday],
     ];
-*/
+
     saveToLocal(info);
 
     var middleData = document.createElement("div");
@@ -228,19 +253,23 @@ var info = [
     var target = document.getElementById("remove");
     target.addEventListener("click", removeTheBox);
     console.log(remAddSwitch);
+
+   */ 
   } else {
   }
+  
 }
 
 //***********************************************************************************
 async function calculateLTLC1() {
   var response = await fetch(
-    "https://mesonet.agron.iastate.edu/api/1/currents.json?station=LTLC1&minutes=14400"
+    "https://mesonet.agron.iastate.edu/api/1/currents.json?station=LTLC1&minutes=14400",
   );
 
   var result = await response.json();
   console.dir(result);
 }
+
 //calculateLTLC1()
 //**********************************************************************************
 
@@ -290,4 +319,23 @@ function processForLocalStorage(info) {
   obj.push(final);
 
   return obj;
+}
+//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+function timeSync(val) {
+  let date = new Date(val);
+  let options = {
+    year: "numeric",
+    month: "numeric",
+    day: "numeric",
+    hour: "numeric",
+    minute: "numeric",
+    second: "numeric",
+    hour12: true,
+    timeZoneName: "short", // Optional: includes the time zone abbreviation
+  };
+  const formattedDate = new Intl.DateTimeFormat("en-US", options).format(date);
+
+  val = formattedDate;
+
+  return val;
 }
