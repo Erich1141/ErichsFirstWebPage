@@ -196,37 +196,27 @@ async function calculateLatest() {
     };
     console.log(obs)
 
-    ___________________________________________________;
+    //___________________________________________________
 
-    /*var response = await fetch(
-      "https://mesonet.agron.iastate.edu/api/1/currents.json?station=MFLC1&minutes=14400",
-    );
+   
 
-    /*var result = await response.json();
-    console.log(result);
+   
     var info = [
       ["Station: ", "MFLC1"],
       ["Name: ", "Middle Fork Lytle Creek"],
       ["County: ", "San Bernardino County"],
       ["State: ", "Califonria"],
       ["Local Date: ", new Date().toLocaleString()],
-      ["Precipitation Hour : "],
-      ["Precipitation Day : "],
+      [`Hourly Precipitation : ${obs.timeValue}`],
+      [`Hourly Time Stamp : ${obs.timeHour}`]
+      [`Seasonal Precipitation : ${obs.seasonValue}`],
+      [`Seasonal Time Stamp : ${obs.seasonTime}`]
+
     ];
 
-    /*var info = [
-      ["Station: ", 1],
-      ["Name: ", 2],
-      ["Station: ", result.data[0].station],
-      ["Name: ", result.data[0].name],
-      ["County: ", result.data[0].county],
-      ["State: ", result.data[0].state],
-      ["Local Date: ", new Date(result.data[0].local_valid).toLocaleString()],
-      ["Precipitation Hour : ", result.data[0].phour],
-      ["Precipitation Day : ", result.data[0].pday],
-    ];
+    
 
-    saveToLocal(info);
+    
 
     var middleData = document.createElement("div");
     middleData.style.cssText =
@@ -254,7 +244,7 @@ async function calculateLatest() {
     target.addEventListener("click", removeTheBox);
     console.log(remAddSwitch);
 
-   */ 
+   
   } else {
   }
   
