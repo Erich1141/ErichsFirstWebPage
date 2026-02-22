@@ -207,10 +207,10 @@ async function calculateLatest() {
       ["County: ", "San Bernardino County"],
       ["State: ", "Califonria"],
       ["Local Date: ", new Date().toLocaleString()],
-      [`Hourly Precipitation : ${obs.timeValue}`],
-      [`Hourly Time Stamp : ${obs.timeHour}`]
-      [`Seasonal Precipitation : ${obs.seasonValue}`],
-      [`Seasonal Time Stamp : ${obs.seasonTime}`]
+      [`Hourly Precipitation :`,` ${obs.timeValue}`],
+      [`Hourly Time Stamp :`,`${obs.timeHour}`],
+      [`Seasonal Precipitation :`,` ${obs.seasonValue}`],
+      [`Seasonal Time Stamp :` ,`${obs.seasonTime}`]
 
     ];
 
