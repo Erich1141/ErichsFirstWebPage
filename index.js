@@ -6,7 +6,7 @@ var clips = [
  
   [
     "Investigative Journalist Nick Shirley Releases Video Uncovering $170 Million in Fraud in California",
-    "https://x.com/nickshirleyy/status/2033708929398845886?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E2033708929398845886%7Ctwgr%5E80f6c5517b6496d56b27bf3f0db75b0381e8fd93%7Ctwcon%5Es1_c10&ref_url=https%3A%2F%2Fwww.thegatewaypundit.com%2F2026%2F03%2Fwatch-investigative-journalist-nick-shirley-releases-video-uncovering%2F",
+    "https://youtu.be/kegwwB4RHgA?si=ndZgU-9xYqPZ7pJ0",
   ],
   
 ];
