@@ -3,79 +3,12 @@ var videoarea = document.querySelector("#videoarea");
 var rearangeVideos = false;
 var objectArray = [];
 var clips = [
+ 
   [
-    "Catherine Fitts: Power Grids, Bankers vs. the West, Secret Underground Bases, and Extinction Events",
-    "https://www.youtube.com/embed/z8pA2TDXtew?si=TjulMr4YSwP1iKBn",
+    "Investigative Journalist Nick Shirley Releases Video Uncovering $170 Million in Fraud in California",
+    "https://x.com/nickshirleyy/status/2033708929398845886?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E2033708929398845886%7Ctwgr%5E80f6c5517b6496d56b27bf3f0db75b0381e8fd93%7Ctwcon%5Es1_c10&ref_url=https%3A%2F%2Fwww.thegatewaypundit.com%2F2026%2F03%2Fwatch-investigative-journalist-nick-shirley-releases-video-uncovering%2F",
   ],
-  [
-    "Tucker Carlson interviewing Rep. Curt Weldon on 9/11 ",
-    "https://www.youtube.com/embed/8SWoEGXk-V8?si=ZiddTm-iNeWds4ap",
-  ],
-  [
-    "ELON MUSK JOINS VERDICT | Verdict Ep. 214",
-    "https://www.youtube.com/embed/BDREZmpkIz8?si=_IOFJrW-pnenORxi",
-  ],
-  [
-    "Karen Bass Leaked Phone Call Jan. 4, 2025 Before The Fires!!",
-    "https://rumble.com/embed/v6lgr4u/?pub=c8ff5",
-  ],
-  [
-    "PROJECT BIG BALLS’: D.O.G.E Explained in Detail",
-    "https://rumble.com/embed/v6g9271/?pub=c8ff5",
-  ],
-  [
-    `The Democratic Party's Desperate Attempt To Claim That Elon Musk's DOGE Is Unconstitutional Crashes & Burns`,
-    "https://www.banned.video/watch?id=67a549982a23988368ba5bad",
-  ],
-  [
-    `BREAKING EXCLUSIVE: Pennsylvania Investigators Found Strong Evidence Of A Criminal Network Handling Trump's Attempted Assassin In Butler, Penn.`,
-    "https://madmaxworld.tv/watch?id=67aba93ee02deded20f1a9d9",
-  ],
-  [
-    `L.A. Marzulli Brokeness`,
-    "https://www.youtube.com/embed/-VvVYlHSVG4?si=5CE3U42RiUY0dgSS&amp;start=884",
-  ],
-  [
-    `DOJ Lawyer Admits FDA War Against Ivermectin was Abuse of Authority, "Millions of Deaths" Resulted`,
-    "https://www.youtube.com/embed/HH2Rh1_owqI?si=jnrhqjz8D-Na8PAf",
-  ],
-  [
-    `RFK Jr. Bombshell: Nukes Entire Democrat Party in Historic Speech That Every American NEEDS To See`,
-    "https://www.youtube.com/embed/iVUdXGC-Tg8?si=o2hRF9PP9dUpqGDM",
-  ],
-
-  [
-    `Confessions of a UFO Hunter: Ross Coulthart interviews Lue Elizondo`,
-    "https://www.youtube.com/embed/wgM5V44eQHU?si=V7C0DDzyPKdAnMjT",
-  ],
-  [
-    `Prophit Predicts Trump Assasination Attempt April 2024 (Short Version)`,
-    "https://www.youtube.com/embed/FCGfE9yMnXc?si=gX6gf63dBLlOeO4k",
-  ],
-  [
-    `3 PROPHETS Explain 3 American SOLAR ECLIPSES | APRIL8 SIGN | Amanda Grace, Brandon Biggs Cioccolanti`,
-    "https://www.youtube.com/embed/Ey0qVzG8_vU?si=C_LAiNhOrevotedP",
-  ],
-  [
-    `New Trump Update: Bomb materials found in vehicle of suspected shooter `,
-    "https://www.youtube.com/embed/dWlQmsq5740?si=WzJpaooGa30F5RPO",
-  ],
-
-  [`Vaxxed II the movie`, "https://rumble.com/embed/v2r08s2/?pub=c8ff5"],
-  [
-    `A Quick Q&A With Father, Relics, Protestant Deliverance and Mediums`,
-    "https://www.youtube.com/embed/EBc1VMAzIH8?si=MoEnIkhYld9D5_B_&amp;start=1569",
-  ],
-  [`Let My People Go`, "https://rumble.com/embed/v4hirv6/?pub=c8ff5"],
-
-  [
-    `The Brutal Reality of the Middle East | Mosab Hassan Yousef | EP 443`,
-    "https://www.youtube.com/embed/I5VPFw0vI6U?si=2jAT1JsyW07JmKXE",
-  ],
-  [
-    `Source Code, Fraud Algorithms, and Injecting Votes: Dr. Daugherity - "Let My People Go" Interview`,
-    "https://rumble.com/embed/v4q9f0n/?pub=c8ff5",
-  ],
+  
 ];
 console.log(clips);
 class VideoMaker {
