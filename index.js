@@ -3,12 +3,19 @@ var videoarea = document.querySelector("#videoarea");
 var rearangeVideos = false;
 var objectArray = [];
 var clips = [
- 
+
+
+
+
   [
-    "Investigative Journalist Nick Shirley Releases Video Uncovering $170 Million in Fraud in California",
-    "https://youtu.be/kegwwB4RHgA?si=ndZgU-9xYqPZ7pJ0",
+    "I Exposed California's Billion Dollar Day Care and Hospice Fraud Crisis",
+    "https://www.youtube.com/embed/kegwwB4RHgA?si=jPvsRQW9oZ-ETRys"
   ],
-  
+
+  [
+    "I Investigated California’s Suspected Voter Fraud",
+    "https://www.youtube.com/embed/zSh1Ey4dLcY?si=JKpOoXM0x-3moL04",
+  ],
 ];
 console.log(clips);
 class VideoMaker {
@@ -95,10 +102,8 @@ sub.addEventListener("click", (e) => {
 //^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 async function calculateLatest() {
   if (!remAddSwitch) {
-   
     var weather = await fetch(
-      "https://erichs-real-server.onrender.com/API/weather/latestObservation/MFLC1"
-      
+      "https://erichs-real-server.onrender.com/API/weather/latestObservation/MFLC1",
     );
 
     if (!weather.ok) {
@@ -127,29 +132,21 @@ async function calculateLatest() {
       seasonTime: time_season,
       seasonValue: value_season,
     };
-    console.log(obs)
+    console.log(obs);
 
     //___________________________________________________
 
-   
-
-   
     var info = [
       ["Station: ", "MFLC1"],
       ["Name: ", "Middle Fork Lytle Creek"],
       ["County: ", "San Bernardino County"],
       ["State: ", "California"],
       ["Local Date: ", new Date().toLocaleString()],
-      [`Hourly Precipitation :`,` ${obs.timeValue}`],
-      [`Hourly Time Stamp :`,`${timeSync(obs.timeHour)}`],
-      [`Seasonal Precipitation :`,` ${obs.seasonValue}`],
-      [`Seasonal Time Stamp :` ,`${timeSync(obs.seasonTime)}`]
-
+      [`Hourly Precipitation :`, ` ${obs.timeValue}`],
+      [`Hourly Time Stamp :`, `${timeSync(obs.timeHour)}`],
+      [`Seasonal Precipitation :`, ` ${obs.seasonValue}`],
+      [`Seasonal Time Stamp :`, `${timeSync(obs.seasonTime)}`],
     ];
-
-    
-
-    
 
     var middleData = document.createElement("div");
     middleData.style.cssText =
@@ -176,11 +173,8 @@ async function calculateLatest() {
     var target = document.getElementById("remove");
     target.addEventListener("click", removeTheBox);
     console.log(remAddSwitch);
-
-   
   } else {
   }
-  
 }
 
 //***********************************************************************************
