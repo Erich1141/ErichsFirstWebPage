@@ -3,13 +3,9 @@ var videoarea = document.querySelector("#videoarea");
 var rearangeVideos = false;
 var objectArray = [];
 var clips = [
-
-
-
-
   [
     "I Exposed California's Billion Dollar Day Care and Hospice Fraud Crisis",
-    "https://www.youtube.com/embed/kegwwB4RHgA?si=jPvsRQW9oZ-ETRys"
+    "https://www.youtube.com/embed/kegwwB4RHgA?si=jPvsRQW9oZ-ETRys",
   ],
 
   [
