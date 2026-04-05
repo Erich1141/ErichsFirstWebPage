@@ -1,0 +1,15 @@
+Unexpected token ...                     -> You forgot something before/after a symbol, or put punctuation in the wrong place.
+Unexpected number                        -> You put a number where JavaScript expected a property name, parameter pattern, operator, or other syntax.
+Unexpected identifier                    -> You put a word/name where JavaScript expected punctuation, an operator, or the end of an expression.
+Unexpected string                        -> You put a quoted string where JavaScript expected punctuation or an operator.
+Invalid or unexpected token              -> You have a broken string, illegal character, bad quote, or some character the parser cannot use there.
+missing ) after argument list            -> You forgot a closing parenthesis in a function call or similar expression.
+missing ] after element list             -> You forgot the closing bracket of an array.
+missing formal parameter                 -> Your function parameter list is malformed.
+Function statements require a function name -> You wrote a function declaration without giving it a name.
+Identifier starts immediately after numeric literal -> You accidentally glued a name onto a number, like 3abc.
+Invalid left-hand side in assignment     -> You tried to assign to something that cannot receive a value, like a function call.
+Private field '#x' must be declared in an enclosing class -> You used #privateField syntax outside the class that defines it.
+Illegal return statement                 -> You used return where there is no function body.
+Setter must have exactly one formal parameter -> Your setter has zero parameters or more than one.
+Invalid regular expression ...           -> Your regex pattern has invalid syntax.
