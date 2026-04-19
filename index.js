@@ -3,6 +3,18 @@ var videoarea = document.querySelector("#videoarea");
 var rearangeVideos = false;
 var objectArray = [];
 var clips = [
+
+
+
+
+  [
+    "I Investigated California's 'Stop Nick Shirley Act' To Protect Fraudsters",
+    "https://www.youtube.com/embed/leN6LYJlFUM?si=SQI-TPR9m7tPp5Sd",
+  ],
+  [
+    "Is it man-made or ET?",
+    "https://www.youtube.com/embed/iAd406Vn8o4?si=QO0wF0plWGg15ZY8",
+  ],
   [
     "I Exposed California's Billion Dollar Day Care and Hospice Fraud Crisis",
     "https://www.youtube.com/embed/kegwwB4RHgA?si=jPvsRQW9oZ-ETRys",
