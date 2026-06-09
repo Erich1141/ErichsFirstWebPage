@@ -3,10 +3,14 @@ var videoarea = document.querySelector("#videoarea");
 var rearangeVideos = false;
 var objectArray = [];
 var clips = [
-
-
-
-
+  [
+    "Dr. Walter Daugherty | 'Let my People Go Interview'",
+    "https://rumble.com/embed/v4q9f0n/?pub=4",
+  ],
+  [
+    "New Rule: Assassination Generation | Real Time with Bill Maher (HBO)",
+    "https://www.youtube.com/embed/4DGJn36rNro?si=Ch-f0FHPqi9p3G64",
+  ],
   [
     "I Investigated California's 'Stop Nick Shirley Act' To Protect Fraudsters",
     "https://www.youtube.com/embed/leN6LYJlFUM?si=SQI-TPR9m7tPp5Sd",
