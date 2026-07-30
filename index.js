@@ -4,6 +4,10 @@ var rearangeVideos = false;
 var objectArray = [];
 var clips = [
   [
+    "FULL HEARING: Dr. Anthony Fauci Faces Off Against Lawmakers In Senate Homeland Security Committee",
+    "https://www.youtube.com/embed/YPNFUIU4zCg?si=BQGWO9_Hf0hvFxcu",
+  ],
+  [
     "Dr. Walter Daugherty | 'Let my People Go Interview'",
     "https://rumble.com/embed/v4q9f0n/?pub=4",
   ],
